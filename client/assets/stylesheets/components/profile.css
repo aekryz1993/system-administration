@@ -1,0 +1,111 @@
+._profile_container {
+    padding-left: 2%;
+    height: 91%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+._left_column_item {
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr 4fr;
+}
+
+._title_profile_item {
+    align-self: center;
+    font-size: 150%;
+    font-weight: 500;
+}
+
+._profile_table {
+    width: 70%;
+    border-bottom: 1px solid #ccc;
+}
+
+._profile_th {
+    text-align: left;
+    font-weight: 100;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    background-color: rgba(44, 96, 160, 0.7);
+}
+
+.profile_td {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+._user_anchor_profil {
+    text-align: left;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 10px;
+    color: rgba(44, 96, 160, 0.7);
+    text-decoration: none;
+}
+
+._user_add_profil {
+    justify-self: center;
+    margin-right: 4%;
+}
+
+._user_add_anchor_profil {
+    text-decoration: none;
+}
+
+._span {
+    margin-left: 2px;
+}
+
+._profile_tbody tr:nth-child(2n) {
+  background-color: rgb(156, 156, 156);
+}
+
+._user_anchor_profil:link {
+    color: rgba(44, 96, 160, 0.7);;
+    text-decoration: none;
+}
+
+._user_anchor_profil:visited {
+    color: rgba(44, 96, 160, 0.7);;
+    text-decoration: none;
+}
+
+._user_anchor_profil:hover {
+    color: rgba(44, 96, 160, 0.7);;
+    text-decoration: none;
+}
+
+._user_anchor_profil:active {
+    color: rgba(44, 96, 160, 0.7);
+    outline: none;
+    text-decoration: none;
+}
+
+._user_add_anchor_profil:link {
+    color: rgba(44, 96, 160, 0.7);
+    text-decoration: none;
+}
+
+._user_add_anchor_profil:visited {
+    color: rgba(44, 96, 160, 0.7);
+    text-decoration: none;
+}
+
+._user_add_anchor_profil:hover {
+    color: rgba(44, 96, 160, 0.7);
+    text-decoration: none;
+}
+
+._user_add_anchor_profil:active {
+    color: rgba(44, 96, 160, 0.7);
+    outline: none;
+    text-decoration: none;
+}
+
+/* ._right_column_item {
+
+} */

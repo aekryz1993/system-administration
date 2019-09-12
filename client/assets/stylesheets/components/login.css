@@ -1,0 +1,76 @@
+._login_container {
+    height: 100%;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15% 47% auto;
+}
+
+._login_form_item {
+    background-color: white;
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    grid-area: 2/2/3/3;
+    height: 80%;
+    width: 80%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+._title_style {
+    background-color: rgba(44, 96, 139, 0.9);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    align-self: stretch;
+}
+
+._login_input {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+}
+
+._input_style {
+    grid-column: 2/3;
+    --color_focus: transparent;
+    clear: both;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* box-sizing: border-box; */
+    padding: 2%;
+    border-radius: 4px;
+}
+
+._input_style:focus {
+    border-color: #999;
+}
+
+._input_style:focus::-webkit-input-placeholder { 
+    color: var(--color_focus, transparent);
+    /* border: 10px solid black; */
+}
+._input_style:focus:-moz-placeholder { 
+    color: var(--color_focus, transparent);
+    /* padding: 10%; */
+} /* FF 4-18 */
+._input_style:focus::-moz-placeholder { 
+    color: var(--color_focus, transparent);
+    /* padding: 10%; */
+} /* FF 19+ */
+._input_style:focus:-ms-input-placeholder { 
+    color: var(--color_focus, transparent);
+} /* IE 10+ */
+
+._login_button {
+    align-self: center;
+    color: white;
+    background-color: rgba(44, 96, 139, 0.8);
+    border: 0px solid;
+    border-radius: 5px;
+    padding: 8px 11px;
+}

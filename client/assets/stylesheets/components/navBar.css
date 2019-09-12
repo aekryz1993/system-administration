@@ -1,0 +1,107 @@
+._navbar_container {
+    /* width: 100%; */
+    height: 6%;
+    padding: 5px 0 5px 0;
+    background-color: rgba(44, 96, 139, 0.8);
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+}
+
+._title_item {
+    color: white;
+    justify-self: left;
+    padding-left: 10%;
+}
+
+._username_item {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    grid-column: 3/4;
+}
+
+._update_item {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    grid-column: 4/5
+}
+
+._anchor:link {
+    color: white;
+    outline: none;
+    /* text-decoration: none; */
+}
+
+._anchor:visited {
+    color: white;
+    /* text-decoration: none; */
+}
+
+._anchor:hover {
+    color: white;
+    /* text-decoration: none; */
+}
+
+._anchor:active {
+    color: white;
+    outline: none;
+    /* text-decoration: none; */
+}
+
+._logout_item {
+    grid-column: 5/6;
+}
+
+._logout_button {
+    background-color: rgba(44, 96, 139, 0);
+    color: white;
+    border: 1px solid white;
+    /* border: none; */
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+._logout_button:hover {
+  background-color: rgba(44, 96, 139, 0.9);
+  color: white;
+}
+
+._anchor_username_user {
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+._anchor_username_user:link {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+._anchor_username_user:visited {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+._anchor_username_user:hover {
+    color: white;
+    text-decoration: none;
+}
+
+._anchor_username_user:active {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}

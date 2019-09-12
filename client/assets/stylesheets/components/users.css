@@ -1,0 +1,107 @@
+._users_container {
+    padding-left: 2%;
+    display: grid;
+    /* width: 97.9%; */
+    height: 91%;
+    grid-template-columns: 3fr 1fr;
+}
+
+._left_column_item {
+    display: flex;
+    flex-direction: column;
+}
+
+._title_users_item {
+    padding: 2% 0;
+    font-size: 150%;
+    font-weight: 500;
+}
+
+._users_table {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+._users_th {
+    text-align: left;
+    font-weight: 100;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 5px;
+    background-color: rgba(44, 96, 160, 0.7);
+}
+
+._users_th_active {
+    text-align: center;
+    font-weight: 100;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 0;
+    background-color: rgba(44, 96, 160, 0.7);
+}
+
+._users_tbody tr:nth-child(2n) {
+    background-color: rgb(215, 215, 215);
+}
+
+.users_td {
+    padding-left: 10px;
+}
+
+.users_td_active {
+    text-align: center;
+}
+
+._users_anchor_username {
+    font-weight: 700;
+    font-size: 12px;
+    color: rgba(44, 96, 160);
+    text-decoration: none;
+}
+
+._users_anchor_username:link {
+    color: rgba(44, 96, 160);
+    text-decoration: none;
+}
+
+._users_anchor_username:visited {
+    color: rgba(44, 96, 160);
+    text-decoration: none;
+}
+
+._users_anchor_username:hover {
+    color: rgba(44, 96, 160);
+    text-decoration: none;
+}
+
+._users_anchor_username:active {
+    color: rgba(44, 96, 160);
+    outline: none;
+    text-decoration: none;
+}
+
+._users_style_email {
+    font-size: 14px;
+}
+
+._right_column_item {
+    padding-right: 40px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+._users_add a {
+    background-color: gray;
+    padding: 2% 3%;
+    border-radius: 50px;
+    float: right;
+}
+
+._users_anchor_add {
+    font-size: 11px;
+    color: white;
+    text-decoration: none;
+}
