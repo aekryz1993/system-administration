@@ -1,8 +1,4 @@
-// import Sequelize from 'sequelize';
-// import app from '../app';
-// import connect from '../db/connection';
-
-export default (sequelize, Sequelize) => {
+	module.exports = (sequelize, Sequelize) => {
   const Permissions = sequelize.define('permissions', {
     id: {
       type: Sequelize.UUID,
@@ -31,4 +27,3 @@ export default (sequelize, Sequelize) => {
 
   return Permissions;
 };
-// export default Permissions;

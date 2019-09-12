@@ -1,9 +1,6 @@
 import bcrypt from 'bcryptjs';
-// import Sequelize from 'sequelize';
-// import Permissions from './Permissions';
-// import app from '../app';
 
-export default (sequelize, Sequelize, Permissions) => {
+module.exports = (sequelize, Sequelize, Permissions) => {
   const User = sequelize.define('user', {
     id: {
       type: Sequelize.UUID,
@@ -77,5 +74,3 @@ export default (sequelize, Sequelize, Permissions) => {
 
   return User;
 };
-
-// export default User;

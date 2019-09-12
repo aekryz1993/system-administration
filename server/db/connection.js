@@ -7,7 +7,7 @@ function connect(config = {}, db= {}) {
     
   // const options = config.options || {};
 
-  const isDev = (config.mode === devConfig.mode);
+  // const isDev = (config.mode === devConfig.mode);
 
   // console.log(isDev);
 
@@ -20,8 +20,8 @@ function connect(config = {}, db= {}) {
   db.Sequelize = Sequelize;
   db.sequelize = sequelize;
 
-  db.permissions = Permissions(sequelize, Sequelize);
-  db.user = User(sequelize, Sequelize, db.permissions);
+  db.permissions = require('../models/Permissions.js')(sequelize, Sequelize);
+  db.user = require('../models/User.js')(sequelize, Sequelize);
 
   return db;
 
