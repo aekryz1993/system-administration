@@ -119,8 +119,8 @@ const _default = UserData;
     return;
   }
 
-  reactHotLoader.register(UserData, "UserData", "/home/aekryz/Workspace/system-administration/client/components/UserData.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/components/UserData.js");
+  reactHotLoader.register(UserData, "UserData", "/home/aekryz-laptop/Workspace/system-administration/client/components/UserData.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/components/UserData.js");
 })();
 
 ;
@@ -293,8 +293,8 @@ const _default = Permissions;
     return;
   }
 
-  reactHotLoader.register(Permissions, "Permissions", "/home/aekryz/Workspace/system-administration/client/user/Permissions.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/user/Permissions.js");
+  reactHotLoader.register(Permissions, "Permissions", "/home/aekryz-laptop/Workspace/system-administration/client/user/Permissions.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/user/Permissions.js");
 })();
 
 ;
@@ -423,8 +423,8 @@ const _default = Users;
     return;
   }
 
-  reactHotLoader.register(Users, "Users", "/home/aekryz/Workspace/system-administration/client/user/User.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/user/User.js");
+  reactHotLoader.register(Users, "Users", "/home/aekryz-laptop/Workspace/system-administration/client/user/User.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/user/User.js");
 })();
 
 ;
@@ -507,9 +507,9 @@ const _default = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRoute
     return;
   }
 
-  reactHotLoader.register(mapStateUserToProps, "mapStateUserToProps", "/home/aekryz/Workspace/system-administration/client/user/userContainer.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz/Workspace/system-administration/client/user/userContainer.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/user/userContainer.js");
+  reactHotLoader.register(mapStateUserToProps, "mapStateUserToProps", "/home/aekryz-laptop/Workspace/system-administration/client/user/userContainer.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz-laptop/Workspace/system-administration/client/user/userContainer.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/user/userContainer.js");
 })();
 
 ;

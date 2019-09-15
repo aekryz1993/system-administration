@@ -105,8 +105,8 @@ const _default = UserInformation;
     return;
   }
 
-  reactHotLoader.register(UserInformation, "UserInformation", "/home/aekryz/Workspace/system-administration/client/components/UserInformation.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/components/UserInformation.js");
+  reactHotLoader.register(UserInformation, "UserInformation", "/home/aekryz-laptop/Workspace/system-administration/client/components/UserInformation.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/components/UserInformation.js");
 })();
 
 ;
@@ -221,8 +221,8 @@ const _default = UpdateCurrentUser;
     return;
   }
 
-  reactHotLoader.register(UpdateCurrentUser, "UpdateCurrentUser", "/home/aekryz/Workspace/system-administration/client/currentuser/UpdateCurrentUser.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/currentuser/UpdateCurrentUser.js");
+  reactHotLoader.register(UpdateCurrentUser, "UpdateCurrentUser", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/UpdateCurrentUser.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/UpdateCurrentUser.js");
 })();
 
 ;
@@ -311,10 +311,10 @@ const _default = UpdateCurrentUserContainer;
     return;
   }
 
-  reactHotLoader.register(mapStateUpdateUserToProps, "mapStateUpdateUserToProps", "/home/aekryz/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
-  reactHotLoader.register(mapDispatchUpdateUserToProps, "mapDispatchUpdateUserToProps", "/home/aekryz/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
-  reactHotLoader.register(UpdateCurrentUserContainer, "UpdateCurrentUserContainer", "/home/aekryz/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
+  reactHotLoader.register(mapStateUpdateUserToProps, "mapStateUpdateUserToProps", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
+  reactHotLoader.register(mapDispatchUpdateUserToProps, "mapDispatchUpdateUserToProps", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
+  reactHotLoader.register(UpdateCurrentUserContainer, "UpdateCurrentUserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/UpdateCurrentUserContainer.js");
 })();
 
 ;

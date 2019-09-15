@@ -168,8 +168,8 @@ const _default = App;
     return;
   }
 
-  reactHotLoader.register(App, "App", "/home/aekryz/Workspace/system-administration/client/App.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/App.js");
+  reactHotLoader.register(App, "App", "/home/aekryz-laptop/Workspace/system-administration/client/App.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/App.js");
 })();
 
 ;
@@ -336,8 +336,8 @@ const _default = Login;
     return;
   }
 
-  reactHotLoader.register(Login, "Login", "/home/aekryz/Workspace/system-administration/client/auth/Login.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/auth/Login.js");
+  reactHotLoader.register(Login, "Login", "/home/aekryz-laptop/Workspace/system-administration/client/auth/Login.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/auth/Login.js");
 })();
 
 ;
@@ -408,8 +408,8 @@ const _default = PrivateRoute;
     return;
   }
 
-  reactHotLoader.register(PrivateRoute, "PrivateRoute", "/home/aekryz/Workspace/system-administration/client/auth/PrivateRoute.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/auth/PrivateRoute.js");
+  reactHotLoader.register(PrivateRoute, "PrivateRoute", "/home/aekryz-laptop/Workspace/system-administration/client/auth/PrivateRoute.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/auth/PrivateRoute.js");
 })();
 
 ;
@@ -457,7 +457,7 @@ const login = (username, password) => axios__WEBPACK_IMPORTED_MODULE_0___default
     return;
   }
 
-  reactHotLoader.register(login, "login", "/home/aekryz/Workspace/system-administration/client/auth/api-auth.js");
+  reactHotLoader.register(login, "login", "/home/aekryz-laptop/Workspace/system-administration/client/auth/api-auth.js");
 })();
 
 ;
@@ -523,8 +523,8 @@ const _default = auth;
     return;
   }
 
-  reactHotLoader.register(auth, "auth", "/home/aekryz/Workspace/system-administration/client/auth/auth-helper.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/auth/auth-helper.js");
+  reactHotLoader.register(auth, "auth", "/home/aekryz-laptop/Workspace/system-administration/client/auth/auth-helper.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/auth/auth-helper.js");
 })();
 
 ;
@@ -605,10 +605,10 @@ const _default = LoginContainer;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryz/Workspace/system-administration/client/auth/loginContainer.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz/Workspace/system-administration/client/auth/loginContainer.js");
-  reactHotLoader.register(LoginContainer, "LoginContainer", "/home/aekryz/Workspace/system-administration/client/auth/loginContainer.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryz-laptop/Workspace/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz-laptop/Workspace/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(LoginContainer, "LoginContainer", "/home/aekryz-laptop/Workspace/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/auth/loginContainer.js");
 })();
 
 ;
@@ -664,8 +664,8 @@ const _default = validate;
     return;
   }
 
-  reactHotLoader.register(validate, "validate", "/home/aekryz/Workspace/system-administration/client/auth/validate.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/auth/validate.js");
+  reactHotLoader.register(validate, "validate", "/home/aekryz-laptop/Workspace/system-administration/client/auth/validate.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/auth/validate.js");
 })();
 
 ;
@@ -718,8 +718,8 @@ const _default = Loading;
     return;
   }
 
-  reactHotLoader.register(Loading, "Loading", "/home/aekryz/Workspace/system-administration/client/components/Loading.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/components/Loading.js");
+  reactHotLoader.register(Loading, "Loading", "/home/aekryz-laptop/Workspace/system-administration/client/components/Loading.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/components/Loading.js");
 })();
 
 ;
@@ -767,8 +767,8 @@ const _default = NoMatch;
     return;
   }
 
-  reactHotLoader.register(NoMatch, "NoMatch", "/home/aekryz/Workspace/system-administration/client/components/NoMatch.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/components/NoMatch.js");
+  reactHotLoader.register(NoMatch, "NoMatch", "/home/aekryz-laptop/Workspace/system-administration/client/components/NoMatch.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/components/NoMatch.js");
 })();
 
 ;
@@ -835,9 +835,9 @@ const logout = credentials => axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('
     return;
   }
 
-  reactHotLoader.register(fetchCurrentUser, "fetchCurrentUser", "/home/aekryz/Workspace/system-administration/client/currentuser/api-currentuser.js");
-  reactHotLoader.register(updateCurrentUser, "updateCurrentUser", "/home/aekryz/Workspace/system-administration/client/currentuser/api-currentuser.js");
-  reactHotLoader.register(logout, "logout", "/home/aekryz/Workspace/system-administration/client/currentuser/api-currentuser.js");
+  reactHotLoader.register(fetchCurrentUser, "fetchCurrentUser", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/api-currentuser.js");
+  reactHotLoader.register(updateCurrentUser, "updateCurrentUser", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/api-currentuser.js");
+  reactHotLoader.register(logout, "logout", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/api-currentuser.js");
 })();
 
 ;
@@ -911,8 +911,8 @@ const CurrentUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_
     return;
   }
 
-  reactHotLoader.register(UpdateCurrentUserContainer, "UpdateCurrentUserContainer", "/home/aekryz/Workspace/system-administration/client/currentuser/index.js");
-  reactHotLoader.register(CurrentUserContainer, "CurrentUserContainer", "/home/aekryz/Workspace/system-administration/client/currentuser/index.js");
+  reactHotLoader.register(UpdateCurrentUserContainer, "UpdateCurrentUserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/index.js");
+  reactHotLoader.register(CurrentUserContainer, "CurrentUserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/index.js");
 })();
 
 ;
@@ -992,8 +992,8 @@ const _default = Logout;
     return;
   }
 
-  reactHotLoader.register(Logout, "Logout", "/home/aekryz/Workspace/system-administration/client/naveBar/Logout.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/naveBar/Logout.js");
+  reactHotLoader.register(Logout, "Logout", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/Logout.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/Logout.js");
 })();
 
 ;
@@ -1113,8 +1113,8 @@ const _default = NavBar;
     return;
   }
 
-  reactHotLoader.register(NavBar, "NavBar", "/home/aekryz/Workspace/system-administration/client/naveBar/NavBar.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/naveBar/NavBar.js");
+  reactHotLoader.register(NavBar, "NavBar", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/NavBar.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/NavBar.js");
 })();
 
 ;
@@ -1197,10 +1197,10 @@ const _default = NavbarContainer;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryz/Workspace/system-administration/client/naveBar/navbarContainer.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz/Workspace/system-administration/client/naveBar/navbarContainer.js");
-  reactHotLoader.register(NavbarContainer, "NavbarContainer", "/home/aekryz/Workspace/system-administration/client/naveBar/navbarContainer.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/naveBar/navbarContainer.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/navbarContainer.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/navbarContainer.js");
+  reactHotLoader.register(NavbarContainer, "NavbarContainer", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/navbarContainer.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/naveBar/navbarContainer.js");
 })();
 
 ;
@@ -1270,8 +1270,8 @@ const _default = profil;
     return;
   }
 
-  reactHotLoader.register(profil, "profil", "/home/aekryz/Workspace/system-administration/client/routes/profile.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/routes/profile.js");
+  reactHotLoader.register(profil, "profil", "/home/aekryz-laptop/Workspace/system-administration/client/routes/profile.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/routes/profile.js");
 })();
 
 ;
@@ -1338,8 +1338,8 @@ const _default = user;
     return;
   }
 
-  reactHotLoader.register(user, "user", "/home/aekryz/Workspace/system-administration/client/routes/user.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/routes/user.js");
+  reactHotLoader.register(user, "user", "/home/aekryz-laptop/Workspace/system-administration/client/routes/user.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/routes/user.js");
 })();
 
 ;
@@ -1467,28 +1467,28 @@ const updateFinished = () => ({
     return;
   }
 
-  reactHotLoader.register(FETCH_CURRENTUSER, "FETCH_CURRENTUSER", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(FETCH_CURRENTUSER_SUCCED, "FETCH_CURRENTUSER_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(FETCH_CURRENTUSER_FAILED, "FETCH_CURRENTUSER_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(startFetchCurrentUser, "startFetchCurrentUser", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST, "LOGOUT_REQUEST", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST_SUCCED, "LOGOUT_REQUEST_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST_FAILED, "LOGOUT_REQUEST_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST_ENDED, "LOGOUT_REQUEST_ENDED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(logoutRequest, "logoutRequest", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(succedLogout, "succedLogout", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(failedLogout, "failedLogout", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(logoutFinished, "logoutFinished", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER, "UPDATE_CURRENTUSER", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER_SUCCED, "UPDATE_CURRENTUSER_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER_FAILED, "UPDATE_CURRENTUSER_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER_ENDED, "UPDATE_CURRENTUSER_ENDED", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(startUpdateCurrentUser, "startUpdateCurrentUser", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryz/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(FETCH_CURRENTUSER, "FETCH_CURRENTUSER", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(FETCH_CURRENTUSER_SUCCED, "FETCH_CURRENTUSER_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(FETCH_CURRENTUSER_FAILED, "FETCH_CURRENTUSER_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(startFetchCurrentUser, "startFetchCurrentUser", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST, "LOGOUT_REQUEST", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST_SUCCED, "LOGOUT_REQUEST_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST_FAILED, "LOGOUT_REQUEST_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST_ENDED, "LOGOUT_REQUEST_ENDED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(logoutRequest, "logoutRequest", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(succedLogout, "succedLogout", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(failedLogout, "failedLogout", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(logoutFinished, "logoutFinished", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER, "UPDATE_CURRENTUSER", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER_SUCCED, "UPDATE_CURRENTUSER_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER_FAILED, "UPDATE_CURRENTUSER_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER_ENDED, "UPDATE_CURRENTUSER_ENDED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(startUpdateCurrentUser, "startUpdateCurrentUser", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/currentuser.js");
 })();
 
 ;
@@ -1566,14 +1566,14 @@ const loginRequestEnded = () => ({
     return;
   }
 
-  reactHotLoader.register(LOGIN_REQUEST, "LOGIN_REQUEST", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(LOGIN_SUCCEED, "LOGIN_SUCCEED", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(LOGIN_FAILED, "LOGIN_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(LOGIN_REQUEST_ENDED, "LOGIN_REQUEST_ENDED", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginRequest, "loginRequest", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginSucced, "loginSucced", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginFailed, "loginFailed", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginRequestEnded, "loginRequestEnded", "/home/aekryz/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_REQUEST, "LOGIN_REQUEST", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_SUCCEED, "LOGIN_SUCCEED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_FAILED, "LOGIN_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_REQUEST_ENDED, "LOGIN_REQUEST_ENDED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginRequest, "loginRequest", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginSucced, "loginSucced", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginFailed, "loginFailed", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginRequestEnded, "loginRequestEnded", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/login.js");
 })();
 
 ;
@@ -1715,28 +1715,28 @@ const deleteFinished = () => ({
     return;
   }
 
-  reactHotLoader.register(FETCH_USER, "FETCH_USER", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(FETCH_USER_SUCCED, "FETCH_USER_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(FETCH_USER_FAILED, "FETCH_USER_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(startFetchUser, "startFetchUser", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER, "UPDATE_USER", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER_SUCCED, "UPDATE_USER_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER_FAILED, "UPDATE_USER_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER_FINISHED, "UPDATE_USER_FINISHED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(startUpdateUser, "startUpdateUser", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER, "DELETE_USER", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER_SUCCED, "DELETE_USER_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER_FAILED, "DELETE_USER_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER_FINISHED, "DELETE_USER_FINISHED", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(startDeleteUser, "startDeleteUser", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(succedDelete, "succedDelete", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(failedDelete, "failedDelete", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(deleteFinished, "deleteFinished", "/home/aekryz/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(FETCH_USER, "FETCH_USER", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(FETCH_USER_SUCCED, "FETCH_USER_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(FETCH_USER_FAILED, "FETCH_USER_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(startFetchUser, "startFetchUser", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER, "UPDATE_USER", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER_SUCCED, "UPDATE_USER_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER_FAILED, "UPDATE_USER_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER_FINISHED, "UPDATE_USER_FINISHED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(startUpdateUser, "startUpdateUser", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER, "DELETE_USER", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER_SUCCED, "DELETE_USER_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER_FAILED, "DELETE_USER_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER_FINISHED, "DELETE_USER_FINISHED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(startDeleteUser, "startDeleteUser", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(succedDelete, "succedDelete", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(failedDelete, "failedDelete", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(deleteFinished, "deleteFinished", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/user.js");
 })();
 
 ;
@@ -1832,20 +1832,20 @@ const createEnded = () => ({
     return;
   }
 
-  reactHotLoader.register(FETCH_USERS, "FETCH_USERS", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(FETCH_USERS_SUCCED, "FETCH_USERS_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(FETCH_USERS_FAILED, "FETCH_USERS_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(startFetchUsers, "startFetchUsers", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER, "ADD_USER", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER_SUCCED, "ADD_USER_SUCCED", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER_FAILED, "ADD_USER_FAILED", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER_FINISHED, "ADD_USER_FINISHED", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(startCreateUser, "startCreateUser", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(succedCreated, "succedCreated", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(failedCreated, "failedCreated", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(createEnded, "createEnded", "/home/aekryz/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(FETCH_USERS, "FETCH_USERS", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(FETCH_USERS_SUCCED, "FETCH_USERS_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(FETCH_USERS_FAILED, "FETCH_USERS_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(startFetchUsers, "startFetchUsers", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER, "ADD_USER", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER_SUCCED, "ADD_USER_SUCCED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER_FAILED, "ADD_USER_FAILED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER_FINISHED, "ADD_USER_FINISHED", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(startCreateUser, "startCreateUser", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(succedCreated, "succedCreated", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(failedCreated, "failedCreated", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(createEnded, "createEnded", "/home/aekryz-laptop/Workspace/system-administration/client/store/actions/users.js");
 })();
 
 ;
@@ -1912,9 +1912,9 @@ const updateCurrentUserEpic = action$ => action$.pipe(Object(redux_observable__W
     return;
   }
 
-  reactHotLoader.register(currentuserEpic, "currentuserEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/currentuser.js");
-  reactHotLoader.register(logoutEpic, "logoutEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/currentuser.js");
-  reactHotLoader.register(updateCurrentUserEpic, "updateCurrentUserEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/currentuser.js");
+  reactHotLoader.register(currentuserEpic, "currentuserEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/currentuser.js");
+  reactHotLoader.register(logoutEpic, "logoutEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/currentuser.js");
+  reactHotLoader.register(updateCurrentUserEpic, "updateCurrentUserEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/currentuser.js");
 })();
 
 ;
@@ -1967,7 +1967,7 @@ const rootEpic = Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["combineEp
     return;
   }
 
-  reactHotLoader.register(rootEpic, "rootEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/index.js");
+  reactHotLoader.register(rootEpic, "rootEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/index.js");
 })();
 
 ;
@@ -2025,7 +2025,7 @@ const loginEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPOR
     return;
   }
 
-  reactHotLoader.register(loginEpic, "loginEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/login.js");
+  reactHotLoader.register(loginEpic, "loginEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/login.js");
 })();
 
 ;
@@ -2090,9 +2090,9 @@ const deleteUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_
     return;
   }
 
-  reactHotLoader.register(userEpic, "userEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/user.js");
-  reactHotLoader.register(updateUserEpic, "updateUserEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/user.js");
-  reactHotLoader.register(deleteUserEpic, "deleteUserEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/user.js");
+  reactHotLoader.register(userEpic, "userEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/user.js");
+  reactHotLoader.register(updateUserEpic, "updateUserEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/user.js");
+  reactHotLoader.register(deleteUserEpic, "deleteUserEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/user.js");
 })();
 
 ;
@@ -2154,8 +2154,8 @@ const createUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_
     return;
   }
 
-  reactHotLoader.register(usersEpic, "usersEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/users.js");
-  reactHotLoader.register(createUserEpic, "createUserEpic", "/home/aekryz/Workspace/system-administration/client/store/epics/users.js");
+  reactHotLoader.register(usersEpic, "usersEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/users.js");
+  reactHotLoader.register(createUserEpic, "createUserEpic", "/home/aekryz-laptop/Workspace/system-administration/client/store/epics/users.js");
 })();
 
 ;
@@ -2263,7 +2263,7 @@ function configureStore(history, wrapEpic = f => f, preloadedState) {
     return;
   }
 
-  reactHotLoader.register(configureStore, "configureStore", "/home/aekryz/Workspace/system-administration/client/store/index.js");
+  reactHotLoader.register(configureStore, "configureStore", "/home/aekryz-laptop/Workspace/system-administration/client/store/index.js");
 })();
 
 ;
@@ -2377,9 +2377,9 @@ const updateCurrentUserReducer = (state = {
     return;
   }
 
-  reactHotLoader.register(currentuserReducer, "currentuserReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/currentuser.js");
-  reactHotLoader.register(logoutReducer, "logoutReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/currentuser.js");
-  reactHotLoader.register(updateCurrentUserReducer, "updateCurrentUserReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/currentuser.js");
+  reactHotLoader.register(currentuserReducer, "currentuserReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/currentuser.js");
+  reactHotLoader.register(logoutReducer, "logoutReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/currentuser.js");
+  reactHotLoader.register(updateCurrentUserReducer, "updateCurrentUserReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/currentuser.js");
 })();
 
 ;
@@ -2496,8 +2496,8 @@ const _default = rootReducer;
     return;
   }
 
-  reactHotLoader.register(rootReducer, "rootReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/index.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/store/reducers/index.js");
+  reactHotLoader.register(rootReducer, "rootReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/index.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/index.js");
 })();
 
 ;
@@ -2568,8 +2568,8 @@ const _default = loginReducer;
     return;
   }
 
-  reactHotLoader.register(loginReducer, "loginReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/login.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/store/reducers/login.js");
+  reactHotLoader.register(loginReducer, "loginReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/login.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/login.js");
 })();
 
 ;
@@ -2684,9 +2684,9 @@ const deleteUserReducer = (state = {
     return;
   }
 
-  reactHotLoader.register(userReducer, "userReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/user.js");
-  reactHotLoader.register(updateUserReducer, "updateUserReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/user.js");
-  reactHotLoader.register(deleteUserReducer, "deleteUserReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/user.js");
+  reactHotLoader.register(userReducer, "userReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/user.js");
+  reactHotLoader.register(updateUserReducer, "updateUserReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/user.js");
+  reactHotLoader.register(deleteUserReducer, "deleteUserReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/user.js");
 })();
 
 ;
@@ -2774,8 +2774,8 @@ const createUserReducer = (state = {
     return;
   }
 
-  reactHotLoader.register(usersReducer, "usersReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/users.js");
-  reactHotLoader.register(createUserReducer, "createUserReducer", "/home/aekryz/Workspace/system-administration/client/store/reducers/users.js");
+  reactHotLoader.register(usersReducer, "usersReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/users.js");
+  reactHotLoader.register(createUserReducer, "createUserReducer", "/home/aekryz-laptop/Workspace/system-administration/client/store/reducers/users.js");
 })();
 
 ;
@@ -2856,9 +2856,9 @@ const deleteUser = (credentials, id) => axios__WEBPACK_IMPORTED_MODULE_0___defau
     return;
   }
 
-  reactHotLoader.register(fetchUser, "fetchUser", "/home/aekryz/Workspace/system-administration/client/user/api-user.js");
-  reactHotLoader.register(updateUser, "updateUser", "/home/aekryz/Workspace/system-administration/client/user/api-user.js");
-  reactHotLoader.register(deleteUser, "deleteUser", "/home/aekryz/Workspace/system-administration/client/user/api-user.js");
+  reactHotLoader.register(fetchUser, "fetchUser", "/home/aekryz-laptop/Workspace/system-administration/client/user/api-user.js");
+  reactHotLoader.register(updateUser, "updateUser", "/home/aekryz-laptop/Workspace/system-administration/client/user/api-user.js");
+  reactHotLoader.register(deleteUser, "deleteUser", "/home/aekryz-laptop/Workspace/system-administration/client/user/api-user.js");
 })();
 
 ;
@@ -2944,9 +2944,9 @@ const DeleteUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2
     return;
   }
 
-  reactHotLoader.register(UserContainer, "UserContainer", "/home/aekryz/Workspace/system-administration/client/user/index.js");
-  reactHotLoader.register(UpdateUserContainer, "UpdateUserContainer", "/home/aekryz/Workspace/system-administration/client/user/index.js");
-  reactHotLoader.register(DeleteUserContainer, "DeleteUserContainer", "/home/aekryz/Workspace/system-administration/client/user/index.js");
+  reactHotLoader.register(UserContainer, "UserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/user/index.js");
+  reactHotLoader.register(UpdateUserContainer, "UpdateUserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/user/index.js");
+  reactHotLoader.register(DeleteUserContainer, "DeleteUserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/user/index.js");
 })();
 
 ;
@@ -3020,8 +3020,8 @@ const addUser = (credentials, body) => axios__WEBPACK_IMPORTED_MODULE_0___defaul
     return;
   }
 
-  reactHotLoader.register(fetchListUsers, "fetchListUsers", "/home/aekryz/Workspace/system-administration/client/users/api-users.js");
-  reactHotLoader.register(addUser, "addUser", "/home/aekryz/Workspace/system-administration/client/users/api-users.js");
+  reactHotLoader.register(fetchListUsers, "fetchListUsers", "/home/aekryz-laptop/Workspace/system-administration/client/users/api-users.js");
+  reactHotLoader.register(addUser, "addUser", "/home/aekryz-laptop/Workspace/system-administration/client/users/api-users.js");
 })();
 
 ;
@@ -3095,8 +3095,8 @@ const CreateUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2
     return;
   }
 
-  reactHotLoader.register(UsersContainer, "UsersContainer", "/home/aekryz/Workspace/system-administration/client/users/index.js");
-  reactHotLoader.register(CreateUserContainer, "CreateUserContainer", "/home/aekryz/Workspace/system-administration/client/users/index.js");
+  reactHotLoader.register(UsersContainer, "UsersContainer", "/home/aekryz-laptop/Workspace/system-administration/client/users/index.js");
+  reactHotLoader.register(CreateUserContainer, "CreateUserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/users/index.js");
 })();
 
 ;
@@ -3142,8 +3142,8 @@ function required(value) {
     return;
   }
 
-  reactHotLoader.register(isEmpty, "isEmpty", "/home/aekryz/Workspace/system-administration/client/utils/validations.js");
-  reactHotLoader.register(required, "required", "/home/aekryz/Workspace/system-administration/client/utils/validations.js");
+  reactHotLoader.register(isEmpty, "isEmpty", "/home/aekryz-laptop/Workspace/system-administration/client/utils/validations.js");
+  reactHotLoader.register(required, "required", "/home/aekryz-laptop/Workspace/system-administration/client/utils/validations.js");
 })();
 
 ;
@@ -3262,8 +3262,8 @@ const _default = Html;
     return;
   }
 
-  reactHotLoader.register(Html, "Html", "/home/aekryz/Workspace/system-administration/helpers/Html.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/helpers/Html.js");
+  reactHotLoader.register(Html, "Html", "/home/aekryz-laptop/Workspace/system-administration/helpers/Html.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/helpers/Html.js");
 })();
 
 ;
@@ -15974,7 +15974,7 @@ const _default = ({
     return;
   }
 
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/server/render.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/server/render.js");
 })();
 
 ;
@@ -15994,7 +15994,7 @@ const _default = ({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/aekryz/Workspace/system-administration/server/render.js */"./server/render.js");
+module.exports = __webpack_require__(/*! /home/aekryz-laptop/Workspace/system-administration/server/render.js */"./server/render.js");
 
 
 /***/ }),

@@ -1,7 +1,8 @@
 import Sequelize from 'sequelize';
+import runDev from './seeds.js';
 // import runDev from './seeds';
-import Permissions from '../models/Permissions';
-import User from '../models/User';
+// import Permissions from '../models/Permissions';
+// import User from '../models/User';
 
 function connect(config = {}, db= {}) {
     
@@ -21,7 +22,7 @@ function connect(config = {}, db= {}) {
   db.sequelize = sequelize;
 
   db.permissions = require('../models/Permissions.js')(sequelize, Sequelize);
-  db.user = require('../models/User.js')(sequelize, Sequelize);
+  db.user = require('../models/User.js')(sequelize, Sequelize, db.permissions);
 
   return db;
 
@@ -34,9 +35,9 @@ function connect(config = {}, db= {}) {
 // }
 
 const env = {
-  database: 'aekryz',
+  database: 'system_administration_dev',
   username: 'root',
-  password: 'abdelkader93',
+  password: 'password123',
   host: 'localhost',
   dialect: 'mysql',
   pool: {
@@ -60,6 +61,28 @@ const prodConfig = {
 export const testConfig = {
   mode: 'test'
 };
+
+// export const connection = (app) =  => {
+//   const db = connect(config(app))
+  
+//   (async () => {
+//     try {
+//       await db.sequelize.sync();
+//       await runDev(app)
+//       return;
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   })();
+  
+//   db.sequelize.authenticate()
+//   .then(() => {
+//     console.log('Connection has been established successfully.');
+//   })
+//   .catch(err => {
+//     console.error('Unable to connect to the database:', err);
+//   });
+// }
 
 export const config = (app) => (app.get('env') === 'development') ? devConfig : prodConfig;
 

@@ -127,8 +127,8 @@ const _default = CurrentUser;
     return;
   }
 
-  reactHotLoader.register(CurrentUser, "CurrentUser", "/home/aekryz/Workspace/system-administration/client/currentuser/Currentuser.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/currentuser/Currentuser.js");
+  reactHotLoader.register(CurrentUser, "CurrentUser", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/Currentuser.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/Currentuser.js");
 })();
 
 ;
@@ -205,10 +205,10 @@ const _default = CurrentuserContainer;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryz/Workspace/system-administration/client/currentuser/currentuserContainer.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz/Workspace/system-administration/client/currentuser/currentuserContainer.js");
-  reactHotLoader.register(CurrentuserContainer, "CurrentuserContainer", "/home/aekryz/Workspace/system-administration/client/currentuser/currentuserContainer.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/currentuser/currentuserContainer.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/currentuserContainer.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/currentuserContainer.js");
+  reactHotLoader.register(CurrentuserContainer, "CurrentuserContainer", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/currentuserContainer.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/currentuser/currentuserContainer.js");
 })();
 
 ;

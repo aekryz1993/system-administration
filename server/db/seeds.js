@@ -1,39 +1,43 @@
-import User from '../models/User';
-import Permissions from '../models/Permissions';
 import { savePermissions } from '../models/query/permissions';
-import { saveUser } from '../models/query/user';
+import { saveUser, findByUsernameAndEmail } from '../models/query/user';
 
-export default function renDev() {
+export default function runDev(app) {
   console.log('[----------- running the seeds --------------] ');
-  let user = new User(users[0]);
 
   (async () => {
     try {
-      await User.deleteMany({});
-      await Permissions.deleteMany({});
-      const permissions = await savePermissions(users[0].permissions);
-      await saveUser(user, permissions);
-      console.log('user saved');
+      const lookupUser = await findByUsernameAndEmail(user.username, user.email, app)
+      // console.log(lookupUser)
+      if(Object.keys(lookupUser).length === 0) {
+        const permissions = await savePermissions(initPermissions, app);
+        await saveUser(user, permissions, app);
+        console.log('user saved');
+        return;
+      } else {
+        console.log('user already created')
+        return;
+      }
     } catch (err) {
       console.log(e);
     }
   })();
 }
 
-const users = [{
-  username: 'admin',
-  email: 'admin@hotmail.com',
+const user = {
+  username: 'admin4',
+  email: 'admin4@hotmail.com',
   password: 'admin',
-  permissions: {
-    viewUsers: true,
-    createUser: true,
-    updateUser: true,
-    deleteUser: true,
-    viewGroups: true,
-    createGroup: true,
-    updateGroup: true,
-    deleteGroup: true,
-    isAdmin: true
-  },
-  isVerified: true,
-}];
+  // isVerified: true,
+};
+
+const initPermissions = {
+  viewUsers: true,
+  createUser: true,
+  updateUser: true,
+  deleteUser: true,
+  viewGroups: true,
+  createGroup: true,
+  updateGroup: true,
+  deleteGroup: true,
+  isAdmin: true
+}

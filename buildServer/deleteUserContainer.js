@@ -71,8 +71,8 @@ const _default = DeleteUser;
     return;
   }
 
-  reactHotLoader.register(DeleteUser, "DeleteUser", "/home/aekryz/Workspace/system-administration/client/user/DeleteUser.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/user/DeleteUser.js");
+  reactHotLoader.register(DeleteUser, "DeleteUser", "/home/aekryz-laptop/Workspace/system-administration/client/user/DeleteUser.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/user/DeleteUser.js");
 })();
 
 ;
@@ -147,9 +147,9 @@ const _default = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRoute
     return;
   }
 
-  reactHotLoader.register(mapStateDeleteUserToProps, "mapStateDeleteUserToProps", "/home/aekryz/Workspace/system-administration/client/user/deleteUserContainer.js");
-  reactHotLoader.register(mapDispatchDeleteUserToProps, "mapDispatchDeleteUserToProps", "/home/aekryz/Workspace/system-administration/client/user/deleteUserContainer.js");
-  reactHotLoader.register(_default, "default", "/home/aekryz/Workspace/system-administration/client/user/deleteUserContainer.js");
+  reactHotLoader.register(mapStateDeleteUserToProps, "mapStateDeleteUserToProps", "/home/aekryz-laptop/Workspace/system-administration/client/user/deleteUserContainer.js");
+  reactHotLoader.register(mapDispatchDeleteUserToProps, "mapDispatchDeleteUserToProps", "/home/aekryz-laptop/Workspace/system-administration/client/user/deleteUserContainer.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz-laptop/Workspace/system-administration/client/user/deleteUserContainer.js");
 })();
 
 ;

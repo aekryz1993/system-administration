@@ -24,7 +24,7 @@ export const signIn = (app, passport) => (req, res, next) => {
           
     req.login(user, {session: false}, (err) => {
       if (err) {
-        res.json(serverErrorMessage());
+        return res.json(serverErrorMessage());
       }
 
       const token = jwt.sign({id: user.dataValues.id}, app.get(SECRET_KEY_AUTH), jwtConfig);
