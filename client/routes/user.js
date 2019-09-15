@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import PrivateRoute from '../auth/PrivateRoute';
+import PrivateRoute from '../auth/index';
 import { UserContainer, UpdateUserContainer, DeleteUserContainer } from '../user/index';
 import NoMatch from '../components/NoMatch';
 
