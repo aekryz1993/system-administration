@@ -1,5 +1,5 @@
-import universal from 'react-universal-component'
-import Loading from '../components/Loading'
+import universal from 'react-universal-component';
+import Loading from '../components/Loading';
 
 // export default universal(() => import('./loginContainer').then(mod => {
 //     const {LoginContainer} = mod;
@@ -10,6 +10,6 @@ import Loading from '../components/Loading'
 // })
 
 export default universal(() => import('./PrivateRoute'), {
-    resolve: () => require.resolveWeak('./PrivateRoute.js'),
-    loading: Loading
-})
+  resolve: () => require.resolveWeak('./PrivateRoute.js'),
+  loading: Loading
+});

@@ -1,8 +1,5 @@
 import Sequelize from 'sequelize';
-import runDev from './seeds.js';
 // import runDev from './seeds';
-// import Permissions from '../models/Permissions';
-// import User from '../models/User';
 
 function connect(config = {}, db= {}) {
     
@@ -61,28 +58,6 @@ const prodConfig = {
 export const testConfig = {
   mode: 'test'
 };
-
-// export const connection = (app) =  => {
-//   const db = connect(config(app))
-  
-//   (async () => {
-//     try {
-//       await db.sequelize.sync();
-//       await runDev(app)
-//       return;
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   })();
-  
-//   db.sequelize.authenticate()
-//   .then(() => {
-//     console.log('Connection has been established successfully.');
-//   })
-//   .catch(err => {
-//     console.error('Unable to connect to the database:', err);
-//   });
-// }
 
 export const config = (app) => (app.get('env') === 'development') ? devConfig : prodConfig;
 

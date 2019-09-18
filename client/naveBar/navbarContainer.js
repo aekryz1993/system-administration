@@ -31,4 +31,4 @@ const NavbarContainer = withRouter(connect(
   mapDispatchToProps
 )(NavBar));
 
-export default NavbarContainer
+export default NavbarContainer;

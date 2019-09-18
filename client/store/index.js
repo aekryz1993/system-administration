@@ -10,44 +10,28 @@ import { createLogger } from 'redux-logger';
 import rootReducer from './reducers';
 import { rootEpic } from './epics/index';
 
-// export const wrappedEpic = wrapRootEpic(rootEpic);
-// const epicMiddleware = createEpicMiddleware();
-// const loggerMiddleware = createLogger();
-// export const history = createBrowserHistory();
-
 export default function configureStore(
   history,
   wrapEpic: Function => Function = f => f, 
   preloadedState: {}
 ) {
   // const history = createBrowserHistory();
-  const wrappedEpic = wrapEpic(rootEpic)
+  const wrappedEpic = wrapEpic(rootEpic);
   const epicMiddleware = createEpicMiddleware();
   const loggerMiddleware = createLogger();
   // const middleware = applyMiddleware(epicMiddleware, loggerMiddleware)
-  const middleware = applyMiddleware(routerMiddleware(history), epicMiddleware, loggerMiddleware)
+  const middleware = (process.env.NODE_ENV === 'development') ? 
+    applyMiddleware(routerMiddleware(history), epicMiddleware, loggerMiddleware) :
+    applyMiddleware(routerMiddleware(history), epicMiddleware);
 
-  let store
+  let store;
   if (!process.env.__Server__) {
     const composeEnhancers =
-      window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-    store = createStore(rootReducer(history), preloadedState, composeEnhancers(middleware))
+      window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+    store = createStore(rootReducer(history), preloadedState, composeEnhancers(middleware));
   } else {
-    store = createStore(rootReducer(history), middleware)
+    store = createStore(rootReducer(history), middleware);
   }
-
-  // const composeEnhancer = composeWithDevTools() || compose;
-  // const store = createStore(
-  //   rootReducer(),
-  //   preloadedState,
-  //   composeEnhancer(
-  //     applyMiddleware(
-  //       // routerMiddleware(history), 
-  //       epicMiddleware,
-  //       loggerMiddleware,
-  //     )
-  //   )
-  // );
 
   const epic$ = new BehaviorSubject(wrappedEpic);
 

@@ -32,4 +32,4 @@ const UpdateCurrentUserContainer = withRouter(connect(
   onSubmit: () => (values, dispatch) => dispatch(startUpdateCurrentUser(values))
 })(UpdateCurrentUser)));
 
-export default UpdateCurrentUserContainer
+export default UpdateCurrentUserContainer;

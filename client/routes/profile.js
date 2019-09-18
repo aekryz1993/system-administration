@@ -7,13 +7,13 @@ import user from './user';
 
 const profil = (
   
-    <Switch>
-      <PrivateRoute exact path="/profile" component={CurrentUserContainer} />
-      <PrivateRoute path="/update" component={UpdateCurrentUserContainer} />
-      <PrivateRoute path="/users" component={UsersContainer} />
-      <PrivateRoute path="/add" component={CreateUserContainer} />
-      {user}
-    </Switch> 
+  <Switch>
+    <PrivateRoute exact path="/profile" component={CurrentUserContainer} />
+    <PrivateRoute path="/update" component={UpdateCurrentUserContainer} />
+    <PrivateRoute path="/users" component={UsersContainer} />
+    <PrivateRoute path="/add" component={CreateUserContainer} />
+    {user}
+  </Switch> 
   
 );
 

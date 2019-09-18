@@ -8,7 +8,7 @@ import Permissions from './Permissions';
 const Users = ({
   user,
   pathname,
-  deletePermission,
+  // deletePermission,
   updatePermission,
   fetchUser,
 }) => {

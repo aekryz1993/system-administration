@@ -30,4 +30,4 @@ const CurrentuserContainer = withRouter(connect(
   mapDispatchToProps
 )(CurrentUser));
 
-export default CurrentuserContainer
+export default CurrentuserContainer;

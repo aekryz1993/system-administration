@@ -57,6 +57,7 @@ export const findByUsernameAndEmail = (username, email, app) => {
           field: 'username'
         });
 
+        // eslint-disable-next-line require-atomic-updates
         user = await findByEmail(email, app);
         if (user) resolve({
           user,

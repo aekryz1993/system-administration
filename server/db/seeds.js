@@ -18,7 +18,7 @@ export default function runDev(app) {
         return;
       }
     } catch (err) {
-      console.log(e);
+      console.log(err);
     }
   })();
 }

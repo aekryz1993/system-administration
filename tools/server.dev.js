@@ -1,25 +1,25 @@
-const fs = require('fs')
-const path = require('path')
-const webpack = require('webpack')
-const WriteFilePlugin = require('write-file-webpack-plugin')
+const fs = require('fs');
+const path = require('path');
+const webpack = require('webpack');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 // const nodeExternals = require('webpack-node-externals');
 // const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 
-const res = p => path.resolve(__dirname, p)
+const res = p => path.resolve(__dirname, p);
 
-const nodeModules = res('../node_modules')
-const entry = res('../server/render.js')
-const output = res('../buildServer')
+const nodeModules = res('../node_modules');
+const entry = res('../server/render.js');
+const output = res('../buildServer');
 
 const externals = fs
   .readdirSync(nodeModules)
   .filter(x => !/\.bin|react-universal-component|webpack-flush-chunks/.test(x))
   .reduce((externals, mod) => {
-    externals[mod] = `commonjs ${mod}`
-    return externals
-  }, {})
+    externals[mod] = `commonjs ${mod}`;
+    return externals;
+  }, {});
 
-externals['react-dom/server'] = 'commonjs react-dom/server'
+externals['react-dom/server'] = 'commonjs react-dom/server';
 
 module.exports = {
   name: 'server',
@@ -78,4 +78,4 @@ module.exports = {
       }
     })
   ]
-}
+};
