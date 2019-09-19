@@ -1,2 +1,2 @@
-web: sudo npm run start
-build: sudo npm run start:prod
+web: npm start
+build: npm run start:prod
