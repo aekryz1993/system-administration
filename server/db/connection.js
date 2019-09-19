@@ -11,6 +11,7 @@ function connect(config = {}, db= {}) {
 
   const sequelize = new Sequelize(config.env.database, config.env.username, config.env.password, {
     host: config.env.host,
+    port: config.env.port || 3306,
     dialect: config.env.dialect,
     logging: false,
   });
@@ -45,6 +46,21 @@ const env = {
   }
 };
 
+const envProd = {
+  database: 'dij69mqcuperi',
+  username: 'ruodfxiyxtqczm',
+  password: '59d1e78022e94d656aadee7fa72354146af3f09d5d3a1d09cb208ed2ec5a11cd',
+  host: 'ec2-54-221-238-248.compute-1.amazonaws.com',
+  dialect: 'mysql',
+  port: 5432,
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
+  }
+};
+
 const devConfig = {
   mode: 'development',
   env: env
@@ -52,7 +68,7 @@ const devConfig = {
 
 const prodConfig = {
   mode: 'production',
-  env: env
+  env: envProd
 };
 
 export const testConfig = {
