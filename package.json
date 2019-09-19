@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "npm run clean && cross-env NODE_ENV=development nodemon",
+    "start": "npm run clean && cross-env NODE_ENV=development nodemon",
     "clean": "rimraf buildClient buildServer",
-    "start": "npm run build && babel-node server/index.js",
+    "start:prod": "npm run build && babel-node server/index.js",
     "build": "npm run build:client && npm run build:server",
     "build:client": "webpack --progress -p --config tools/client.prod.js",
     "build:server": "webpack --progress --config tools/server.prod.js",
