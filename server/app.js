@@ -11,7 +11,8 @@ import passport from 'passport';
 import { SECRET_KEY_AUTH, SECRET_KEY_AUTH_VALUE } from './config/config';
 import apiRouter from './routes';
 import devBundle from './devBundle';
-import createError from 'http-errors';
+// import createError from 'http-errors';
+import errorHandler from 'errorhandler';
 
 const CURRENT_WORKING_DIR = process.cwd();
 const app = express();
@@ -30,7 +31,7 @@ app.use(cookieParser());
 
 app.use(compress());
 
-app.disable('x-powered-by')
+app.disable('x-powered-by');
 
 // enable CORS - Cross Origin Resource Sharing
 app.use(cors());
@@ -46,8 +47,18 @@ app.use('/api', apiRouter(app, passport));
 
 devBundle.compile(app, express);
 
+if (process.env.NODE_ENV === 'development') {
+  app.use(errorHandler({
+    dumpExceptions: true,
+    showStack: true
+  }));
+} else if (process.env.NODE_ENV === 'production') {
+  app.use(errorHandler());
+}
+
 // catch 404 and forward to error handler
 // app.use(function (req, res, next) {
+//   next(createError(404));
 //   next(createError(404));
 // });
 
