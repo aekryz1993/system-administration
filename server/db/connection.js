@@ -14,6 +14,7 @@ function connect(config = {}, db= {}) {
     port: config.env.port || 3306,
     dialect: config.env.dialect,
     logging: false,
+    pool: config.env.pool
   });
 
   db.Sequelize = Sequelize;
