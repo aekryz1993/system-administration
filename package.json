@@ -8,7 +8,6 @@
     "start:dev": "npm run clean && cross-env NODE_ENV=development nodemon",
     "clean": "rimraf buildClient buildServer",
     "start:prod": "npm run build && babel-node server/index.js",
-    "prebuild": "rimraf build",
     "build": "npm run build:client && npm run build:server",
     "build:client": "webpack --progress -p --config tools/client.prod.js",
     "build:server": "webpack --progress --config tools/server.prod.js"
