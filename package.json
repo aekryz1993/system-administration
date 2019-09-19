@@ -10,7 +10,8 @@
     "start:prod": "npm run build && babel-node server/index.js",
     "build": "npm run build:client && npm run build:server",
     "build:client": "webpack --progress -p --config tools/client.prod.js",
-    "build:server": "webpack --progress --config tools/server.prod.js"
+    "build:server": "webpack --progress --config tools/server.prod.js",
+    "heroku-prebuild": "npm install --dev"
   },
   "repository": {
     "type": "git",
