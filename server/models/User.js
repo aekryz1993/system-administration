@@ -1,76 +1,80 @@
+import mongoose from 'mongoose'; 
+// import mongooseRedisCache from 'mongoose-redis-cache';
 import bcrypt from 'bcryptjs';
 
-module.exports = (sequelize, Sequelize, Permissions) => {
-  const User = sequelize.define('user', {
-    id: {
-      type: Sequelize.UUID,
-      primaryKey: true,
-      defaultValue: Sequelize.UUIDV1,
-    },
-    username: {
-      type: Sequelize.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        notNull: {
-          msg: 'Please enter your username'
-        },
-        len: {
-          args: [4, 20],
-          msg: 'Your username\'s length should be between 6 and 20'
-        }
-      }
-    },
-    email: {
-      type: Sequelize.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      }
-    },
-    password: {
-      type: Sequelize.STRING,
-      validate: {
-        min: 4,
-      }
-    },
-    isActivate: {
-      type: Sequelize.BOOLEAN,
-      allowNull: false,
-      defaultValue: true,
-    },
-    isVerified: {
-      type: Sequelize.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-  });
+const Schema = mongoose.Schema;
 
-  User.belongsTo(Permissions, {
-    foreignKey: 'permissionsId'
-  });
+mongoose.Promise = global.Promise;
 
-  User.addHook('beforeSave', async (user) => {
-    try {
+const userSchema = Schema({
+  username: {
+    type: String,
+    required: true,
+    index: true,
+    unique: [true, 'the username is already exist'],
+    minlength: [5, 'Your username is too short']
+  }, 
 
-      const salt = await bcrypt.genSalt(10);
-      const hashedPassword = await bcrypt.hash(user.password, salt);
-      // eslint-disable-next-line require-atomic-updates
-      user.password = hashedPassword;
-      return;
-    } catch (error) {
-      return error;
-    }
-  });
+  email: {
+    type: String,
+    required: true,
+    index: true,
+    unique: [true, 'the email is already exist'],
+    match: [/\S+@\S+\.\S+/, 'email is invalid']
+  },
 
-  User.prototype.checkPassword = function (guess) {
-    return new Promise((resolve, reject) => {
-      bcrypt.compare(guess, this.password, (err, isMatch) => {
-        (err) ? reject(err) : resolve(isMatch);
-      });
+  password: { type: String, minlength: [5, 'Your password is too short'] },
+
+  // groups: [{ type: Schema.Types.ObjectId, ref: 'Group' }],
+
+  permissions: { type: Schema.Types.ObjectId, ref: 'Permissions' },
+
+  firstname: String,
+
+  lastname: String,
+
+  // salt: { type: Number, default: 12 },
+
+  createdAt: { type: Date, default: Date.now() },
+
+  lastLogin: Date,
+
+  isActivate: { type: Boolean, 'default': true },
+
+  isVerified: { type: Boolean, 'default': false },
+    
+});
+
+// userSchema.set('redisCache', true);
+
+// userSchema.set('expires', 0);
+
+// mongooseRedisCache(mongoose);
+
+userSchema.pre('save', async function(done) {
+  try {
+    const user = this;
+
+    if (!user.isModified('password')) return done();
+
+    const salt = await bcrypt.genSalt(10);
+
+    const hashedPassword = await bcrypt.hash(user.password, salt);
+
+    user.password = hashedPassword;
+
+    done();
+  } catch(err) {
+    return done(err);  
+  }
+});
+
+userSchema.methods.checkPassword = function(guess) {
+  return new Promise((resolve, reject) => {
+    bcrypt.compare(guess, this.password, (err, isMatch) => {
+      (err) ? reject(err) : resolve(isMatch);
     });
-  };
-
-  return User;
+  });
 };
+
+export default mongoose.model('User', userSchema);

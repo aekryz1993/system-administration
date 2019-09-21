@@ -1,29 +1,29 @@
-	module.exports = (sequelize, Sequelize) => {
-  const Permissions = sequelize.define('permissions', {
-    id: {
-      type: Sequelize.UUID,
-      primaryKey: true,
-      defaultValue: Sequelize.UUIDV1,
-    },
+import mongoose from 'mongoose';
 
-    viewUsers: { type: Sequelize.BOOLEAN, defaultValue: false },
+const Schema = mongoose.Schema;
 
-    createUser: { type: Sequelize.BOOLEAN, defaultValue: false },
+mongoose.Promise = global.Promise;
 
-    updateUser: { type: Sequelize.BOOLEAN, defaultValue: false },
+const permissionsSchema = Schema({
 
-    deleteUser: { type: Sequelize.BOOLEAN, defaultValue: false },
+  viewUsers: { type: Boolean, 'default': false },
 
-    viewGroups: { type: Sequelize.BOOLEAN, defaultValue: false },
+  createUser: { type: Boolean, 'default': false },
 
-    createGroup: { type: Sequelize.BOOLEAN, defaultValue: false },
+  updateUser: { type: Boolean, 'default': false },
 
-    updateGroup: { type: Sequelize.BOOLEAN, defaultValue: false },
+  deleteUser: { type: Boolean, 'default': false },
 
-    deleteGroup: { type: Sequelize.BOOLEAN, defaultValue: false },
+  viewGroups: { type: Boolean, 'default': false },
 
-    isAdmin: { type: Sequelize.BOOLEAN, defaultValue: false },
-  }, { createdAt: false, updatedAt: false });
+  createGroup: { type: Boolean, 'default': false },
 
-  return Permissions;
-};
+  updateGroup: { type: Boolean, 'default': false },
+
+  deleteGroup: { type: Boolean, 'default': false },
+
+  isAdmin: { type: Boolean, 'default': false },
+    
+}, { autoIndex: false });
+
+export default mongoose.model('Permissions', permissionsSchema);

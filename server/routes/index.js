@@ -8,8 +8,8 @@ const router = express.Router();
 const apiRouter = (app, passport) => {
 
   app.use(passport.initialize());
-  localPassportStrategy(passport, app);
-  jwtPassportStrategy(passport, app);
+  localPassportStrategy(passport);
+  jwtPassportStrategy(passport);
 
   router.get('/', (req, res, next) => {
     res.send('APIs router');

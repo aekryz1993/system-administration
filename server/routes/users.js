@@ -8,16 +8,16 @@ const router = express.Router();
 const usersRouter = (app) => {
 
   router.route('/')
-    .get(usersList(app));
+    .get(usersList);
 
   router.route('/add')
     .post(createUser(app));
 
   router.route('/:userId')
     .get((req, res) => {
-      const viewUsers = req.user.dataValues.permission.dataValues.viewUsers;
-      const updateUser = req.user.dataValues.permission.dataValues.updateUser;
-      const deleteUser = req.user.dataValues.permission.dataValues.deleteUser;
+      const viewUsers = req.user.permissions.viewUsers;
+      const updateUser = req.user.permissions.updateUser;
+      const deleteUser = req.user.permissions.deleteUser;
       if (!viewUsers) return res.status(400).json(messages.preventPermission());
       const result = {
         user: req.profil,
@@ -26,10 +26,10 @@ const usersRouter = (app) => {
       };
       res.json(result);
     })
-    .put(updateUser(app))
+    .put(updateUser)
     .delete(removeUser);
 
-  router.param('userId', userParam(app));
+  router.param('userId', userParam);
 
   return router;
 

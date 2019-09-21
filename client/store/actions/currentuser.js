@@ -11,8 +11,8 @@ export const succedFetch = (payload) => ({
   payload: {
     username: payload.data.username,
     email: payload.data.email,
-    viewUsers: payload.data.permission.viewUsers,
-    addUser: payload.data.permission.createUser,
+    viewUsers: payload.data.permissions.viewUsers,
+    addUser: payload.data.permissions.createUser,
   }
 });
 

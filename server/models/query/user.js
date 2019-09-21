@@ -1,68 +1,32 @@
-// import User from '../User';
-// import Permissions from '../Permissions';
-import connect, {config} from '../../db/connection';
+import User from '../User';
 
-export const saveUser = (user, permissions, app) => {
+export const saveUser = (user, permissions) => {
 
-  const newUser = (user instanceof connect(config(app)).user) ? user : connect(config(app)).user.build(user);
+  const newUser = new User(user);
 
-  newUser.dataValues.permissionsId = permissions.id;
+  newUser.permissions = permissions;
 
-  newUser.save();
-
-  return newUser.dataValues;
-};
-
-//////////////////////
-export const UpdateUserQuery = (user, permissions, app) => {
-
-  user.permissionsId = permissions.id;
-
-  user.save();
-
-  return user.dataValues;
-};
-
-///////////////////////
-export const findByEmail = (email, app) => {
-  return connect(config(app)).user.findOne({
-    where: {
-      email: email
-    },
-    include: [{
-      model: connect(config(app)).permissions,
-    }],
-  });
+  return newUser.save();
 };
 ///////////////////////
-export const findByUsername = (username, app) => {
-  return connect(config(app)).user.findOne({
-    where: {
-      username: username
-    },
-    include: [{
-      model: connect(config(app)).permissions,
-    }],
-  });
+export const findByEmail = (email) => {
+  return User.findOne({email}).populate('permissions').exec();
+};
+///////////////////////
+export const findByUsername = (username) => {
+  return User.findOne({username}).populate('permissions').exec();
 };
 
-export const findByUsernameAndEmail = (username, email, app) => {
+export const findByUsernameAndEmail = (username, email) => {
   return new Promise((resolve, reject) => {
     let user;
     (async () => {
       try {
-        user = await findByUsername(username, app);
-        if (user) resolve({
-          user,
-          field: 'username'
-        });
+        user = await findByUsername(username);
+        if(user) resolve({ user, field: 'username' });
 
-        // eslint-disable-next-line require-atomic-updates
-        user = await findByEmail(email, app);
-        if (user) resolve({
-          user,
-          field: 'email'
-        });
+        user = await findByEmail(email);
+        if(user) resolve({ user, field: 'email' });
 
         resolve({});
 
@@ -73,17 +37,17 @@ export const findByUsernameAndEmail = (username, email, app) => {
   });
 };
 
-export const findByUsernameOrEmail = (field, app) => {
+export const findByUsernameOrEmail = (field) => {
   return new Promise((resolve, reject) => {
     let user;
     (async () => {
       try {
-        if (field['username']) {
-          user = await findByUsername(field.username, app);
+        if(field['username']) {
+          user = await findByUsername(field.username);
           // console.log(user)
           resolve(user);
-        } else if (field['email']) {
-          user = await findByEmail(field.email, app);
+        } else if(field['email']) {
+          user = await findByEmail(field.email);
           resolve(user);
         } else {
           resolve(null);
@@ -96,22 +60,10 @@ export const findByUsernameOrEmail = (field, app) => {
   });
 };
 
-export const findOneById = (userId, app) => {
-  return connect(config(app)).user.findOne({
-    where: {
-      id: userId
-    },
-    include: [{
-      model: connect(config(app)).permissions,
-    }],
-    attributes: {
-      exclude: ['password']
-    },
-  });
-};
+export const findOneById = (userId) => {
+  return User.findById(userId, '-password').populate('permissions').exec();
+}; 
 
-export const allUsers = (app) => {
-  return connect(config(app)).user.findAll({
-    attributes: ['id', 'username', 'email', 'isActivate'],
-  });
+export const allUsers = () => {
+  return User.find({}, '_id username email isActivate').exec();
 };

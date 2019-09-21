@@ -8,7 +8,7 @@ const mapStateUpdateUserToProps = (state, ownProps) => {
   const { message, redirect } = state.updateUserReducer;
   const { id } = ownProps.match.params;
   const { initialValues } = ownProps.location.state;
-  const permissions = initialValues.permission;
+  const permissions = initialValues.permissions;
   console.log('************************');
   console.log(initialValues);
   console.log('************************');

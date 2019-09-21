@@ -4,7 +4,7 @@ import { from, of } from 'rxjs';
 import { FETCH_CURRENTUSER, succedFetch, failedFetch, LOGOUT_REQUEST, failedLogout, succedLogout, UPDATE_CURRENTUSER, succedUpdate, failedUpdate } from '../actions/currentuser';
 import auth from '../../auth/auth-helper';
 import { fetchCurrentUser, logout, updateCurrentUser } from '../../currentuser/api-currentuser';
-// import { push } from 'connected-react-router';
+import { push } from 'connected-react-router';
 
 export const currentuserEpic = action$ => action$.pipe(
   ofType(FETCH_CURRENTUSER),
@@ -14,10 +14,9 @@ export const currentuserEpic = action$ => action$.pipe(
     ).pipe(
       map(response => succedFetch(response)),
       catchError(error => of(failedFetch(error)))
+    ).pipe(
+      tap(() => push('/profile'))
     )
-    // .pipe(
-    //   tap(() => push('/profile'))
-    // )
   )
 );
 
@@ -42,9 +41,8 @@ export const updateCurrentUserEpic = action$ => action$.pipe(
     ).pipe(
       map(response => succedUpdate(response)),
       catchError(error => of(failedUpdate(error.response.data)))
+    ).pipe(
+      tap(() => push('/update/currentuser')),
     )
-    // .pipe(
-    //   tap(() => push('/update/currentuser')),
-    // )
   )
 );

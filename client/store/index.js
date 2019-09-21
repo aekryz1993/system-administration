@@ -58,6 +58,5 @@ export default function configureStore(
     store,
     history,
     wrappedEpic,
-    
   };
 }

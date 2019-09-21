@@ -1,33 +1,48 @@
+import User from '../models/User';
+import Permissions from '../models/Permissions';
 import { savePermissions } from '../models/query/permissions';
 import { saveUser, findByUsernameAndEmail } from '../models/query/user';
 
-export default function runDev(app) {
+export default function runDev(uri, uriDev) {
   console.log('[----------- running the seeds --------------] ');
+  let user = new User(initUser);
+  const isDev = (uri === uriDev);
 
-  (async () => {
-    try {
-      const lookupUser = await findByUsernameAndEmail(user.username, user.email, app)
-      // console.log(lookupUser)
-      if(Object.keys(lookupUser).length === 0) {
-        const permissions = await savePermissions(initPermissions, app);
-        await saveUser(user, permissions, app);
+  if (isDev) {
+    (async () => {
+      try {
+        await User.deleteMany({});
+        await Permissions.deleteMany({});
+        const permissions = await savePermissions(initPermissions);
+        await saveUser(user, permissions);
         console.log('user saved');
-        return;
-      } else {
-        console.log('user already created')
-        return;
+      } catch (err) {
+        console.log(err);
       }
-    } catch (err) {
-      console.log(err);
-    }
-  })();
+    })();
+  } else {
+    (async () => {
+      try {
+        const lookupUser = await findByUsernameAndEmail(user.username, user.email);
+
+        if(Object.keys(lookupUser).length === 0) {
+          const permissions = await savePermissions(initPermissions);
+          await saveUser(user, permissions);
+          console.log('user saved');
+        } else {
+          console.log('user already created');
+        }
+      } catch(err) {
+        console.log(err);
+      }
+    })();
+  }
 }
 
-const user = {
-  username: 'admin4',
-  email: 'admin4@hotmail.com',
-  password: 'admin',
-  // isVerified: true,
+const initUser = {
+  username: 'admin',
+  email: 'admin@hotmail.com',
+  password: 'admin'
 };
 
 const initPermissions = {
@@ -40,4 +55,4 @@ const initPermissions = {
   updateGroup: true,
   deleteGroup: true,
   isAdmin: true
-}
+};

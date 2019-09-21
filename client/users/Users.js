@@ -33,7 +33,7 @@ const Users = ({
               users.map((user, index) => {
                 return (
                   <tr key={index}>
-                    <td className={usersStyle.users_td}><Link className={usersStyle._users_anchor_username} to={`/user/${user.id}`}>{user.username}</Link></td>
+                    <td className={usersStyle.users_td}><Link className={usersStyle._users_anchor_username} to={`/user/${user._id}`}>{user.username}</Link></td>
                     <td className={usersStyle.users_td}><div className={usersStyle._users_style_email}>{user.email}</div></td>
                     <td className={usersStyle.users_td_active}><div className={usersStyle._users_style_active}>{user.isActivate ? <FontAwesomeIcon icon={faCheckCircle} size="xs" color="#1B5E20" /> : <FontAwesomeIcon icon={faTimesCircle} size="xs" color="#d50000" />}</div></td>
                   </tr>

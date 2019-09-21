@@ -12,7 +12,7 @@ const userRouter = (app) => {
     .get((req, res) => {
       res.json(req.user);
     })
-    .put(updateCurrentUser(app));
+    .put(updateCurrentUser);
 
   return router;
 

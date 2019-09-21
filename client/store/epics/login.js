@@ -1,7 +1,7 @@
 import { ofType } from 'redux-observable';
 import { mergeMap, map, tap, catchError } from 'rxjs/operators';
 import { from, of } from 'rxjs';
-// import { push } from 'connected-react-router';
+import { push } from 'connected-react-router';
 import { login } from '../../auth/api-auth';
 import { LOGIN_REQUEST, loginSucced, loginFailed } from '../actions/login';
 import auth from '../../auth/auth-helper';
@@ -14,7 +14,7 @@ export const loginEpic = action$ => action$.pipe(
       catchError(error => of(loginFailed(error)))
     ).pipe(
       tap(action => auth.authenticate(action.payload.token)),
-      // tap(() => push('/'))
+      tap(() => push('/'))
     )
   )
 );

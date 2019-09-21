@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 // const ServiceWorkerPlugin = require('serviceworker-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const res = p => path.resolve(__dirname, p);
 
@@ -50,6 +51,12 @@ module.exports = {
     }
   },
   plugins: [
+    new Dotenv({
+      path: path.resolve(__dirname, '../.env'),
+      safe: true,
+      systemvars: true,
+      defaults: false
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),

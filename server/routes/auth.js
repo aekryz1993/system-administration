@@ -11,13 +11,9 @@ const authRouter = (app, passport) => {
 
   router.post('/login', signIn(app, passport), logout(app));
 
-  // router.post('/signin', signin(app));
-
   router.get('/logout', passport.authenticate('userJwt', {
     session: false
   }), logout(app));
-
-  // router.get('/signout', requireSignin(app), signout(app))
 
   return router;
 

@@ -58,7 +58,7 @@ export const failedUpdate = (payload) => ({
 
 export const updateFinished = () => ({
   type: UPDATE_USER_FINISHED
-})
+});
 
 export const DELETE_USER = 'DELETE_USER';
 export const DELETE_USER_SUCCED = 'DELETE_USER_SUCCED';
@@ -90,4 +90,4 @@ export const failedDelete = (payload) => ({
 
 export const deleteFinished = () => ({
   type: DELETE_USER_FINISHED
-})
+});

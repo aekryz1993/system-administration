@@ -26,7 +26,7 @@ const Users = ({
             { updatePermission && 
               <Link className={userStyle._user_anchor_update}
                 to={{
-                  pathname: `/updateuser/${user.id}`, 
+                  pathname: `/updateuser/${user._id}`, 
                   state: {initialValues: user}
                 }} >
                   Update

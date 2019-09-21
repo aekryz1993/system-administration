@@ -1,31 +1,19 @@
-// 'use strict';
+'use strict';
 
-// import Permissions from '../Permissions';
-import connect, {config} from '../../db/connection';
+import Permissions from '../Permissions';
 
-export const savePermissions = (permissions, app) => {
+export const savePermissions = (permissions) => {
+    
+  const newPermissions = (permissions instanceof Permissions) ? permissions : new Permissions(permissions);
 
-  let newPermissions = (permissions instanceof connect(config(app)).permissions) ? permissions : connect(config(app)).permissions.build(permissions);
- 
-  newPermissions.save();
-  return newPermissions.dataValues;
+  return newPermissions.save();
 };
 
-////////////////////////////////
-export const UpdatePermissionsQuery = (permissions, app) => {
-
-  permissions.save();
-
-  return permissions.dataValues;
-};
-
-////////////////////////////////
-const findOneById = (permissionId, app) => {
-  return connect(config(app)).permissions.findByPk(permissionId);
+const findOneById = (permissionId) => {
+  return Permissions.findById(permissionId).exec();
 };
 
 export default {
   savePermissions,
-  UpdatePermissionsQuery,
   findOneById,
 };

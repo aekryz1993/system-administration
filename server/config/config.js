@@ -4,7 +4,8 @@ export const devHostServer = {
 };
 
 const prodHostServer = {
-  host: process.env.HOST || ''
+  host: 'localhost',
+  port: process.env.PORT || 3000
 };
 
 export const hostServer = (app) => app.get('env') === 'development' ? devHostServer : prodHostServer;

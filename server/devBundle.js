@@ -8,16 +8,17 @@ import serverConfig from '../tools/server.dev';
 const clientConfigProd = require('../tools/client.prod');
 const serverConfigProd = require('../tools/server.prod');
 
-const { publicPath } = clientConfig.output;
-const outputPath = clientConfig.output.path;
-const DEV = process.env.NODE_ENV === 'development';
+const { publicPathDev } = clientConfig.output;
+const { publicPath } = clientConfigProd.output;
+const outputPath = clientConfigProd.output.path;
+
 
 const compile = (app, express) => {
 
-  if (DEV) {
+  if (app.get('env') === 'development') {
     const compiler = webpack([clientConfig, serverConfig]);
     const clientCompiler = compiler.compilers[0];
-    const options = { publicPath, stats: { colors: true } };
+    const options = { publicPathDev, stats: { colors: true } };
     const devMiddleware = webpackDevMiddleware(compiler, options);
 
     app.use(devMiddleware);
@@ -26,7 +27,7 @@ const compile = (app, express) => {
 
     return app;
   } else {
-    webpack([clientConfigProd, serverConfigProd]).run((err, stats) => {
+    return webpack([clientConfigProd, serverConfigProd]).run((err, stats) => {
       // console.log(stats);
       const clientStats = stats.toJson().children[0];
       
@@ -34,6 +35,8 @@ const compile = (app, express) => {
 
       app.use(publicPath, express.static(outputPath));
       app.use(serverRender({ clientStats }));
+
+      return app;
     });
   }
 };

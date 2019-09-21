@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const WriteFilePlugin = require('write-file-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 // const nodeExternals = require('webpack-node-externals');
 // const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 
@@ -70,6 +71,7 @@ module.exports = {
   },
   plugins: [
     new WriteFilePlugin(),
+    new Dotenv(),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('development'),

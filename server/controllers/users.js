@@ -2,10 +2,10 @@
 import { allUsers } from '../models/query/user';
 import messages, { successFetchUsers } from '../utils/messages/auth';
 
-export const usersList = (app) => (req, res) => {
-  const viewUsers = req.user.dataValues.permission.dataValues.viewUsers;
-  const addUser = req.user.dataValues.permission.dataValues.createUser;
-  const currentUserId = req.user.dataValues.id;
+export const usersList = (req, res) => {
+  const viewUsers = req.user.permissions.viewUsers;
+  const addUser = req.user.permissions.createUser;
+  const currentUserId = req.user._id;
 
   (async () => {
     try {
@@ -14,9 +14,9 @@ export const usersList = (app) => (req, res) => {
 
       if (!viewUsers) return res.status(400).json(messages.preventPermission());
       
-      const allusers = await allUsers(app);
+      const allusers = await allUsers();
       
-      const users = allusers.filter(user => user.dataValues.id.toString() !== currentUserId.toString());
+      const users = allusers.filter(user => user._id.toString() !== currentUserId.toString());
 
       return res.json(successFetchUsers(users, addUser));
 

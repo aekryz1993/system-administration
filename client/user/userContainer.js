@@ -7,7 +7,7 @@ const mapStateUserToProps = (state, ownProps) => {
   const { user, updatePermission, deletePermission } = state.userReducer;
   const {url} = ownProps.match;
   console.log('************************');
-  console.log(user);
+  console.log(ownProps);
   console.log('************************');
   return {
     user: user,
@@ -20,6 +20,7 @@ const mapStateUserToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   const { id } = ownProps.match.params;
+  
   return {
     fetchUser: () => dispatch(startFetchUser(id))
   };
