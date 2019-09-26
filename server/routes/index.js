@@ -1,21 +1,46 @@
 import express from 'express';
+import session from 'express-session';
+import redis from 'redis';
+import uuid from 'uuid';
+import connectRedis from 'connect-redis';
 import userRouter from './user';
 import authRouter from './auth';
-import { localPassportStrategy, jwtPassportStrategy } from '../config/passport-config';
+import { localPassportStrategy } from '../config/passport-config';
+import { SESSION_SECRET } from '../config/config';
 
 const router = express.Router();
 
+const redisClient = redis.createClient();
+const RedisStore = connectRedis(session);
+
 const apiRouter = (app, passport) => {
 
-  app.use(passport.initialize());
-  localPassportStrategy(passport);
-  jwtPassportStrategy(passport);
-
-  router.get('/', (req, res, next) => {
-    res.send('APIs router');
+  redisClient.on('error', (err) => {
+    console.log('Redis error: ', err);
   });
 
-  router.use('/currentuser', passport.authenticate('userJwt', {session: false}), userRouter(app));
+  app.use(session({
+    genid: () => {
+      return uuid();
+    },
+    secret: app.get(SESSION_SECRET),
+    store: new RedisStore({ host: 'localhost', port: 6379, client: redisClient, ttl: 86400 }),
+    name: 'admin_sid', 
+    resave: false,
+    cookie: { secure: false, maxAge: 99999999999999 },
+    saveUninitialized: false,
+  }));
+
+  localPassportStrategy(passport);
+
+  app.use(passport.initialize());
+  app.use(passport.session());
+
+  router.get('/', (req, res) => {
+    res.send('doesn\'t authenticated');
+  });
+
+  router.use('/currentuser', passport.authenticationMiddleware, userRouter(app));
   router.use('/auth', authRouter(app, passport));
 
   return router;

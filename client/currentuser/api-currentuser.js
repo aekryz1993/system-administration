@@ -1,25 +1,26 @@
 import axios from 'axios';
+import http from 'http';
 
-export const fetchCurrentUser = (credentials) => axios.get('/api/currentuser', {
-  headers: {
-    'content-Type': 'application/json',
-    Authorization: 'Bearer ' + credentials
-  }
+const httpAgent = new http.Agent({ keepAlive: true });
+
+export const fetchCurrentUser = async () => await axios({
+  method: 'get',
+  baseURL: '/api/currentuser',
+  withCredentials: true,
+  httpAgent
 });
 
-export const updateCurrentUser = (credentials, body) => axios.put('/api/currentuser', {
+export const updateCurrentUser = (body) => axios.put('/api/currentuser', {
   username: body.username,
   email: body.email,
 }, {
   headers: {
     'content-Type': 'application/json',
-    Authorization: 'Bearer ' + credentials
   }
 });
 
-export const logout = (credentials) => axios.get('/api/auth/logout', {
+export const logout = () => axios.get('/api/auth/logout', {
   headers: {
     'content-Type': 'application/json',
-    Authorization: 'Bearer ' + credentials
   }
 });

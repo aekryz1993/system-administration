@@ -1,47 +1,37 @@
-import { jwtConfig, SECRET_KEY_AUTH } from '../config/config';
-import jwt from 'jsonwebtoken';
 import messages from '../utils/messages/auth';
 import { serverErrorMessage } from '../utils/messages';
 
-// const jwtBlacklist = require('jwt-blacklist')(jwt);
+import redis from 'redis';
+const redisClient = redis.createClient();
 
-// jwtBlacklist.config({
-//   unitType: 'h',
-//   expiresDuration: 24,
-// });
-
-// blacklist.configure({
-//   tokenId: 'jti',
-// });
-
-export const signIn = (app, passport) => (req, res, next) => {
-  passport.authenticate('userLocal', {session: false}, (err, user, info) => {
+export const signIn = (app, passport) => (req, res) => {
+  passport.authenticate('userLocal', (err, user, info) => {
     if(err || !user) {
       return res.status(400).json(messages.userNotExist(info));
     }
 
     if (!user.isActivate) return res.status(400).json(messages.deactivatedUser());
           
-    req.login(user, {session: false}, (err) => {
+    req.login(user, (err) => {
       if (err) {
         return res.json(serverErrorMessage());
       }
-
-      const token = jwt.sign({id: user['_id']}, app.get(SECRET_KEY_AUTH), jwtConfig);
-
-      return res.json(messages.successLogIn(token));
+      const isAuthenticated = req.isAuthenticated();
+      return res.json(messages.successLogIn(isAuthenticated));
     });
   })(req, res);
 };
 
 export const logout = (app) => (req, res) => {
-
-  if (req.isAuthenticated()) {
-   
-    req.logout();
-  
-    return res.redirect('/api');
-  }
-
-  return res.status(401).json(messages.deactivatedUser());
+  req.logout();
+  console.log(req.session);
+  redisClient.del(`sess:${req.sessionID}`);
+  req.session.destroy(err => {
+    if(err){
+      console.log(err);
+    } else {
+      console.log(req.session);
+      return res.redirect('/api');
+    }
+  });
 };

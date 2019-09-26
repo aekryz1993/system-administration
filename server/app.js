@@ -8,7 +8,7 @@ import compress from 'compression';
 import logger from 'morgan';
 import passport from 'passport';
 // import favicon from 'serve-favicon';
-import { SECRET_KEY_AUTH, SECRET_KEY_AUTH_VALUE } from './config/config';
+import { SESSION_SECRET, SESSION_SECRET_VALUE } from './config/config';
 import apiRouter from './routes';
 import devBundle from './devBundle';
 // import createError from 'http-errors';
@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.set(SECRET_KEY_AUTH, SECRET_KEY_AUTH_VALUE);
+app.set(SESSION_SECRET, SESSION_SECRET_VALUE);
 
 app.use(logger('dev'));
 

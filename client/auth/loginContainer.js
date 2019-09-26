@@ -6,11 +6,12 @@ import Login from './Login';
 import validate from './validate';
 
 const mapStateToProps = (state, ownProps) => {
-  const { message, redirect } = state.loginReducer;
+  const { message, isAuth, redirect } = state.loginReducer;
   console.log('************************');
   console.log(ownProps);
   console.log('************************');
   return {
+    isAuth: isAuth,
     message: message,
     redirect: redirect,
   };

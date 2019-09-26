@@ -1,7 +1,5 @@
 import { Strategy as LocalStrategy } from 'passport-local';
-import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 import { findByUsernameOrEmail, findOneById } from '../models/query/user';
-import { SECRET_KEY_AUTH_VALUE } from './config';
 
 const localStrategy = new LocalStrategy(async (username, password, done) => {
   const criteria = (username.indexOf('@') === -1) ? { username: username } : { email: username };
@@ -29,27 +27,30 @@ const localStrategy = new LocalStrategy(async (username, password, done) => {
 
 });
 
-const options = {
-  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-  secretOrKey: SECRET_KEY_AUTH_VALUE
-};
-
-const jwtStrategy = new JwtStrategy(options, async (jwtPayload, done) => {
-  let user; 
-  try {
-    user = await findOneById(jwtPayload.id);
-    if (!user) return done(null, false, {
-      message: 'No user by that email or username'
-    });
-
-    return done(null, user);
-  } catch (err) {
-    done(err);
+function ensureAuthenticated(req, res, next) {
+  // console.log(req.session);
+  // req.session.reload((err) => {
+  //   if (err) return console.log(err);
+  //   console.log(req.isAuthenticated);
+  // });
+  if (req.isAuthenticated()) {
+    return next();
   }
-});
+  res.redirect('/api');
+}
 
-export const localPassportStrategy = (passport) => passport.use('userLocal', localStrategy);
+export const localPassportStrategy = (passport) => {
+  passport.serializeUser((user, done) => done(null, user._id));
 
-export const jwtPassportStrategy = (passport) => passport.use('userJwt', jwtStrategy);
-
+  passport.deserializeUser(async (id, done) => {
+    try {
+      const doc = await findOneById(id);
+      done(null, doc);
+    } catch (error) {
+      done(error);
+    }
+  });
+  passport.use('userLocal', localStrategy);
+  passport.authenticationMiddleware = ensureAuthenticated;
+};
 

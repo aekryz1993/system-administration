@@ -15,7 +15,7 @@ export const loginSucced = (response) => ({
   type: LOGIN_SUCCEED,
   payload: {
     message: response.data.message,
-    token: response.data.token,
+    isAuth: response.data.isAuth,
     error: null
   }
 });
@@ -24,7 +24,7 @@ export const loginFailed = (error) => ({
   type: LOGIN_FAILED,
   payload: {
     message: null,
-    token: null,
+    isAuth: false,
     error: error.response.data.message, 
   }
 });

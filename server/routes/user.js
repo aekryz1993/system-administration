@@ -10,6 +10,7 @@ const userRouter = (app) => {
 
   router.route('/')
     .get((req, res) => {
+      // console.log(req.sessionID);
       res.json(req.user);
     })
     .put(updateCurrentUser);

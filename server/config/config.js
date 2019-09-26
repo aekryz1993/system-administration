@@ -17,8 +17,8 @@ export const mailer = {
   passMailer: 'nodemailer100'
 };
 
-export const SECRET_KEY_AUTH = process.env.SECRET_KEY_AUTH || 'SECRET_KEY_AUTH';
-export const SECRET_KEY_AUTH_VALUE = process.env.SECRET_KEY_AUTH_VALUE || 'mxkfHC28Ghnxm554DD';
+export const SESSION_SECRET = process.env.SESSION_SECRET || 'SECRET_KEY_AUTH';
+export const SESSION_SECRET_VALUE = process.env.SESSION_SECRET_VALUE || 'mxkfHC28Ghnxm554DD';
 export const jwtConfig = {
   expiresIn: '2h',
 };

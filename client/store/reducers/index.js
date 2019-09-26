@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import { connectRouter } from 'connected-react-router';
+import { sessionReducer } from 'redux-react-session';
 import loginReducer from './login';
 import { LOGIN_REQUEST } from '../actions/login';
 import { currentuserReducer, logoutReducer, updateCurrentUserReducer } from './currentuser';
@@ -56,6 +57,8 @@ const rootReducer = (history) => combineReducers({
       }
     },
   }),
+  
+  session: sessionReducer,
 });
 
 export default rootReducer;

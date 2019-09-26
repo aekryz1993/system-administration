@@ -5,6 +5,7 @@ import { routerMiddleware } from 'connected-react-router';
 import { BehaviorSubject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { createLogger } from 'redux-logger';
+import { sessionService } from 'redux-react-session';
 // import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction'
 // import { wrapRootEpic } from 'react-redux-epic';
 import rootReducer from './reducers';
@@ -29,8 +30,10 @@ export default function configureStore(
     const composeEnhancers =
       window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
     store = createStore(rootReducer(history), preloadedState, composeEnhancers(middleware));
+    sessionService.initSessionService(store);
   } else {
     store = createStore(rootReducer(history), middleware);
+    sessionService.initSessionService(store);
   }
 
   const epic$ = new BehaviorSubject(wrappedEpic);

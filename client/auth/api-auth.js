@@ -1,6 +1,15 @@
 import axios from 'axios';
+import http from 'http';
 
-export const login = (username, password) => axios.post('/api/auth/login', {
-  username: username,
-  password: password
+const httpAgent = new http.Agent({ keepAlive: true });
+
+export const login = async (username, password) => await axios({
+  method: 'post',
+  baseURL: '/api/auth/login',
+  httpAgent,
+  withCredentials: true,
+  params: {
+    username: username,
+    password: password
+  }
 });

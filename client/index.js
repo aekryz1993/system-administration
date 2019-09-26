@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createBrowserHistory} from 'history';
 import { Router } from 'react-router-dom';
-import { ConnectedRouter } from 'connected-react-router';
+import { ConnectedRouter } from 'connected-react-router/immutable';
 import { Provider } from 'react-redux';
 import {AppContainer} from 'react-hot-loader';
 import App from './App';

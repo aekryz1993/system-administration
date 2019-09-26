@@ -1,13 +1,12 @@
 import axios from 'axios';
 
-export const fetchListUsers = (credentials) => axios.get('/api/currentuser/users', {
+export const fetchListUsers = () => axios.get('/api/currentuser/users', {
   headers: {
-    'content-Type': 'application/json',
-    Authorization: 'Bearer ' + credentials
+    'content-Type': 'application/json'
   }
 });
 
-export const addUser = (credentials, body) => axios.post('/api/currentuser/users/add', {
+export const addUser = (body) => axios.post('/api/currentuser/users/add', {
   username: body.username,
   email: body.email,
   password: body.password,
@@ -26,7 +25,6 @@ export const addUser = (credentials, body) => axios.post('/api/currentuser/users
   }
 }, {
   headers: {
-    'content-Type': 'application/json',
-    Authorization: 'Bearer ' + credentials
+    'content-Type': 'application/json'
   }
 });

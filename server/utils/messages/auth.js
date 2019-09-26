@@ -24,9 +24,9 @@ export const userNotExist = (info) => ({
   message: info ? info.message : 'Login failed',
 });
 
-export const successLogIn = (token) => ({
+export const successLogIn = (isAuthenticated) => ({
   success: true,
-  token: token,
+  isAuth: isAuthenticated,
   message: 'successful login',
 });
 

@@ -3,20 +3,17 @@ const auth = {
     if (typeof window !== 'undefined')
       localStorage.setItem('jwt', jwt);
   },
-  isAuthenticated(action) {
-    return new Promise((resolve, reject) => {
-      if (localStorage.getItem('jwt')) {
-        return resolve({
-          token: localStorage.getItem('jwt'),
-          action: action
-        });
-      } 
-      return reject('DOESN\'T AUTHORIZED');
-    });
+  isAuthenticated(auth) {
+    console.log(auth);
+    localStorage.setItem('auth?', auth);
+    // if (typeof window !== 'undefined'){
+    //   if (sessionStorage.getItem('auth?')) return;
+    //   return sessionStorage.setItem('auth?', auth); 
+    // }
   },
   signout(cb) {
     if (typeof window !== 'undefined')
-      localStorage.removeItem('jwt');
+      sessionStorage.removeItem('auth?');
     cb();
   }
 };

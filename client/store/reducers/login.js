@@ -6,12 +6,14 @@ const loginReducer = (state = {redirect: false}, action) => {
     return {
       ...state,
       message: action.payload.message,
+      isAuth: action.payload.isAuth,
       redirect: true,
     };
   case LOGIN_FAILED:
     return {
       ...state,
       message: action.payload.error,
+      isAuth: action.payload.isAuth,
       redirect: false,
     };
   case LOGIN_REQUEST_ENDED: 
