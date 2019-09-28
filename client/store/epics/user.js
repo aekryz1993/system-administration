@@ -12,7 +12,12 @@ export const userEpic = action$ => action$.pipe(
       map(response => succedFetch(response.data)),
       catchError(error => of(failedFetch(error.response)))
     ).pipe(
-      tap((action) => push(action.payload.path))
+      tap((action) => push(action.payload.path)),
+      tap((action) => push(`updateuser/${action.payload.id}`, {
+        initialValues: {
+          user: action.payload.user
+        }
+      })),
     )
   )
 );

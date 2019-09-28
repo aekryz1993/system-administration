@@ -12,3 +12,7 @@ export const UpdateUserContainer = universal(() => import('./updateUserContainer
 export const DeleteUserContainer = universal(() => import('./deleteUserContainer'), {
   loading: Loading
 });
+
+export const Permissions = universal(() => import('./Permissions'), {
+  loading: Loading
+});

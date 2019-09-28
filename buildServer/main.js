@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"PrivateRoute":"PrivateRoute","UpdateCurrentUserContainer":"UpdateCurrentUserContainer","createUserContainer":"createUserContainer","deleteUserContainer":"deleteUserContainer","updateUserContainer":"updateUserContainer","vendors~currentuserContainer~userContainer~usersContainer":"vendors~currentuserContainer~userContainer~usersContainer","currentuserContainer":"currentuserContainer","userContainer":"userContainer","usersContainer":"usersContainer"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"PrivateRoute":"PrivateRoute","UpdateCurrentUserContainer":"UpdateCurrentUserContainer","createUserContainer":"createUserContainer","deleteUserContainer":"deleteUserContainer","updateUserContainer":"updateUserContainer","vendors~Permissions~currentuserContainer~userContainer~usersContainer":"vendors~Permissions~currentuserContainer~userContainer~usersContainer","Permissions":"Permissions","currentuserContainer":"currentuserContainer","userContainer":"userContainer","usersContainer":"usersContainer"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -341,8 +341,6 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! http */ "http");
-/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(http__WEBPACK_IMPORTED_MODULE_1__);
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
   enterModule && enterModule(module);
@@ -353,14 +351,9 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 };
 
 
-
-const httpAgent = new http__WEBPACK_IMPORTED_MODULE_1___default.a.Agent({
-  keepAlive: true
-});
 const login = async (username, password) => await axios__WEBPACK_IMPORTED_MODULE_0___default()({
   method: 'post',
   baseURL: '/api/auth/login',
-  httpAgent,
   withCredentials: true,
   params: {
     username: username,
@@ -376,7 +369,6 @@ const login = async (username, password) => await axios__WEBPACK_IMPORTED_MODULE
     return;
   }
 
-  reactHotLoader.register(httpAgent, "httpAgent", "/home/aekryzprobook/Workspace/system-administration/client/auth/api-auth.js");
   reactHotLoader.register(login, "login", "/home/aekryzprobook/Workspace/system-administration/client/auth/api-auth.js");
 })();
 
@@ -715,8 +707,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! http */ "http");
-/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(http__WEBPACK_IMPORTED_MODULE_1__);
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
   enterModule && enterModule(module);
@@ -727,17 +717,12 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 };
 
 
-
-const httpAgent = new http__WEBPACK_IMPORTED_MODULE_1___default.a.Agent({
-  keepAlive: true
-});
 const fetchCurrentUser = async () => await axios__WEBPACK_IMPORTED_MODULE_0___default()({
   method: 'get',
   baseURL: '/api/currentuser',
-  withCredentials: true,
-  httpAgent
+  withCredentials: true
 });
-const updateCurrentUser = body => axios__WEBPACK_IMPORTED_MODULE_0___default.a.put('/api/currentuser', {
+const updateCurrentUser = async body => await axios__WEBPACK_IMPORTED_MODULE_0___default.a.put('/api/currentuser', {
   username: body.username,
   email: body.email
 }, {
@@ -745,7 +730,7 @@ const updateCurrentUser = body => axios__WEBPACK_IMPORTED_MODULE_0___default.a.p
     'content-Type': 'application/json'
   }
 });
-const logout = () => axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/auth/logout', {
+const logout = async () => await axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/currentuser/logout', {
   headers: {
     'content-Type': 'application/json'
   }
@@ -759,7 +744,6 @@ const logout = () => axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/auth
     return;
   }
 
-  reactHotLoader.register(httpAgent, "httpAgent", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/api-currentuser.js");
   reactHotLoader.register(fetchCurrentUser, "fetchCurrentUser", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/api-currentuser.js");
   reactHotLoader.register(updateCurrentUser, "updateCurrentUser", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/api-currentuser.js");
   reactHotLoader.register(logout, "logout", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/api-currentuser.js");
@@ -821,7 +805,7 @@ const UpdateCurrentUserContainer = react_universal_component__WEBPACK_IMPORTED_M
 });
 const CurrentUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2___default()(() => babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "./currentuserContainer",
-  load: () => Promise.all([Promise.all(/*! import() | currentuserContainer */[__webpack_require__.e("vendors~currentuserContainer~userContainer~usersContainer"), __webpack_require__.e("currentuserContainer")]).then(__webpack_require__.bind(null, /*! ./currentuserContainer */ "./client/currentuser/currentuserContainer.js"))]).then(proms => proms[0]),
+  load: () => Promise.all([Promise.all(/*! import() | currentuserContainer */[__webpack_require__.e("vendors~Permissions~currentuserContainer~userContainer~usersContainer"), __webpack_require__.e("currentuserContainer")]).then(__webpack_require__.bind(null, /*! ./currentuserContainer */ "./client/currentuser/currentuserContainer.js"))]).then(proms => proms[0]),
   path: () => path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, './currentuserContainer'),
   resolve: () => /*require.resolve*/(/*! ./currentuserContainer */ "./client/currentuser/currentuserContainer.js"),
   chunkName: () => "currentuserContainer"
@@ -1189,7 +1173,7 @@ const loginFailed = error => ({
   type: LOGIN_FAILED,
   payload: {
     message: null,
-    isAuth: false,
+    isAuth: null,
     error: error.response.data.message
   }
 });
@@ -1281,6 +1265,7 @@ const succedFetch = payload => ({
     user: payload.user,
     updatePermission: payload.updateUser,
     deletePermission: payload.deleteUser,
+    id: payload.user._id,
     path: `/user/${payload.user._id}`
   }
 });
@@ -1533,9 +1518,14 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const currentuserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["FETCH_CURRENTUSER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_currentuser_api_currentuser__WEBPACK_IMPORTED_MODULE_4__["fetchCurrentUser"])()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["succedFetch"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["failedFetch"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/profile')))));
-const logoutEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["LOGOUT_REQUEST"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_currentuser_api_currentuser__WEBPACK_IMPORTED_MODULE_4__["logout"])()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["succedLogout"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["failedLogout"])(error))))));
-const updateCurrentUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["UPDATE_CURRENTUSER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_currentuser_api_currentuser__WEBPACK_IMPORTED_MODULE_4__["updateCurrentUser"])(action.payload)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["succedUpdate"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["failedUpdate"])(error.response.data)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/update/currentuser')))));
+const currentuserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["FETCH_CURRENTUSER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_currentuser_api_currentuser__WEBPACK_IMPORTED_MODULE_4__["fetchCurrentUser"])()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["succedFetch"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["failedFetch"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/profile')), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/update', {
+  initialValues: {
+    username: action.payload.username,
+    email: action.payload.email
+  }
+})))));
+const logoutEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["LOGOUT_REQUEST"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_currentuser_api_currentuser__WEBPACK_IMPORTED_MODULE_4__["logout"])()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["succedLogout"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["failedLogout"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => localStorage.removeItem('auth')))));
+const updateCurrentUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["UPDATE_CURRENTUSER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_currentuser_api_currentuser__WEBPACK_IMPORTED_MODULE_4__["updateCurrentUser"])(action.payload)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["succedUpdate"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_currentuser__WEBPACK_IMPORTED_MODULE_3__["failedUpdate"])(error.response.data)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/update')))));
 ;
 
 (function () {
@@ -1647,7 +1637,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const loginEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_login__WEBPACK_IMPORTED_MODULE_5__["LOGIN_REQUEST"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_auth_api_auth__WEBPACK_IMPORTED_MODULE_4__["login"])(action.payload.username, action.payload.password)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginSucced"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginFailed"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_3__["push"])('/')))));
+const loginEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_login__WEBPACK_IMPORTED_MODULE_5__["LOGIN_REQUEST"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_auth_api_auth__WEBPACK_IMPORTED_MODULE_4__["login"])(action.payload.username, action.payload.password)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginSucced"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginFailed"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => localStorage.setItem('auth', action.payload.isAuth)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_3__["push"])('/')))));
 ;
 
 (function () {
@@ -1706,7 +1696,11 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const userEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_user__WEBPACK_IMPORTED_MODULE_4__["FETCH_USER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_user_api_user__WEBPACK_IMPORTED_MODULE_3__["fetchUser"])(action.payload.id)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["succedFetch"])(response.data)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["failedFetch"])(error.response)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])(action.payload.path)))));
+const userEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_user__WEBPACK_IMPORTED_MODULE_4__["FETCH_USER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_user_api_user__WEBPACK_IMPORTED_MODULE_3__["fetchUser"])(action.payload.id)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["succedFetch"])(response.data)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["failedFetch"])(error.response)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])(action.payload.path)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])(`updateuser/${action.payload.id}`, {
+  initialValues: {
+    user: action.payload.user
+  }
+})))));
 const updateUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_user__WEBPACK_IMPORTED_MODULE_4__["UPDATE_USER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_user_api_user__WEBPACK_IMPORTED_MODULE_3__["updateUser"])(action.payload.id, action.payload)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["succedUpdate"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["failedUpdate"])(error.response.data)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])(action.payload.path)))));
 const deleteUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_user__WEBPACK_IMPORTED_MODULE_4__["DELETE_USER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_user_api_user__WEBPACK_IMPORTED_MODULE_3__["deleteUser"])(action.payload.id)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["succedDelete"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_user__WEBPACK_IMPORTED_MODULE_4__["failedDelete"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])(action.payload.path)))));
 ;
@@ -2491,7 +2485,7 @@ const deleteUser = id => axios__WEBPACK_IMPORTED_MODULE_0___default.a.delete(`/a
 /*!******************************!*\
   !*** ./client/user/index.js ***!
   \******************************/
-/*! exports provided: UserContainer, UpdateUserContainer, DeleteUserContainer */
+/*! exports provided: UserContainer, UpdateUserContainer, DeleteUserContainer, Permissions */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2499,6 +2493,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module, __dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserContainer", function() { return UserContainer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UpdateUserContainer", function() { return UpdateUserContainer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DeleteUserContainer", function() { return DeleteUserContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Permissions", function() { return Permissions; });
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! path */ "path");
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! babel-plugin-universal-import/universalImport */ "./node_modules/babel-plugin-universal-import/universalImport.js");
@@ -2506,6 +2501,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-universal-component */ "./node_modules/react-universal-component/dist/index.js");
 /* harmony import */ var react_universal_component__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_universal_component__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_Loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Loading */ "./client/components/Loading.js");
+
+
 
 
 
@@ -2526,7 +2523,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 const UserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2___default()(() => babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "./userContainer",
-  load: () => Promise.all([Promise.all(/*! import() | userContainer */[__webpack_require__.e("vendors~currentuserContainer~userContainer~usersContainer"), __webpack_require__.e("userContainer")]).then(__webpack_require__.bind(null, /*! ./userContainer */ "./client/user/userContainer.js"))]).then(proms => proms[0]),
+  load: () => Promise.all([Promise.all(/*! import() | userContainer */[__webpack_require__.e("vendors~Permissions~currentuserContainer~userContainer~usersContainer"), __webpack_require__.e("userContainer")]).then(__webpack_require__.bind(null, /*! ./userContainer */ "./client/user/userContainer.js"))]).then(proms => proms[0]),
   path: () => path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, './userContainer'),
   resolve: () => /*require.resolve*/(/*! ./userContainer */ "./client/user/userContainer.js"),
   chunkName: () => "userContainer"
@@ -2551,6 +2548,15 @@ const DeleteUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2
 }), {
   loading: _components_Loading__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
+const Permissions = react_universal_component__WEBPACK_IMPORTED_MODULE_2___default()(() => babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "./Permissions",
+  load: () => Promise.all([Promise.all(/*! import() | Permissions */[__webpack_require__.e("vendors~Permissions~currentuserContainer~userContainer~usersContainer"), __webpack_require__.e("Permissions")]).then(__webpack_require__.bind(null, /*! ./Permissions */ "./client/user/Permissions.js"))]).then(proms => proms[0]),
+  path: () => path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, './Permissions'),
+  resolve: () => /*require.resolve*/(/*! ./Permissions */ "./client/user/Permissions.js"),
+  chunkName: () => "Permissions"
+}), {
+  loading: _components_Loading__WEBPACK_IMPORTED_MODULE_3__["default"]
+});
 ;
 
 (function () {
@@ -2563,6 +2569,7 @@ const DeleteUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2
   reactHotLoader.register(UserContainer, "UserContainer", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
   reactHotLoader.register(UpdateUserContainer, "UpdateUserContainer", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
   reactHotLoader.register(DeleteUserContainer, "DeleteUserContainer", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
+  reactHotLoader.register(Permissions, "Permissions", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
 })();
 
 ;
@@ -2684,7 +2691,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 const UsersContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2___default()(() => babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
   id: "./usersContainer",
-  load: () => Promise.all([Promise.all(/*! import() | usersContainer */[__webpack_require__.e("vendors~currentuserContainer~userContainer~usersContainer"), __webpack_require__.e("usersContainer")]).then(__webpack_require__.bind(null, /*! ./usersContainer */ "./client/users/usersContainer.js"))]).then(proms => proms[0]),
+  load: () => Promise.all([Promise.all(/*! import() | usersContainer */[__webpack_require__.e("vendors~Permissions~currentuserContainer~userContainer~usersContainer"), __webpack_require__.e("usersContainer")]).then(__webpack_require__.bind(null, /*! ./usersContainer */ "./client/users/usersContainer.js"))]).then(proms => proms[0]),
   path: () => path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, './usersContainer'),
   resolve: () => /*require.resolve*/(/*! ./usersContainer */ "./client/users/usersContainer.js"),
   chunkName: () => "usersContainer"
@@ -15676,17 +15683,6 @@ module.exports = require("history");
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
-
-/***/ }),
-
-/***/ "http":
-/*!***********************!*\
-  !*** external "http" ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("http");
 
 /***/ }),
 

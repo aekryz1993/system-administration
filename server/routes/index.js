@@ -37,7 +37,7 @@ const apiRouter = (app, passport) => {
   app.use(passport.session());
 
   router.get('/', (req, res) => {
-    res.send('doesn\'t authenticated');
+    res.status(401).send('doesn\'t authenticated');
   });
 
   router.use('/currentuser', passport.authenticationMiddleware, userRouter(app));

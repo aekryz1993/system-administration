@@ -1,6 +1,7 @@
 import express from 'express';
 import { updateCurrentUser } from '../controllers/user';
 import usersRouter from './users';
+import { logout } from '../controllers/auth';
 
 const router = express.Router();
 
@@ -10,10 +11,13 @@ const userRouter = (app) => {
 
   router.route('/')
     .get((req, res) => {
-      // console.log(req.sessionID);
+      
       res.json(req.user);
     })
     .put(updateCurrentUser);
+
+  router.route('/logout')
+    .get(logout(app));
 
   return router;
 

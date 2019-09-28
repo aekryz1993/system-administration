@@ -5,9 +5,9 @@ import { startFetchUsers } from '../store/actions/users';
 
 const mapStateUsersToProps = (state, ownProps) => {
   const { users, addUserPermission } = state.usersReducer;
-  const { pathname } = ownProps.location;
+  const { pathname } = ownProps.history.location;
   console.log('************************');
-  console.log(users);
+  console.log(ownProps);
   console.log('************************');
   return {
     users: users,

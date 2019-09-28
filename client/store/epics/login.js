@@ -5,7 +5,6 @@ import { push } from 'connected-react-router';
 import { login } from '../../auth/api-auth';
 import { LOGIN_REQUEST, loginSucced, loginFailed } from '../actions/login';
 
-
 export const loginEpic = action$ => action$.pipe(
   ofType(LOGIN_REQUEST),
   mergeMap(action => from(login(action.payload.username, action.payload.password))
@@ -13,6 +12,7 @@ export const loginEpic = action$ => action$.pipe(
       map(response => loginSucced(response)),
       catchError(error => of(loginFailed(error))),
     ).pipe(
+      tap(action => localStorage.setItem('auth', action.payload.isAuth)),
       tap(() => push('/'))
     )
   )

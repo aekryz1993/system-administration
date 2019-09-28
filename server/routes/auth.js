@@ -1,5 +1,5 @@
 import express from 'express';
-import { signIn, logout } from '../controllers/auth';
+import { signIn } from '../controllers/auth';
 
 const router = express.Router();
 
@@ -9,9 +9,9 @@ const authRouter = (app, passport) => {
     res.json('LOG IN --------------- SIGN UP');
   });
 
-  router.post('/login', signIn(app, passport), logout(app));
+  router.post('/login', signIn(app, passport));
 
-  router.get('/logout', passport.authenticationMiddleware, logout(app));
+  // router.get('/logout', passport.authenticationMiddleware, logout(app));
 
   return router;
 

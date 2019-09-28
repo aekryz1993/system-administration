@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import UserData from '../components/UserData';
 import { Link, NavLink, Route, BrowserRouter as Router } from 'react-router-dom';
 import userStyle from '../assets/stylesheets/components/user.css';
-import Permissions from './Permissions';
+import {Permissions} from './index';
 
 const Users = ({
   user,

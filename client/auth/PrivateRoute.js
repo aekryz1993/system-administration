@@ -4,11 +4,16 @@ import NavbarContainer from '../naveBar/navbarContainer';
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route {...rest} render={props => (
-    // localStorage.getItem('jwt') ? (
+    localStorage.getItem('auth') ? (
       <>
       <NavbarContainer />
       <Component {...props}/>
       </>
+    ) : (
+      <Redirect to={{
+        pathname: '/',
+      }}/>
+    )
   )}/>
 );
 // ) : (

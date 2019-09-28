@@ -7,8 +7,8 @@ import UpdateUser from './UpdateUser';
 const mapStateUpdateUserToProps = (state, ownProps) => {
   const { message, redirect } = state.updateUserReducer;
   const { id } = ownProps.match.params;
-  const { initialValues } = ownProps.location.state;
-  const permissions = initialValues.permissions;
+  const initialValues = (ownProps.history.location.state) ? ownProps.history.location.state.initialValues : {};
+  const permissions = (Object.entries(initialValues).length !== 0) ? initialValues.permissions : {};
   console.log('************************');
   console.log(initialValues);
   console.log('************************');

@@ -28,15 +28,11 @@ const localStrategy = new LocalStrategy(async (username, password, done) => {
 });
 
 function ensureAuthenticated(req, res, next) {
-  // console.log(req.session);
-  // req.session.reload((err) => {
-  //   if (err) return console.log(err);
-  //   console.log(req.isAuthenticated);
-  // });
+  
   if (req.isAuthenticated()) {
     return next();
   }
-  res.redirect('/api');
+  return res.redirect('/api');
 }
 
 export const localPassportStrategy = (passport) => {

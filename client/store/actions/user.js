@@ -16,6 +16,7 @@ export const succedFetch = (payload) => ({
     user: payload.user,
     updatePermission: payload.updateUser,
     deletePermission: payload.deleteUser,
+    id: payload.user._id,
     path: `/user/${payload.user._id}`,
   }
 });

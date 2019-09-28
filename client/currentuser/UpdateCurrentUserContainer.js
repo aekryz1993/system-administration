@@ -6,11 +6,10 @@ import UpdateCurrentUser from './UpdateCurrentUser';
 
 const mapStateUpdateUserToProps = (state, ownProps) => {
   const { message, redirect } = state.updateCurrentUserReducer;
-  const {username, email} = state.currentuserReducer;
-  const initialValues = (ownProps.location.state) ? ownProps.location.state.initialValues : {username, email};
-  const from = (ownProps.location.state) ? ownProps.location.state.from : '/profile';
+  const initialValues =  (ownProps.history.location.state) ? ownProps.history.location.state.initialValues : '';
+  const from = (ownProps.history.location.state) ? ownProps.history.location.state.from : '/profile';
   console.log('************************');
-  console.log(initialValues);
+  console.log(ownProps.history.location.state);
   console.log('************************');
   return {
     message: message,

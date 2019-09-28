@@ -4,7 +4,7 @@ const auth = {
       localStorage.setItem('jwt', jwt);
   },
   isAuthenticated(auth) {
-    console.log(auth);
+    // console.log(auth);
     localStorage.setItem('auth?', auth);
     // if (typeof window !== 'undefined'){
     //   if (sessionStorage.getItem('auth?')) return;

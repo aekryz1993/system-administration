@@ -12,7 +12,14 @@ export const currentuserEpic = action$ => action$.pipe(
       map(response => succedFetch(response)),
       catchError(error => of(failedFetch(error)))
     ).pipe(
-      tap(() => push('/profile'))
+      tap(() => push('/profile')),
+      tap(action => push('/update', {
+        initialValues: {
+          username: action.payload.username, 
+          email: action.payload.email
+        }
+      })),
+      
     )
   )
 );
@@ -23,6 +30,8 @@ export const logoutEpic = action$ => action$.pipe(
     .pipe(
       map(response => succedLogout(response)),
       catchError(error => of(failedLogout(error)))
+    ).pipe(
+      tap(() => localStorage.removeItem('auth'))
     )
   )
 );
@@ -34,7 +43,7 @@ export const updateCurrentUserEpic = action$ => action$.pipe(
       map(response => succedUpdate(response)),
       catchError(error => of(failedUpdate(error.response.data)))
     ).pipe(
-      tap(() => push('/update/currentuser')),
+      tap(() => push('/update')),
     )
   )
 );

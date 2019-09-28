@@ -24,7 +24,7 @@ export const loginFailed = (error) => ({
   type: LOGIN_FAILED,
   payload: {
     message: null,
-    isAuth: false,
+    isAuth: null,
     error: error.response.data.message, 
   }
 });
