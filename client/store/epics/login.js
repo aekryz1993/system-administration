@@ -12,7 +12,6 @@ export const loginEpic = action$ => action$.pipe(
       map(response => loginSucced(response)),
       catchError(error => of(loginFailed(error))),
     ).pipe(
-      tap(action => localStorage.setItem('auth', action.payload.isAuth)),
       tap(() => push('/'))
     )
   )

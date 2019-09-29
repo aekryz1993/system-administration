@@ -7,6 +7,7 @@ import path from 'path';
 import compress from 'compression';
 import logger from 'morgan';
 import passport from 'passport';
+import cookiesMiddleware from 'universal-cookie-express';
 // import favicon from 'serve-favicon';
 import { SESSION_SECRET, SESSION_SECRET_VALUE } from './config/config';
 import apiRouter from './routes';
@@ -28,6 +29,7 @@ app.set(SESSION_SECRET, SESSION_SECRET_VALUE);
 app.use(logger('dev'));
 
 app.use(cookieParser());
+app.use(cookiesMiddleware());
 
 app.use(compress());
 

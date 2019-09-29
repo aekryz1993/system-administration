@@ -15,7 +15,6 @@ export const loginSucced = (response) => ({
   type: LOGIN_SUCCEED,
   payload: {
     message: response.data.message,
-    isAuth: response.data.isAuth,
     error: null
   }
 });

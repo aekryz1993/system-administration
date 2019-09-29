@@ -1,10 +1,14 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
+import { Cookies } from 'react-cookie';
+// import { instanceOf } from 'prop-types';
 import NavbarContainer from '../naveBar/navbarContainer';
+
+const cookies = new Cookies();
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route {...rest} render={props => (
-    localStorage.getItem('auth') ? (
+    cookies.get('auth_token') ? (
       <>
       <NavbarContainer />
       <Component {...props}/>
@@ -12,6 +16,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
     ) : (
       <Redirect to={{
         pathname: '/',
+        // state: { from: location }
       }}/>
     )
   )}/>
@@ -22,6 +27,9 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
         state: { from: props.location }
       }}/>*/}
 // )
- 
+
+// PrivateRoute.propTypes = {
+//   cookies: instanceOf(newCookies()).isRequired
+// };
 
 export default PrivateRoute;

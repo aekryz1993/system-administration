@@ -19,15 +19,19 @@ const apiRouter = (app, passport) => {
     console.log('Redis error: ', err);
   });
 
+  redisClient.on('connect', () => {
+    console.log('Redis connected...');
+  });
+
   app.use(session({
     genid: () => {
       return uuid();
     },
     secret: app.get(SESSION_SECRET),
-    store: new RedisStore({ host: 'localhost', port: 6379, client: redisClient, ttl: 86400 }),
+    store: new RedisStore({ port: 6379, client: redisClient, ttl: 86400 }),
     name: 'admin_sid', 
     resave: false,
-    cookie: { secure: false, maxAge: 99999999999999 },
+    cookie: { secure: false, maxAge: 86400000 },
     saveUninitialized: false,
   }));
 
@@ -40,7 +44,7 @@ const apiRouter = (app, passport) => {
     res.status(401).send('doesn\'t authenticated');
   });
 
-  router.use('/currentuser', passport.authenticationMiddleware, userRouter(app));
+  router.use('/currentuser', passport.authenticationMiddleware, userRouter(app, redisClient));
   router.use('/auth', authRouter(app, passport));
 
   return router;

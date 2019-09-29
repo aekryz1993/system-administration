@@ -42,9 +42,13 @@ const Html = (props: Props) => {
   return (
     <html lang="en" {...htmlAttrs} style={htmlStyle} >
       <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge"></meta>
         {head.title.toComponent()}
         {head.meta.toComponent()}
         {head.link.toComponent()}
+
         {/*<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />*/}
         {styles.map(name => (
           <link rel="stylesheet" href={`/static/${name}`} key={name} />

@@ -17,7 +17,9 @@ export const signIn = (app, passport) => (req, res) => {
         return res.json(serverErrorMessage());
       }
       const isAuthenticated = req.isAuthenticated();
-      // res.cookie('auth', isAuthenticated);
+
+      req.universalCookies.set('auth_token', req.sessionID);
+
       return res.json(messages.successLogIn(isAuthenticated));
     });
   })(req, res);

@@ -9,6 +9,7 @@ import { flushChunkNames } from 'react-universal-component/server';
 import flushChunks from 'webpack-flush-chunks';
 import { StaticRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { CookiesProvider } from 'react-cookie';
 import App from '../client/App';
 import configureStore from '../client/store/index';
 import HTML from '../helpers/Html';
@@ -23,11 +24,13 @@ export default ({ clientStats }) => (req, res) => {
   const reactRouterContext = {};
 
   const component = (
-    <Provider store={store} key="provider">
-      <StaticRouter location={req.url} context={reactRouterContext} history={history}>
-        <App />
-      </StaticRouter>
-    </Provider>
+    <CookiesProvider cookies={req.universalCookies}>
+      <Provider store={store} key="provider">
+        <StaticRouter location={req.url} context={reactRouterContext} history={history}>
+          <App />
+        </StaticRouter>
+      </Provider>
+    </CookiesProvider>
   );
 
   renderToStringEpic(component, wrappedEpic)

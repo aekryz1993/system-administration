@@ -232,8 +232,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux_form__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(redux_form__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/stylesheets/components/login.css */ "./client/assets/stylesheets/components/login.css");
-/* harmony import */ var _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-cookie */ "react-cookie");
+/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_cookie__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/stylesheets/components/login.css */ "./client/assets/stylesheets/components/login.css");
+/* harmony import */ var _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5__);
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
   enterModule && enterModule(module);
@@ -242,6 +244,7 @@ __webpack_require__.r(__webpack_exports__);
 var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default.signature : function (a) {
   return a;
 };
+
 
 
 
@@ -261,38 +264,41 @@ const Login = ({
       loginRequestEnded();
     };
   }, []);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._login_container
+  const cookies = new react_cookie__WEBPACK_IMPORTED_MODULE_4__["Cookies"]();
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, !cookies.get('auth_token') ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_container
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._login_form_item,
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_form_item,
     onSubmit: handleSubmit(onSubmit)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._title_style
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._title_style
   }, "System administration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._login_input
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_input
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_2__["Field"], {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._input_style,
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._input_style,
     name: "username",
     component: "input",
     placeholder: "username or email",
     type: "text",
     required: true
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._login_input
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_input
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_2__["Field"], {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._input_style,
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._input_style,
     name: "password",
     component: "input",
     placeholder: "Password",
     type: "password",
     required: true
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_4___default.a._login_button,
+    className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_button,
     type: "submit",
     value: "Log in"
   }), redirect ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
     to: "/profile"
-  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, message)));
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, message))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
+    to: "/profile"
+  }));
 };
 
 __signature__(Login, "useEffect{}");
@@ -1165,7 +1171,6 @@ const loginSucced = response => ({
   type: LOGIN_SUCCEED,
   payload: {
     message: response.data.message,
-    isAuth: response.data.isAuth,
     error: null
   }
 });
@@ -1637,7 +1642,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const loginEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_login__WEBPACK_IMPORTED_MODULE_5__["LOGIN_REQUEST"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_auth_api_auth__WEBPACK_IMPORTED_MODULE_4__["login"])(action.payload.username, action.payload.password)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginSucced"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginFailed"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(action => localStorage.setItem('auth', action.payload.isAuth)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_3__["push"])('/')))));
+const loginEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_login__WEBPACK_IMPORTED_MODULE_5__["LOGIN_REQUEST"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_auth_api_auth__WEBPACK_IMPORTED_MODULE_4__["login"])(action.payload.username, action.payload.password)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginSucced"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_login__WEBPACK_IMPORTED_MODULE_5__["loginFailed"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_3__["push"])('/')))));
 ;
 
 (function () {
@@ -2149,14 +2154,12 @@ const loginReducer = (state = {
     case _actions_login__WEBPACK_IMPORTED_MODULE_0__["LOGIN_SUCCEED"]:
       return { ...state,
         message: action.payload.message,
-        isAuth: action.payload.isAuth,
         redirect: true
       };
 
     case _actions_login__WEBPACK_IMPORTED_MODULE_0__["LOGIN_FAILED"]:
       return { ...state,
         message: action.payload.error,
-        isAuth: action.payload.isAuth,
         redirect: false
       };
 
@@ -2840,7 +2843,15 @@ const Html = props => {
     lang: "en"
   }, htmlAttrs, {
     style: htmlStyle
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("head", null, head.title.toComponent(), head.meta.toComponent(), head.link.toComponent(), styles.map(name => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("head", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    charset: "UTF-8"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1.0"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    httpEquiv: "X-UA-Compatible",
+    content: "ie=edge"
+  }), head.title.toComponent(), head.meta.toComponent(), head.link.toComponent(), styles.map(name => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "stylesheet",
     href: `/static/${name}`,
     key: name
@@ -15492,9 +15503,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _client_App__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../client/App */ "./client/App.js");
-/* harmony import */ var _client_store_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../client/store/index */ "./client/store/index.js");
-/* harmony import */ var _helpers_Html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../helpers/Html */ "./helpers/Html.js");
+/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-cookie */ "react-cookie");
+/* harmony import */ var react_cookie__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_cookie__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _client_App__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../client/App */ "./client/App.js");
+/* harmony import */ var _client_store_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../client/store/index */ "./client/store/index.js");
+/* harmony import */ var _helpers_Html__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../helpers/Html */ "./helpers/Html.js");
 (function () {
   var enterModule = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.enterModule : undefined;
   enterModule && enterModule(module);
@@ -15503,6 +15516,7 @@ __webpack_require__.r(__webpack_exports__);
 var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal.default.signature : function (a) {
   return a;
 };
+
 
 
 
@@ -15526,16 +15540,18 @@ const _default = ({
   const {
     wrappedEpic,
     store
-  } = Object(_client_store_index__WEBPACK_IMPORTED_MODULE_9__["default"])(history, react_redux_epic__WEBPACK_IMPORTED_MODULE_2__["wrapRootEpic"]);
+  } = Object(_client_store_index__WEBPACK_IMPORTED_MODULE_10__["default"])(history, react_redux_epic__WEBPACK_IMPORTED_MODULE_2__["wrapRootEpic"]);
   const reactRouterContext = {};
-  const component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
+  const component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_cookie__WEBPACK_IMPORTED_MODULE_8__["CookiesProvider"], {
+    cookies: req.universalCookies
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
     store: store,
     key: "provider"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["StaticRouter"], {
     location: req.url,
     context: reactRouterContext,
     history: history
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_App__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_App__WEBPACK_IMPORTED_MODULE_9__["default"], null))));
   Object(react_redux_epic__WEBPACK_IMPORTED_MODULE_2__["renderToString"])(component, wrappedEpic).map(({
     markup
   }) => ({
@@ -15553,7 +15569,7 @@ const _default = ({
     } = webpack_flush_chunks__WEBPACK_IMPORTED_MODULE_5___default()(clientStats, {
       chunkNames
     });
-    const html = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToNodeStream"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_helpers_Html__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    const html = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToNodeStream"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_helpers_Html__WEBPACK_IMPORTED_MODULE_11__["default"], {
       styles: stylesheets,
       cssHash: cssHashRaw,
       js: scripts,
@@ -15716,6 +15732,17 @@ module.exports = require("prop-types");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-cookie":
+/*!*******************************!*\
+  !*** external "react-cookie" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-cookie");
 
 /***/ }),
 
