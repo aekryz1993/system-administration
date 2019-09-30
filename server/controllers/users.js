@@ -14,7 +14,7 @@ export const usersList = (req, res) => {
 
       if (!viewUsers) return res.status(400).json(messages.preventPermission());
       
-      const allusers = await allUsers();
+      const allusers = await allUsers(req.params.page);
       
       const users = allusers.filter(user => user._id.toString() !== currentUserId.toString());
 

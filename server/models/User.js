@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'; 
 // import mongooseRedisCache from 'mongoose-redis-cache';
 import bcrypt from 'bcryptjs';
+import mongoosePaginate from 'mongoose-paginate-v2';
 
 const Schema = mongoose.Schema;
 
@@ -44,6 +45,8 @@ const userSchema = Schema({
   isVerified: { type: Boolean, 'default': false },
     
 });
+
+userSchema.plugin(mongoosePaginate);
 
 // userSchema.set('redisCache', true);
 

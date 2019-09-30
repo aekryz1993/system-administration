@@ -1413,8 +1413,11 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 const FETCH_USERS = 'FETCH_USERS';
 const FETCH_USERS_SUCCED = 'FETCH_USERS_SUCCED';
 const FETCH_USERS_FAILED = 'FETCH_USERS_FAILED';
-const startFetchUsers = () => ({
-  type: FETCH_USERS
+const startFetchUsers = page => ({
+  type: FETCH_USERS,
+  payload: {
+    page: page
+  }
 });
 const succedFetch = payload => ({
   type: FETCH_USERS_SUCCED,
@@ -1767,7 +1770,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const usersEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_users__WEBPACK_IMPORTED_MODULE_4__["FETCH_USERS"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_users_api_users__WEBPACK_IMPORTED_MODULE_3__["fetchListUsers"])()).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_users__WEBPACK_IMPORTED_MODULE_4__["succedFetch"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_users__WEBPACK_IMPORTED_MODULE_4__["failedFetch"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/users')))));
+const usersEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_users__WEBPACK_IMPORTED_MODULE_4__["FETCH_USERS"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_users_api_users__WEBPACK_IMPORTED_MODULE_3__["fetchListUsers"])(action.payload.page)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_users__WEBPACK_IMPORTED_MODULE_4__["succedFetch"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_users__WEBPACK_IMPORTED_MODULE_4__["failedFetch"])(error)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/users')))));
 const createUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["ofType"])(_actions_users__WEBPACK_IMPORTED_MODULE_4__["ADD_USER"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["mergeMap"])(action => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["from"])(Object(_users_api_users__WEBPACK_IMPORTED_MODULE_3__["addUser"])(action.payload)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(response => Object(_actions_users__WEBPACK_IMPORTED_MODULE_4__["succedCreated"])(response)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(Object(_actions_users__WEBPACK_IMPORTED_MODULE_4__["failedCreated"])(error.response.data)))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["tap"])(() => Object(connected_react_router__WEBPACK_IMPORTED_MODULE_5__["push"])('/add')))));
 ;
 
@@ -2428,12 +2431,12 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 };
 
 
-const fetchUser = id => axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(`/api/currentuser/users/${id}`, {
+const fetchUser = id => axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(`/api/currentuser/guest/${id}`, {
   headers: {
     'content-Type': 'application/json'
   }
 });
-const updateUser = (id, body) => axios__WEBPACK_IMPORTED_MODULE_0___default.a.put(`/api/currentuser/users/${id}`, {
+const updateUser = (id, body) => axios__WEBPACK_IMPORTED_MODULE_0___default.a.put(`/api/currentuser/guest/${id}`, {
   username: body.payload.username,
   email: body.payload.email,
   password: body.payload.password,
@@ -2455,7 +2458,7 @@ const updateUser = (id, body) => axios__WEBPACK_IMPORTED_MODULE_0___default.a.pu
     'content-Type': 'application/json'
   }
 });
-const deleteUser = id => axios__WEBPACK_IMPORTED_MODULE_0___default.a.delete(`/api/currentuser/users/${id}`, {
+const deleteUser = id => axios__WEBPACK_IMPORTED_MODULE_0___default.a.delete(`/api/currentuser/guest/${id}`, {
   headers: {
     'content-Type': 'application/json'
   }
@@ -2608,7 +2611,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 };
 
 
-const fetchListUsers = () => axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/currentuser/users', {
+const fetchListUsers = page => axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(`/api/currentuser/users/${page}`, {
   headers: {
     'content-Type': 'application/json'
   }
@@ -15765,6 +15768,17 @@ module.exports = require("react-dom/server");
 /***/ (function(module, exports) {
 
 module.exports = require("react-helmet");
+
+/***/ }),
+
+/***/ "react-js-pagination":
+/*!**************************************!*\
+  !*** external "react-js-pagination" ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-js-pagination");
 
 /***/ }),
 

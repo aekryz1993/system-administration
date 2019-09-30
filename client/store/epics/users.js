@@ -7,7 +7,7 @@ import { push } from 'connected-react-router';
 
 export const usersEpic = action$ => action$.pipe(
   ofType(FETCH_USERS),
-  mergeMap(() => from(fetchListUsers())
+  mergeMap((action) => from(fetchListUsers(action.payload.page))
     .pipe(
       map(response => succedFetch(response)),
       catchError(error => of(failedFetch(error)))

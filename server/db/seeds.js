@@ -11,10 +11,10 @@ export default function runDev(uri, uriDev) {
   if (isDev) {
     (async () => {
       try {
-        await User.deleteMany({});
-        await Permissions.deleteMany({});
-        const permissions = await savePermissions(initPermissions);
-        await saveUser(user, permissions);
+        // await User.deleteMany({});
+        // await Permissions.deleteMany({});
+        // const permissions = await savePermissions(initPermissions);
+        // await saveUser(user, permissions);
         console.log('user saved');
       } catch (err) {
         console.log(err);

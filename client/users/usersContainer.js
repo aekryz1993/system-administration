@@ -17,7 +17,7 @@ const mapStateUsersToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchUsers: () => dispatch(startFetchUsers())
+  fetchUsers: (page) => dispatch(startFetchUsers(page))
 });
 
 export default withRouter(connect(

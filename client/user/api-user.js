@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-export const fetchUser = (id) => axios.get(`/api/currentuser/users/${id}`, {
+export const fetchUser = (id) => axios.get(`/api/currentuser/guest/${id}`, {
   headers: {
     'content-Type': 'application/json'
   }
 });
 
-export const updateUser = (id, body) => axios.put(`/api/currentuser/users/${id}`, {
+export const updateUser = (id, body) => axios.put(`/api/currentuser/guest/${id}`, {
   username: body.payload.username,
   email: body.payload.email,
   password: body.payload.password,
@@ -29,7 +29,7 @@ export const updateUser = (id, body) => axios.put(`/api/currentuser/users/${id}`
   }
 });
 
-export const deleteUser = (id) => axios.delete(`/api/currentuser/users/${id}`, {
+export const deleteUser = (id) => axios.delete(`/api/currentuser/guest/${id}`, {
   headers: {
     'content-Type': 'application/json'
   }

@@ -2,6 +2,7 @@ import express from 'express';
 import { updateCurrentUser } from '../controllers/user';
 import usersRouter from './users';
 import { logout } from '../controllers/auth';
+import guestRouter from './guest';
 
 const router = express.Router();
 
@@ -22,6 +23,7 @@ const userRouter = (app, redisClient) => {
   // }
   
   router.use('/users', usersRouter(app));
+  router.use('/guest', guestRouter(app));
 
   router.route('/')
     .get((req, res) => {

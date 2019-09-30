@@ -2,8 +2,11 @@ export const FETCH_USERS = 'FETCH_USERS';
 export const FETCH_USERS_SUCCED = 'FETCH_USERS_SUCCED';
 export const FETCH_USERS_FAILED = 'FETCH_USERS_FAILED';
 
-export const startFetchUsers = () => ({
+export const startFetchUsers = (page) => ({
   type: FETCH_USERS,
+  payload: {
+    page: page,
+  }
 });
 
 export const succedFetch = (payload) => ({

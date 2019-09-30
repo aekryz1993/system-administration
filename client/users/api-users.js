@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const fetchListUsers = () => axios.get('/api/currentuser/users', {
+export const fetchListUsers = (page) => axios.get(`/api/currentuser/users/${page}`, {
   headers: {
     'content-Type': 'application/json'
   }

@@ -64,6 +64,15 @@ export const findOneById = (userId) => {
   return User.findById(userId, '-password').populate('permissions').exec();
 }; 
 
-export const allUsers = () => {
-  return User.find({}, '_id username email isActivate').exec();
+export const allUsers = async (page) => {
+  var options = {
+    select:   '_id username email isActivate',
+    // sort:     { username: -1 },
+    // lean:     true,
+    // offset:   20, 
+    limit:    5,
+    page: page,
+  };
+  const users = await User.paginate({}, options);
+  return users.docs;
 };

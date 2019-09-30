@@ -7,6 +7,7 @@ import userRouter from './user';
 import authRouter from './auth';
 import { localPassportStrategy } from '../config/passport-config';
 import { SESSION_SECRET } from '../config/config';
+import User from '../models/User';
 
 const router = express.Router();
 

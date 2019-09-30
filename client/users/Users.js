@@ -1,9 +1,13 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import Pagination from 'react-js-pagination';
+// require('bootstrap/less/bootstrap.less');
 import usersStyle from '../assets/stylesheets/components/users.css';
+
+// const useForceUpdate = () => useState()[1];
 
 const Users = ({
   users,
@@ -12,10 +16,23 @@ const Users = ({
   pathname,
 }) => {
 
+  const [activePage, setActivePage] = useState({activePage: 1});
+  // const forceUpdate = useForceUpdate();
+
   useEffect(() => {
-    fetchUsers();
-  }, []);
-  
+    fetchUsers(activePage.activePage);
+    // forceUpdate();
+  }, [activePage.activePage]);
+
+  // console.log('rendering');
+  function handlePageChange(pageNumber) {
+    console.log(`active page is ${pageNumber}`);
+    setActivePage({activePage: pageNumber});
+    // forceUpdate();
+    fetchUsers(activePage.activePage);
+    // fetchUsers(activePage);
+  }
+
   return (
     <div className={usersStyle._users_container}> 
       <div className={usersStyle._left_column_item}>
@@ -49,12 +66,28 @@ const Users = ({
           {addUserPermission && <Link className={usersStyle._users_anchor_add} to={{pathname:'/add', state: {from: pathname}}}>ADD USER <FontAwesomeIcon icon={faPlus} /></Link>}
         </div><br/>
       </div>
+
+      <div>
+        <Pagination
+          activePage={activePage.activePage}
+          itemsCountPerPage={4}
+          totalItemsCount={20}
+          forcePage={activePage.activePage}
+          onChange={handlePageChange}
+        />
+      </div>
       { /*
           location.state.message ? <h4>{location.state.message}</h4> : ''
         */}
     </div> 
   );
 };
+
+// class Users extends React.Component {
+//   state = {
+//     activePage: 1
+//   }
+// }
 
 Users.propTypes = {
   users: PropTypes.array,
