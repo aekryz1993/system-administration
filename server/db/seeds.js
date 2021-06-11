@@ -7,14 +7,15 @@ export default function runDev(uri, uriDev) {
   console.log('[----------- running the seeds --------------] ');
   let user = new User(initUser);
   const isDev = (uri === uriDev);
-
+  
   if (isDev) {
     (async () => {
       try {
-        // await User.deleteMany({});
-        // await Permissions.deleteMany({});
-        // const permissions = await savePermissions(initPermissions);
-        // await saveUser(user, permissions);
+        console.log(user)
+        await User.deleteMany({});
+        await Permissions.deleteMany({});
+        const permissions = await savePermissions(initPermissions);
+        await saveUser(user, permissions);
         console.log('user saved');
       } catch (err) {
         console.log(err);
@@ -24,7 +25,7 @@ export default function runDev(uri, uriDev) {
     (async () => {
       try {
         const lookupUser = await findByUsernameAndEmail(user.username, user.email);
-
+        
         if(Object.keys(lookupUser).length === 0) {
           const permissions = await savePermissions(initPermissions);
           await saveUser(user, permissions);

@@ -150,7 +150,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 const App = () => {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     exact: true,
     path: "/",
     component: _auth_loginContainer__WEBPACK_IMPORTED_MODULE_1__["default"]
@@ -168,8 +168,8 @@ const _default = App;
     return;
   }
 
-  reactHotLoader.register(App, "App", "/home/aekryzprobook/Workspace/system-administration/client/App.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/App.js");
+  reactHotLoader.register(App, "App", "/home/aekryz/Documents/projects/system-administration/client/App.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/App.js");
 })();
 
 ;
@@ -199,6 +199,7 @@ module.exports = {
 	"_login_button": "DCbUnWUNNnRl6OFCqfMNv"
 };
 
+
 /***/ }),
 
 /***/ "./client/assets/stylesheets/style.css":
@@ -212,6 +213,7 @@ module.exports = {
 module.exports = {
 	"title": "_1KiWCpupLm-TMlyjRS-0Ai"
 };
+
 
 /***/ }),
 
@@ -265,38 +267,38 @@ const Login = ({
     };
   }, []);
   const cookies = new react_cookie__WEBPACK_IMPORTED_MODULE_4__["Cookies"]();
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, !cookies.get('auth_token') ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, !cookies.get('auth_token') ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_container
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_form_item,
     onSubmit: handleSubmit(onSubmit)
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._title_style
-  }, "System administration"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "System administration"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_input
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_2__["Field"], {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._input_style,
     name: "username",
     component: "input",
     placeholder: "username or email",
     type: "text",
     required: true
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_input
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_2__["Field"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(redux_form__WEBPACK_IMPORTED_MODULE_2__["Field"], {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._input_style,
     name: "password",
     component: "input",
     placeholder: "Password",
     type: "password",
     required: true
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     className: _assets_stylesheets_components_login_css__WEBPACK_IMPORTED_MODULE_5___default.a._login_button,
     type: "submit",
     value: "Log in"
-  }), redirect ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
+  }), redirect ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
     to: "/profile"
-  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, message))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, message))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Redirect"], {
     to: "/profile"
   }));
 };
@@ -321,8 +323,8 @@ const _default = Login;
     return;
   }
 
-  reactHotLoader.register(Login, "Login", "/home/aekryzprobook/Workspace/system-administration/client/auth/Login.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/auth/Login.js");
+  reactHotLoader.register(Login, "Login", "/home/aekryz/Documents/projects/system-administration/client/auth/Login.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/auth/Login.js");
 })();
 
 ;
@@ -375,7 +377,7 @@ const login = async (username, password) => await axios__WEBPACK_IMPORTED_MODULE
     return;
   }
 
-  reactHotLoader.register(login, "login", "/home/aekryzprobook/Workspace/system-administration/client/auth/api-auth.js");
+  reactHotLoader.register(login, "login", "/home/aekryz/Documents/projects/system-administration/client/auth/api-auth.js");
 })();
 
 ;
@@ -440,7 +442,7 @@ const _default = react_universal_component__WEBPACK_IMPORTED_MODULE_2___default(
     return;
   }
 
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/auth/index.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/auth/index.js");
 })();
 
 ;
@@ -523,10 +525,10 @@ const _default = LoginContainer;
     return;
   }
 
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryzprobook/Workspace/system-administration/client/auth/loginContainer.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryzprobook/Workspace/system-administration/client/auth/loginContainer.js");
-  reactHotLoader.register(LoginContainer, "LoginContainer", "/home/aekryzprobook/Workspace/system-administration/client/auth/loginContainer.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "/home/aekryz/Documents/projects/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "/home/aekryz/Documents/projects/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(LoginContainer, "LoginContainer", "/home/aekryz/Documents/projects/system-administration/client/auth/loginContainer.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/auth/loginContainer.js");
 })();
 
 ;
@@ -582,8 +584,8 @@ const _default = validate;
     return;
   }
 
-  reactHotLoader.register(validate, "validate", "/home/aekryzprobook/Workspace/system-administration/client/auth/validate.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/auth/validate.js");
+  reactHotLoader.register(validate, "validate", "/home/aekryz/Documents/projects/system-administration/client/auth/validate.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/auth/validate.js");
 })();
 
 ;
@@ -621,7 +623,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const Loading = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+const Loading = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
   className: _assets_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1___default.a.title
 }, "Loading!");
 
@@ -636,8 +638,8 @@ const _default = Loading;
     return;
   }
 
-  reactHotLoader.register(Loading, "Loading", "/home/aekryzprobook/Workspace/system-administration/client/components/Loading.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/components/Loading.js");
+  reactHotLoader.register(Loading, "Loading", "/home/aekryz/Documents/projects/system-administration/client/components/Loading.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/components/Loading.js");
 })();
 
 ;
@@ -672,7 +674,7 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const NoMatch = () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "No Match");
+const NoMatch = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "No Match");
 
 const _default = NoMatch;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
@@ -685,8 +687,8 @@ const _default = NoMatch;
     return;
   }
 
-  reactHotLoader.register(NoMatch, "NoMatch", "/home/aekryzprobook/Workspace/system-administration/client/components/NoMatch.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/components/NoMatch.js");
+  reactHotLoader.register(NoMatch, "NoMatch", "/home/aekryz/Documents/projects/system-administration/client/components/NoMatch.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/components/NoMatch.js");
 })();
 
 ;
@@ -750,9 +752,9 @@ const logout = async () => await axios__WEBPACK_IMPORTED_MODULE_0___default.a.ge
     return;
   }
 
-  reactHotLoader.register(fetchCurrentUser, "fetchCurrentUser", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/api-currentuser.js");
-  reactHotLoader.register(updateCurrentUser, "updateCurrentUser", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/api-currentuser.js");
-  reactHotLoader.register(logout, "logout", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/api-currentuser.js");
+  reactHotLoader.register(fetchCurrentUser, "fetchCurrentUser", "/home/aekryz/Documents/projects/system-administration/client/currentuser/api-currentuser.js");
+  reactHotLoader.register(updateCurrentUser, "updateCurrentUser", "/home/aekryz/Documents/projects/system-administration/client/currentuser/api-currentuser.js");
+  reactHotLoader.register(logout, "logout", "/home/aekryz/Documents/projects/system-administration/client/currentuser/api-currentuser.js");
 })();
 
 ;
@@ -828,8 +830,8 @@ const CurrentUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_
     return;
   }
 
-  reactHotLoader.register(UpdateCurrentUserContainer, "UpdateCurrentUserContainer", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/index.js");
-  reactHotLoader.register(CurrentUserContainer, "CurrentUserContainer", "/home/aekryzprobook/Workspace/system-administration/client/currentuser/index.js");
+  reactHotLoader.register(UpdateCurrentUserContainer, "UpdateCurrentUserContainer", "/home/aekryz/Documents/projects/system-administration/client/currentuser/index.js");
+  reactHotLoader.register(CurrentUserContainer, "CurrentUserContainer", "/home/aekryz/Documents/projects/system-administration/client/currentuser/index.js");
 })();
 
 ;
@@ -874,17 +876,17 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const profil = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+const profil = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
   exact: true,
   path: "/profile",
   component: _currentuser_index__WEBPACK_IMPORTED_MODULE_3__["CurrentUserContainer"]
-}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
   path: "/update",
   component: _currentuser_index__WEBPACK_IMPORTED_MODULE_3__["UpdateCurrentUserContainer"]
-}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
   path: "/users",
   component: _users_index__WEBPACK_IMPORTED_MODULE_4__["UsersContainer"]
-}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
   path: "/add",
   component: _users_index__WEBPACK_IMPORTED_MODULE_4__["CreateUserContainer"]
 }), _user__WEBPACK_IMPORTED_MODULE_5__["default"]);
@@ -899,8 +901,8 @@ const _default = profil;
     return;
   }
 
-  reactHotLoader.register(profil, "profil", "/home/aekryzprobook/Workspace/system-administration/client/routes/profile.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/routes/profile.js");
+  reactHotLoader.register(profil, "profil", "/home/aekryz/Documents/projects/system-administration/client/routes/profile.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/routes/profile.js");
 })();
 
 ;
@@ -943,18 +945,18 @@ var __signature__ = typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoader
 
 
 
-const user = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+const user = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
   exact: true,
   path: "/user/:id",
   component: _user_index__WEBPACK_IMPORTED_MODULE_3__["UserContainer"]
-}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
   path: "/updateuser/:id",
   component: _user_index__WEBPACK_IMPORTED_MODULE_3__["UpdateUserContainer"]
-}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_auth_index__WEBPACK_IMPORTED_MODULE_2__["default"], {
   path: "/deleteuser/:id",
   component: _user_index__WEBPACK_IMPORTED_MODULE_3__["DeleteUserContainer"]
-}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-  render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NoMatch__WEBPACK_IMPORTED_MODULE_4__["default"], null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  render: () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NoMatch__WEBPACK_IMPORTED_MODULE_4__["default"], null)
 })));
 const _default = user;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
@@ -967,8 +969,8 @@ const _default = user;
     return;
   }
 
-  reactHotLoader.register(user, "user", "/home/aekryzprobook/Workspace/system-administration/client/routes/user.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/routes/user.js");
+  reactHotLoader.register(user, "user", "/home/aekryz/Documents/projects/system-administration/client/routes/user.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/routes/user.js");
 })();
 
 ;
@@ -1096,28 +1098,28 @@ const updateFinished = () => ({
     return;
   }
 
-  reactHotLoader.register(FETCH_CURRENTUSER, "FETCH_CURRENTUSER", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(FETCH_CURRENTUSER_SUCCED, "FETCH_CURRENTUSER_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(FETCH_CURRENTUSER_FAILED, "FETCH_CURRENTUSER_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(startFetchCurrentUser, "startFetchCurrentUser", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST, "LOGOUT_REQUEST", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST_SUCCED, "LOGOUT_REQUEST_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST_FAILED, "LOGOUT_REQUEST_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(LOGOUT_REQUEST_ENDED, "LOGOUT_REQUEST_ENDED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(logoutRequest, "logoutRequest", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(succedLogout, "succedLogout", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(failedLogout, "failedLogout", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(logoutFinished, "logoutFinished", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER, "UPDATE_CURRENTUSER", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER_SUCCED, "UPDATE_CURRENTUSER_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER_FAILED, "UPDATE_CURRENTUSER_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(UPDATE_CURRENTUSER_ENDED, "UPDATE_CURRENTUSER_ENDED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(startUpdateCurrentUser, "startUpdateCurrentUser", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
-  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(FETCH_CURRENTUSER, "FETCH_CURRENTUSER", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(FETCH_CURRENTUSER_SUCCED, "FETCH_CURRENTUSER_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(FETCH_CURRENTUSER_FAILED, "FETCH_CURRENTUSER_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(startFetchCurrentUser, "startFetchCurrentUser", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST, "LOGOUT_REQUEST", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST_SUCCED, "LOGOUT_REQUEST_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST_FAILED, "LOGOUT_REQUEST_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(LOGOUT_REQUEST_ENDED, "LOGOUT_REQUEST_ENDED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(logoutRequest, "logoutRequest", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(succedLogout, "succedLogout", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(failedLogout, "failedLogout", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(logoutFinished, "logoutFinished", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER, "UPDATE_CURRENTUSER", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER_SUCCED, "UPDATE_CURRENTUSER_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER_FAILED, "UPDATE_CURRENTUSER_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(UPDATE_CURRENTUSER_ENDED, "UPDATE_CURRENTUSER_ENDED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(startUpdateCurrentUser, "startUpdateCurrentUser", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
+  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryz/Documents/projects/system-administration/client/store/actions/currentuser.js");
 })();
 
 ;
@@ -1194,14 +1196,14 @@ const loginRequestEnded = () => ({
     return;
   }
 
-  reactHotLoader.register(LOGIN_REQUEST, "LOGIN_REQUEST", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(LOGIN_SUCCEED, "LOGIN_SUCCEED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(LOGIN_FAILED, "LOGIN_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(LOGIN_REQUEST_ENDED, "LOGIN_REQUEST_ENDED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginRequest, "loginRequest", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginSucced, "loginSucced", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginFailed, "loginFailed", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
-  reactHotLoader.register(loginRequestEnded, "loginRequestEnded", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_REQUEST, "LOGIN_REQUEST", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_SUCCEED, "LOGIN_SUCCEED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_FAILED, "LOGIN_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(LOGIN_REQUEST_ENDED, "LOGIN_REQUEST_ENDED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginRequest, "loginRequest", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginSucced, "loginSucced", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginFailed, "loginFailed", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
+  reactHotLoader.register(loginRequestEnded, "loginRequestEnded", "/home/aekryz/Documents/projects/system-administration/client/store/actions/login.js");
 })();
 
 ;
@@ -1344,28 +1346,28 @@ const deleteFinished = () => ({
     return;
   }
 
-  reactHotLoader.register(FETCH_USER, "FETCH_USER", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(FETCH_USER_SUCCED, "FETCH_USER_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(FETCH_USER_FAILED, "FETCH_USER_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(startFetchUser, "startFetchUser", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER, "UPDATE_USER", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER_SUCCED, "UPDATE_USER_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER_FAILED, "UPDATE_USER_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(UPDATE_USER_FINISHED, "UPDATE_USER_FINISHED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(startUpdateUser, "startUpdateUser", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER, "DELETE_USER", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER_SUCCED, "DELETE_USER_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER_FAILED, "DELETE_USER_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(DELETE_USER_FINISHED, "DELETE_USER_FINISHED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(startDeleteUser, "startDeleteUser", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(succedDelete, "succedDelete", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(failedDelete, "failedDelete", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
-  reactHotLoader.register(deleteFinished, "deleteFinished", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(FETCH_USER, "FETCH_USER", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(FETCH_USER_SUCCED, "FETCH_USER_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(FETCH_USER_FAILED, "FETCH_USER_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(startFetchUser, "startFetchUser", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER, "UPDATE_USER", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER_SUCCED, "UPDATE_USER_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER_FAILED, "UPDATE_USER_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(UPDATE_USER_FINISHED, "UPDATE_USER_FINISHED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(startUpdateUser, "startUpdateUser", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(succedUpdate, "succedUpdate", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(failedUpdate, "failedUpdate", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(updateFinished, "updateFinished", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER, "DELETE_USER", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER_SUCCED, "DELETE_USER_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER_FAILED, "DELETE_USER_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(DELETE_USER_FINISHED, "DELETE_USER_FINISHED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(startDeleteUser, "startDeleteUser", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(succedDelete, "succedDelete", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(failedDelete, "failedDelete", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
+  reactHotLoader.register(deleteFinished, "deleteFinished", "/home/aekryz/Documents/projects/system-administration/client/store/actions/user.js");
 })();
 
 ;
@@ -1464,20 +1466,20 @@ const createEnded = () => ({
     return;
   }
 
-  reactHotLoader.register(FETCH_USERS, "FETCH_USERS", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(FETCH_USERS_SUCCED, "FETCH_USERS_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(FETCH_USERS_FAILED, "FETCH_USERS_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(startFetchUsers, "startFetchUsers", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER, "ADD_USER", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER_SUCCED, "ADD_USER_SUCCED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER_FAILED, "ADD_USER_FAILED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(ADD_USER_FINISHED, "ADD_USER_FINISHED", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(startCreateUser, "startCreateUser", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(succedCreated, "succedCreated", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(failedCreated, "failedCreated", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
-  reactHotLoader.register(createEnded, "createEnded", "/home/aekryzprobook/Workspace/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(FETCH_USERS, "FETCH_USERS", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(FETCH_USERS_SUCCED, "FETCH_USERS_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(FETCH_USERS_FAILED, "FETCH_USERS_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(startFetchUsers, "startFetchUsers", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(succedFetch, "succedFetch", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(failedFetch, "failedFetch", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER, "ADD_USER", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER_SUCCED, "ADD_USER_SUCCED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER_FAILED, "ADD_USER_FAILED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(ADD_USER_FINISHED, "ADD_USER_FINISHED", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(startCreateUser, "startCreateUser", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(succedCreated, "succedCreated", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(failedCreated, "failedCreated", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
+  reactHotLoader.register(createEnded, "createEnded", "/home/aekryz/Documents/projects/system-administration/client/store/actions/users.js");
 })();
 
 ;
@@ -1543,9 +1545,9 @@ const updateCurrentUserEpic = action$ => action$.pipe(Object(redux_observable__W
     return;
   }
 
-  reactHotLoader.register(currentuserEpic, "currentuserEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/currentuser.js");
-  reactHotLoader.register(logoutEpic, "logoutEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/currentuser.js");
-  reactHotLoader.register(updateCurrentUserEpic, "updateCurrentUserEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/currentuser.js");
+  reactHotLoader.register(currentuserEpic, "currentuserEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/currentuser.js");
+  reactHotLoader.register(logoutEpic, "logoutEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/currentuser.js");
+  reactHotLoader.register(updateCurrentUserEpic, "updateCurrentUserEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/currentuser.js");
 })();
 
 ;
@@ -1598,7 +1600,7 @@ const rootEpic = Object(redux_observable__WEBPACK_IMPORTED_MODULE_0__["combineEp
     return;
   }
 
-  reactHotLoader.register(rootEpic, "rootEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/index.js");
+  reactHotLoader.register(rootEpic, "rootEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/index.js");
 })();
 
 ;
@@ -1655,7 +1657,7 @@ const loginEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_IMPOR
     return;
   }
 
-  reactHotLoader.register(loginEpic, "loginEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/login.js");
+  reactHotLoader.register(loginEpic, "loginEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/login.js");
 })();
 
 ;
@@ -1720,9 +1722,9 @@ const deleteUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_
     return;
   }
 
-  reactHotLoader.register(userEpic, "userEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/user.js");
-  reactHotLoader.register(updateUserEpic, "updateUserEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/user.js");
-  reactHotLoader.register(deleteUserEpic, "deleteUserEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/user.js");
+  reactHotLoader.register(userEpic, "userEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/user.js");
+  reactHotLoader.register(updateUserEpic, "updateUserEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/user.js");
+  reactHotLoader.register(deleteUserEpic, "deleteUserEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/user.js");
 })();
 
 ;
@@ -1781,8 +1783,8 @@ const createUserEpic = action$ => action$.pipe(Object(redux_observable__WEBPACK_
     return;
   }
 
-  reactHotLoader.register(usersEpic, "usersEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/users.js");
-  reactHotLoader.register(createUserEpic, "createUserEpic", "/home/aekryzprobook/Workspace/system-administration/client/store/epics/users.js");
+  reactHotLoader.register(usersEpic, "usersEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/users.js");
+  reactHotLoader.register(createUserEpic, "createUserEpic", "/home/aekryz/Documents/projects/system-administration/client/store/epics/users.js");
 })();
 
 ;
@@ -1878,7 +1880,7 @@ function configureStore(history, wrapEpic = f => f, preloadedState) {
     return;
   }
 
-  reactHotLoader.register(configureStore, "configureStore", "/home/aekryzprobook/Workspace/system-administration/client/store/index.js");
+  reactHotLoader.register(configureStore, "configureStore", "/home/aekryz/Documents/projects/system-administration/client/store/index.js");
 })();
 
 ;
@@ -1992,9 +1994,9 @@ const updateCurrentUserReducer = (state = {
     return;
   }
 
-  reactHotLoader.register(currentuserReducer, "currentuserReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/currentuser.js");
-  reactHotLoader.register(logoutReducer, "logoutReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/currentuser.js");
-  reactHotLoader.register(updateCurrentUserReducer, "updateCurrentUserReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/currentuser.js");
+  reactHotLoader.register(currentuserReducer, "currentuserReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/currentuser.js");
+  reactHotLoader.register(logoutReducer, "logoutReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/currentuser.js");
+  reactHotLoader.register(updateCurrentUserReducer, "updateCurrentUserReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/currentuser.js");
 })();
 
 ;
@@ -2115,8 +2117,8 @@ const _default = rootReducer;
     return;
   }
 
-  reactHotLoader.register(rootReducer, "rootReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/index.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/index.js");
+  reactHotLoader.register(rootReducer, "rootReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/index.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/index.js");
 })();
 
 ;
@@ -2187,8 +2189,8 @@ const _default = loginReducer;
     return;
   }
 
-  reactHotLoader.register(loginReducer, "loginReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/login.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/login.js");
+  reactHotLoader.register(loginReducer, "loginReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/login.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/login.js");
 })();
 
 ;
@@ -2303,9 +2305,9 @@ const deleteUserReducer = (state = {
     return;
   }
 
-  reactHotLoader.register(userReducer, "userReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/user.js");
-  reactHotLoader.register(updateUserReducer, "updateUserReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/user.js");
-  reactHotLoader.register(deleteUserReducer, "deleteUserReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/user.js");
+  reactHotLoader.register(userReducer, "userReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/user.js");
+  reactHotLoader.register(updateUserReducer, "updateUserReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/user.js");
+  reactHotLoader.register(deleteUserReducer, "deleteUserReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/user.js");
 })();
 
 ;
@@ -2393,8 +2395,8 @@ const createUserReducer = (state = {
     return;
   }
 
-  reactHotLoader.register(usersReducer, "usersReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/users.js");
-  reactHotLoader.register(createUserReducer, "createUserReducer", "/home/aekryzprobook/Workspace/system-administration/client/store/reducers/users.js");
+  reactHotLoader.register(usersReducer, "usersReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/users.js");
+  reactHotLoader.register(createUserReducer, "createUserReducer", "/home/aekryz/Documents/projects/system-administration/client/store/reducers/users.js");
 })();
 
 ;
@@ -2472,9 +2474,9 @@ const deleteUser = id => axios__WEBPACK_IMPORTED_MODULE_0___default.a.delete(`/a
     return;
   }
 
-  reactHotLoader.register(fetchUser, "fetchUser", "/home/aekryzprobook/Workspace/system-administration/client/user/api-user.js");
-  reactHotLoader.register(updateUser, "updateUser", "/home/aekryzprobook/Workspace/system-administration/client/user/api-user.js");
-  reactHotLoader.register(deleteUser, "deleteUser", "/home/aekryzprobook/Workspace/system-administration/client/user/api-user.js");
+  reactHotLoader.register(fetchUser, "fetchUser", "/home/aekryz/Documents/projects/system-administration/client/user/api-user.js");
+  reactHotLoader.register(updateUser, "updateUser", "/home/aekryz/Documents/projects/system-administration/client/user/api-user.js");
+  reactHotLoader.register(deleteUser, "deleteUser", "/home/aekryz/Documents/projects/system-administration/client/user/api-user.js");
 })();
 
 ;
@@ -2572,10 +2574,10 @@ const Permissions = react_universal_component__WEBPACK_IMPORTED_MODULE_2___defau
     return;
   }
 
-  reactHotLoader.register(UserContainer, "UserContainer", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
-  reactHotLoader.register(UpdateUserContainer, "UpdateUserContainer", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
-  reactHotLoader.register(DeleteUserContainer, "DeleteUserContainer", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
-  reactHotLoader.register(Permissions, "Permissions", "/home/aekryzprobook/Workspace/system-administration/client/user/index.js");
+  reactHotLoader.register(UserContainer, "UserContainer", "/home/aekryz/Documents/projects/system-administration/client/user/index.js");
+  reactHotLoader.register(UpdateUserContainer, "UpdateUserContainer", "/home/aekryz/Documents/projects/system-administration/client/user/index.js");
+  reactHotLoader.register(DeleteUserContainer, "DeleteUserContainer", "/home/aekryz/Documents/projects/system-administration/client/user/index.js");
+  reactHotLoader.register(Permissions, "Permissions", "/home/aekryz/Documents/projects/system-administration/client/user/index.js");
 })();
 
 ;
@@ -2647,8 +2649,8 @@ const addUser = body => axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/
     return;
   }
 
-  reactHotLoader.register(fetchListUsers, "fetchListUsers", "/home/aekryzprobook/Workspace/system-administration/client/users/api-users.js");
-  reactHotLoader.register(addUser, "addUser", "/home/aekryzprobook/Workspace/system-administration/client/users/api-users.js");
+  reactHotLoader.register(fetchListUsers, "fetchListUsers", "/home/aekryz/Documents/projects/system-administration/client/users/api-users.js");
+  reactHotLoader.register(addUser, "addUser", "/home/aekryz/Documents/projects/system-administration/client/users/api-users.js");
 })();
 
 ;
@@ -2722,8 +2724,8 @@ const CreateUserContainer = react_universal_component__WEBPACK_IMPORTED_MODULE_2
     return;
   }
 
-  reactHotLoader.register(UsersContainer, "UsersContainer", "/home/aekryzprobook/Workspace/system-administration/client/users/index.js");
-  reactHotLoader.register(CreateUserContainer, "CreateUserContainer", "/home/aekryzprobook/Workspace/system-administration/client/users/index.js");
+  reactHotLoader.register(UsersContainer, "UsersContainer", "/home/aekryz/Documents/projects/system-administration/client/users/index.js");
+  reactHotLoader.register(CreateUserContainer, "CreateUserContainer", "/home/aekryz/Documents/projects/system-administration/client/users/index.js");
 })();
 
 ;
@@ -2769,8 +2771,8 @@ function required(value) {
     return;
   }
 
-  reactHotLoader.register(isEmpty, "isEmpty", "/home/aekryzprobook/Workspace/system-administration/client/utils/validations.js");
-  reactHotLoader.register(required, "required", "/home/aekryzprobook/Workspace/system-administration/client/utils/validations.js");
+  reactHotLoader.register(isEmpty, "isEmpty", "/home/aekryz/Documents/projects/system-administration/client/utils/validations.js");
+  reactHotLoader.register(required, "required", "/home/aekryz/Documents/projects/system-administration/client/utils/validations.js");
 })();
 
 ;
@@ -2842,43 +2844,43 @@ const Html = props => {
     minWidth: '320px',
     boxSizing: 'inherit'
   };
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("html", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("html", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
     lang: "en"
   }, htmlAttrs, {
     style: htmlStyle
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("head", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("head", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     charset: "UTF-8"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1.0"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     httpEquiv: "X-UA-Compatible",
     content: "ie=edge"
-  }), head.title.toComponent(), head.meta.toComponent(), head.link.toComponent(), styles.map(name => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
+  }), head.title.toComponent(), head.meta.toComponent(), head.link.toComponent(), styles.map(name => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
     rel: "stylesheet",
     href: `/static/${name}`,
     key: name
-  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("body", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("body", {
     style: bodyStyle
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     id: "root",
     style: rootStyle,
     dangerouslySetInnerHTML: {
       __html: component
     }
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
     type: "text/javascript",
     dangerouslySetInnerHTML: {
       __html: `window.__data=${serialize_javascript__WEBPACK_IMPORTED_MODULE_3___default()(state)};`
     },
     charSet: "UTF-8"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
     type: "text/javascript",
     dangerouslySetInnerHTML: {
       __html: `window.__CSS_CHUNKS__=${serialize_javascript__WEBPACK_IMPORTED_MODULE_3___default()(cssHash)};`
     },
     charSet: "UTF-8"
-  }), js.map(name => react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+  }), js.map(name => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
     type: "text/javascript",
     src: `/static/${name}`,
     key: name,
@@ -2897,8 +2899,8 @@ const _default = Html;
     return;
   }
 
-  reactHotLoader.register(Html, "Html", "/home/aekryzprobook/Workspace/system-administration/helpers/Html.js");
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/helpers/Html.js");
+  reactHotLoader.register(Html, "Html", "/home/aekryz/Documents/projects/system-administration/helpers/Html.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/helpers/Html.js");
 })();
 
 ;
@@ -2933,10 +2935,12 @@ function _extends() {
     return target;
   };
 
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _extends.apply(this, arguments);
 }
 
 module.exports = _extends;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -2947,7 +2951,7 @@ module.exports = _extends;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* eslint-disable */
+/* WEBPACK VAR INJECTION */(function(module) {/* eslint-disable */
 
 module.exports = function(config, makeThennable) {
   if (makeThennable === false) return config
@@ -2978,7 +2982,8 @@ function setHasPlugin() {
       var weakId = /*require.resolve*/(/*! react-universal-component */ "./node_modules/react-universal-component/dist/index.js")
       universal = __webpack_require__(weakId)
     } else {
-      universal = __webpack_require__(/*! react-universal-component */ "./node_modules/react-universal-component/dist/index.js")
+      var nodeRequire = typeof require === 'undefined' ? module.require : require
+      universal = nodeRequire('react-universal-component')
     }
 
     if (universal) {
@@ -2990,6 +2995,33 @@ function setHasPlugin() {
 
 setHasPlugin()
 
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
+
+/***/ }),
+
+/***/ "./node_modules/react-universal-component/dist/context.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-universal-component/dist/context.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ReportContext = _react2.default.createContext({ report: function report() {} });
+
+exports.default = ReportContext;
 
 /***/ }),
 
@@ -3113,9 +3145,11 @@ var _hoistNonReactStatics = __webpack_require__(/*! hoist-non-react-statics */ "
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(/*! vm */ "vm");
-
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
+
+var _context = __webpack_require__(/*! ./context */ "./node_modules/react-universal-component/dist/context.js");
+
+var _context2 = _interopRequireDefault(_context);
 
 var _utils = __webpack_require__(/*! ./utils */ "./node_modules/react-universal-component/dist/utils.js");
 
@@ -3177,7 +3211,7 @@ function universal(asyncModule) {
 
     _createClass(UniversalComponent, [{
       key: 'requireAsyncInner',
-      value: function requireAsyncInner(requireAsync, props, state, context, isMount) {
+      value: function requireAsyncInner(requireAsync, props, state, isMount) {
         var _this2 = this;
 
         if (!state.mod && loadingTransition) {
@@ -3186,8 +3220,8 @@ function universal(asyncModule) {
 
         var time = new Date();
 
-        requireAsync(props, context).then(function (mod) {
-          var state = { mod: mod, props: props, context: context };
+        requireAsync(props).then(function (mod) {
+          var state = { mod: mod, props: props };
 
           var timeLapsed = new Date() - time;
           if (timeLapsed < minDelay) {
@@ -3199,7 +3233,7 @@ function universal(asyncModule) {
 
           _this2.update(state, isMount);
         }).catch(function (error) {
-          return _this2.update({ error: error, props: props, context: context });
+          return _this2.update({ error: error, props: props });
         });
       }
     }, {
@@ -3243,7 +3277,7 @@ function universal(asyncModule) {
 
     }, {
       key: 'init',
-      value: function init(props, context) {
+      value: function init(props) {
         var _req = (0, _requireUniversalModule2.default)(asyncModule, options, props),
             addModule = _req.addModule,
             requireSync = _req.requireSync,
@@ -3253,35 +3287,29 @@ function universal(asyncModule) {
         var mod = void 0;
 
         try {
-          mod = requireSync(props, context);
+          mod = requireSync(props);
         } catch (error) {
-          return (0, _helpers.__update)(props, { error: error, props: props, context: context }, this._initialized);
+          return (0, _helpers.__update)(props, { error: error, props: props }, this._initialized);
         }
 
         this._asyncOnly = asyncOnly;
         var chunkName = addModule(props); // record the module for SSR flushing :)
-
-        if (context.report) {
-          context.report(chunkName);
+        if (this.context && this.context.report) {
+          this.context.report(chunkName);
         }
 
         if (mod || _utils.isServer) {
           this.handleBefore(true, true, _utils.isServer);
-          return (0, _helpers.__update)(props, { asyncOnly: asyncOnly, props: props, mod: mod, context: context }, this._initialized, true, true, _utils.isServer);
+          return (0, _helpers.__update)(props, { asyncOnly: asyncOnly, props: props, mod: mod }, this._initialized, true, true, _utils.isServer);
         }
 
         this.handleBefore(true, false);
-        this.requireAsyncInner(requireAsync, props, { props: props, asyncOnly: asyncOnly, mod: mod, context: context }, context, true);
-        return { mod: mod, asyncOnly: asyncOnly, context: context, props: props };
+        this.requireAsyncInner(requireAsync, props, { props: props, asyncOnly: asyncOnly, mod: mod }, true);
+        return { mod: mod, asyncOnly: asyncOnly, props: props };
       }
     }], [{
       key: 'preload',
-
-      /* eslint-enable react/sort-comp */
-
       value: function preload(props) {
-        var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
         props = props || {};
 
         var _req2 = (0, _requireUniversalModule2.default)(asyncModule, options, props),
@@ -3291,14 +3319,14 @@ function universal(asyncModule) {
         var mod = void 0;
 
         try {
-          mod = requireSync(props, context);
+          mod = requireSync(props);
         } catch (error) {
           return Promise.reject(error);
         }
 
         return Promise.resolve().then(function () {
           if (mod) return mod;
-          return requireAsync(props, context);
+          return requireAsync(props);
         }).then(function (mod) {
           (0, _hoistNonReactStatics2.default)(UniversalComponent, mod, {
             preload: true,
@@ -3307,19 +3335,19 @@ function universal(asyncModule) {
           return mod;
         });
       }
+      /* eslint-enable react/sort-comp */
+
       /* eslint-disable react/sort-comp */
 
     }, {
       key: 'preloadWeak',
       value: function preloadWeak(props) {
-        var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
         props = props || {};
 
         var _req3 = (0, _requireUniversalModule2.default)(asyncModule, options, props),
             requireSync = _req3.requireSync;
 
-        var mod = requireSync(props, context);
+        var mod = requireSync(props);
         if (mod) {
           (0, _hoistNonReactStatics2.default)(UniversalComponent, mod, {
             preload: true,
@@ -3347,7 +3375,7 @@ function universal(asyncModule) {
         _this.handleAfter(state, isMount, isSync, isServer);
       };
 
-      _this.state = _this.init(_this.props, _this.context);
+      _this.state = _this.init(_this.props);
       // $FlowFixMe
       _this.state.error = null;
       return _this;
@@ -3373,7 +3401,7 @@ function universal(asyncModule) {
             var mod = void 0;
 
             try {
-              mod = requireSync(this.props, this.context);
+              mod = requireSync(this.props);
             } catch (error) {
               return this.update({ error: error });
             }
@@ -3425,7 +3453,7 @@ function universal(asyncModule) {
             shouldUpdate = _req5.shouldUpdate;
 
         if (isHMR() && shouldUpdate(currentState.props, nextProps)) {
-          var mod = requireSync(nextProps, currentState.context);
+          var mod = requireSync(nextProps);
           return _extends({}, currentState, { mod: mod });
         }
         return null;
@@ -3433,10 +3461,7 @@ function universal(asyncModule) {
     }]);
 
     return UniversalComponent;
-  }(_react2.default.Component), _class.contextTypes = {
-    store: _propTypes2.default.object,
-    report: _propTypes2.default.func
-  }, _temp;
+  }(_react2.default.Component), _class.contextType = _context2.default, _temp;
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
@@ -3466,6 +3491,10 @@ var _propTypes = __webpack_require__(/*! prop-types */ "prop-types");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _context = __webpack_require__(/*! ./context */ "./node_modules/react-universal-component/dist/context.js");
+
+var _context2 = _interopRequireDefault(_context);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -3477,23 +3506,25 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var ReportChunks = function (_React$Component) {
   _inherits(ReportChunks, _React$Component);
 
-  function ReportChunks() {
+  function ReportChunks(props) {
     _classCallCheck(this, ReportChunks);
 
-    return _possibleConstructorReturn(this, (ReportChunks.__proto__ || Object.getPrototypeOf(ReportChunks)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (ReportChunks.__proto__ || Object.getPrototypeOf(ReportChunks)).call(this, props));
+
+    _this.state = {
+      report: props.report
+    };
+    return _this;
   }
 
   _createClass(ReportChunks, [{
-    key: 'getChildContext',
-    value: function getChildContext() {
-      return {
-        report: this.props.report
-      };
-    }
-  }, {
     key: 'render',
     value: function render() {
-      return _react2.default.Children.only(this.props.children);
+      return _react2.default.createElement(
+        _context2.default.Provider,
+        { value: this.state },
+        this.props.children
+      );
     }
   }]);
 
@@ -3501,9 +3532,6 @@ var ReportChunks = function (_React$Component) {
 }(_react2.default.Component);
 
 ReportChunks.propTypes = {
-  report: _propTypes2.default.func.isRequired
-};
-ReportChunks.childContextTypes = {
   report: _propTypes2.default.func.isRequired
 };
 exports.default = ReportChunks;
@@ -3618,7 +3646,7 @@ function requireUniversalModule(universalConfig, options, props, prevProps) {
 
   var asyncOnly = !path && !resolve || typeof chunkName === 'function';
 
-  var requireSync = function requireSync(props, context) {
+  var requireSync = function requireSync(props) {
     var exp = (0, _utils.loadFromCache)(chunkName, props, modCache);
 
     if (!exp) {
@@ -3636,14 +3664,14 @@ function requireUniversalModule(universalConfig, options, props, prevProps) {
       }
 
       if (mod) {
-        exp = (0, _utils.resolveExport)(mod, key, onLoad, chunkName, props, context, modCache, true);
+        exp = (0, _utils.resolveExport)(mod, key, onLoad, chunkName, props, modCache, true);
       }
     }
 
     return exp;
   };
 
-  var requireAsync = function requireAsync(props, context) {
+  var requireAsync = function requireAsync(props) {
     var exp = (0, _utils.loadFromCache)(chunkName, props, modCache);
     if (exp) return Promise.resolve(exp);
 
@@ -3668,7 +3696,7 @@ function requireUniversalModule(universalConfig, options, props, prevProps) {
       var resolve = function resolve(mod) {
         clearTimeout(timer);
 
-        var exp = (0, _utils.resolveExport)(mod, key, onLoad, chunkName, props, context, modCache);
+        var exp = (0, _utils.resolveExport)(mod, key, onLoad, chunkName, props, modCache);
         if (exp) return res(exp);
 
         reject(new Error('export not found'));
@@ -3849,14 +3877,14 @@ var tryRequire = exports.tryRequire = function tryRequire(id) {
   return null;
 };
 
-var resolveExport = exports.resolveExport = function resolveExport(mod, key, onLoad, chunkName, props, context, modCache) {
-  var isSync = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : false;
+var resolveExport = exports.resolveExport = function resolveExport(mod, key, onLoad, chunkName, props, modCache) {
+  var isSync = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : false;
 
   var exp = findExport(mod, key);
   if (onLoad && mod) {
     var _isServer = typeof window === 'undefined';
     var info = { isServer: _isServer, isSync: isSync };
-    onLoad(mod, info, props, context);
+    onLoad(mod, info, props);
   }
   if (chunkName && exp) cacheExport(exp, chunkName, props, modCache);
   return exp;
@@ -4452,16 +4480,20 @@ var ReplaySubject = /*@__PURE__*/ (function (_super) {
         return _this;
     }
     ReplaySubject.prototype.nextInfiniteTimeWindow = function (value) {
-        var _events = this._events;
-        _events.push(value);
-        if (_events.length > this._bufferSize) {
-            _events.shift();
+        if (!this.isStopped) {
+            var _events = this._events;
+            _events.push(value);
+            if (_events.length > this._bufferSize) {
+                _events.shift();
+            }
         }
         _super.prototype.next.call(this, value);
     };
     ReplaySubject.prototype.nextTimeWindow = function (value) {
-        this._events.push(new ReplayEvent(this._getNow(), value));
-        this._trimBufferThenGetEvents();
+        if (!this.isStopped) {
+            this._events.push(new ReplayEvent(this._getNow(), value));
+            this._trimBufferThenGetEvents();
+        }
         _super.prototype.next.call(this, value);
     };
     ReplaySubject.prototype._subscribe = function (subscriber) {
@@ -5085,6 +5117,7 @@ var Subscription = /*@__PURE__*/ (function () {
         this._parentOrParents = null;
         this._subscriptions = null;
         if (unsubscribe) {
+            this._ctorUnsubscribe = true;
             this._unsubscribe = unsubscribe;
         }
     }
@@ -5093,7 +5126,7 @@ var Subscription = /*@__PURE__*/ (function () {
         if (this.closed) {
             return;
         }
-        var _a = this, _parentOrParents = _a._parentOrParents, _unsubscribe = _a._unsubscribe, _subscriptions = _a._subscriptions;
+        var _a = this, _parentOrParents = _a._parentOrParents, _ctorUnsubscribe = _a._ctorUnsubscribe, _unsubscribe = _a._unsubscribe, _subscriptions = _a._subscriptions;
         this.closed = true;
         this._parentOrParents = null;
         this._subscriptions = null;
@@ -5107,6 +5140,9 @@ var Subscription = /*@__PURE__*/ (function () {
             }
         }
         if (Object(_util_isFunction__WEBPACK_IMPORTED_MODULE_2__["isFunction"])(_unsubscribe)) {
+            if (_ctorUnsubscribe) {
+                this._unsubscribe = undefined;
+            }
             try {
                 _unsubscribe.call(this);
             }
@@ -5243,6 +5279,129 @@ var config = {
     },
 };
 //# sourceMappingURL=config.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js":
+/*!************************************************************!*\
+  !*** ./node_modules/rxjs/_esm5/internal/innerSubscribe.js ***!
+  \************************************************************/
+/*! exports provided: SimpleInnerSubscriber, ComplexInnerSubscriber, SimpleOuterSubscriber, ComplexOuterSubscriber, innerSubscribe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SimpleInnerSubscriber", function() { return SimpleInnerSubscriber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComplexInnerSubscriber", function() { return ComplexInnerSubscriber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SimpleOuterSubscriber", function() { return SimpleOuterSubscriber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComplexOuterSubscriber", function() { return ComplexOuterSubscriber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "innerSubscribe", function() { return innerSubscribe; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Subscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Subscriber */ "./node_modules/rxjs/_esm5/internal/Subscriber.js");
+/* harmony import */ var _Observable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Observable */ "./node_modules/rxjs/_esm5/internal/Observable.js");
+/* harmony import */ var _util_subscribeTo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./util/subscribeTo */ "./node_modules/rxjs/_esm5/internal/util/subscribeTo.js");
+/** PURE_IMPORTS_START tslib,_Subscriber,_Observable,_util_subscribeTo PURE_IMPORTS_END */
+
+
+
+
+var SimpleInnerSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](SimpleInnerSubscriber, _super);
+    function SimpleInnerSubscriber(parent) {
+        var _this = _super.call(this) || this;
+        _this.parent = parent;
+        return _this;
+    }
+    SimpleInnerSubscriber.prototype._next = function (value) {
+        this.parent.notifyNext(value);
+    };
+    SimpleInnerSubscriber.prototype._error = function (error) {
+        this.parent.notifyError(error);
+        this.unsubscribe();
+    };
+    SimpleInnerSubscriber.prototype._complete = function () {
+        this.parent.notifyComplete();
+        this.unsubscribe();
+    };
+    return SimpleInnerSubscriber;
+}(_Subscriber__WEBPACK_IMPORTED_MODULE_1__["Subscriber"]));
+
+var ComplexInnerSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ComplexInnerSubscriber, _super);
+    function ComplexInnerSubscriber(parent, outerValue, outerIndex) {
+        var _this = _super.call(this) || this;
+        _this.parent = parent;
+        _this.outerValue = outerValue;
+        _this.outerIndex = outerIndex;
+        return _this;
+    }
+    ComplexInnerSubscriber.prototype._next = function (value) {
+        this.parent.notifyNext(this.outerValue, value, this.outerIndex, this);
+    };
+    ComplexInnerSubscriber.prototype._error = function (error) {
+        this.parent.notifyError(error);
+        this.unsubscribe();
+    };
+    ComplexInnerSubscriber.prototype._complete = function () {
+        this.parent.notifyComplete(this);
+        this.unsubscribe();
+    };
+    return ComplexInnerSubscriber;
+}(_Subscriber__WEBPACK_IMPORTED_MODULE_1__["Subscriber"]));
+
+var SimpleOuterSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](SimpleOuterSubscriber, _super);
+    function SimpleOuterSubscriber() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    SimpleOuterSubscriber.prototype.notifyNext = function (innerValue) {
+        this.destination.next(innerValue);
+    };
+    SimpleOuterSubscriber.prototype.notifyError = function (err) {
+        this.destination.error(err);
+    };
+    SimpleOuterSubscriber.prototype.notifyComplete = function () {
+        this.destination.complete();
+    };
+    return SimpleOuterSubscriber;
+}(_Subscriber__WEBPACK_IMPORTED_MODULE_1__["Subscriber"]));
+
+var ComplexOuterSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](ComplexOuterSubscriber, _super);
+    function ComplexOuterSubscriber() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    ComplexOuterSubscriber.prototype.notifyNext = function (_outerValue, innerValue, _outerIndex, _innerSub) {
+        this.destination.next(innerValue);
+    };
+    ComplexOuterSubscriber.prototype.notifyError = function (error) {
+        this.destination.error(error);
+    };
+    ComplexOuterSubscriber.prototype.notifyComplete = function (_innerSub) {
+        this.destination.complete();
+    };
+    return ComplexOuterSubscriber;
+}(_Subscriber__WEBPACK_IMPORTED_MODULE_1__["Subscriber"]));
+
+function innerSubscribe(result, innerSubscriber) {
+    if (innerSubscriber.closed) {
+        return undefined;
+    }
+    if (result instanceof _Observable__WEBPACK_IMPORTED_MODULE_2__["Observable"]) {
+        return result.subscribe(innerSubscriber);
+    }
+    var subscription;
+    try {
+        subscription = Object(_util_subscribeTo__WEBPACK_IMPORTED_MODULE_3__["subscribeTo"])(result)(innerSubscriber);
+    }
+    catch (error) {
+        innerSubscriber.error(error);
+    }
+    return subscription;
+}
+//# sourceMappingURL=innerSubscribe.js.map
 
 
 /***/ }),
@@ -5513,8 +5672,8 @@ function combineLatest() {
     for (var _i = 0; _i < arguments.length; _i++) {
         observables[_i] = arguments[_i];
     }
-    var resultSelector = null;
-    var scheduler = null;
+    var resultSelector = undefined;
+    var scheduler = undefined;
     if (Object(_util_isScheduler__WEBPACK_IMPORTED_MODULE_1__["isScheduler"])(observables[observables.length - 1])) {
         scheduler = observables.pop();
     }
@@ -5561,7 +5720,7 @@ var CombineLatestSubscriber = /*@__PURE__*/ (function (_super) {
             this.toRespond = len;
             for (var i = 0; i < len; i++) {
                 var observable = observables[i];
-                this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_4__["subscribeToResult"])(this, observable, observable, i));
+                this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_4__["subscribeToResult"])(this, observable, undefined, i));
             }
         }
     };
@@ -5570,7 +5729,7 @@ var CombineLatestSubscriber = /*@__PURE__*/ (function (_super) {
             this.destination.complete();
         }
     };
-    CombineLatestSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    CombineLatestSubscriber.prototype.notifyNext = function (_outerValue, innerValue, outerIndex) {
         var values = this.values;
         var oldVal = values[outerIndex];
         var toRespond = !this.toRespond
@@ -5908,7 +6067,7 @@ var RaceSubscriber = /*@__PURE__*/ (function (_super) {
         else {
             for (var i = 0; i < len && !this.hasFirst; i++) {
                 var observable = observables[i];
-                var subscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_4__["subscribeToResult"])(this, observable, observable, i);
+                var subscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_4__["subscribeToResult"])(this, observable, undefined, i);
                 if (this.subscriptions) {
                     this.subscriptions.push(subscription);
                 }
@@ -5917,7 +6076,7 @@ var RaceSubscriber = /*@__PURE__*/ (function (_super) {
             this.observables = null;
         }
     };
-    RaceSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    RaceSubscriber.prototype.notifyNext = function (_outerValue, innerValue, outerIndex) {
         if (!this.hasFirst) {
             this.hasFirst = true;
             for (var i = 0; i < this.subscriptions.length; i++) {
@@ -6045,11 +6204,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fromArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fromArray */ "./node_modules/rxjs/_esm5/internal/observable/fromArray.js");
 /* harmony import */ var _util_isArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/isArray */ "./node_modules/rxjs/_esm5/internal/util/isArray.js");
 /* harmony import */ var _Subscriber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Subscriber */ "./node_modules/rxjs/_esm5/internal/Subscriber.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/* harmony import */ var _internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../internal/symbol/iterator */ "./node_modules/rxjs/_esm5/internal/symbol/iterator.js");
-/** PURE_IMPORTS_START tslib,_fromArray,_util_isArray,_Subscriber,_OuterSubscriber,_util_subscribeToResult,_.._internal_symbol_iterator PURE_IMPORTS_END */
-
+/* harmony import */ var _internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../internal/symbol/iterator */ "./node_modules/rxjs/_esm5/internal/symbol/iterator.js");
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_fromArray,_util_isArray,_Subscriber,_.._internal_symbol_iterator,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -6084,10 +6241,10 @@ var ZipSubscriber = /*@__PURE__*/ (function (_super) {
             values = Object.create(null);
         }
         var _this = _super.call(this, destination) || this;
+        _this.resultSelector = resultSelector;
         _this.iterators = [];
         _this.active = 0;
-        _this.resultSelector = (typeof resultSelector === 'function') ? resultSelector : null;
-        _this.values = values;
+        _this.resultSelector = (typeof resultSelector === 'function') ? resultSelector : undefined;
         return _this;
     }
     ZipSubscriber.prototype._next = function (value) {
@@ -6095,8 +6252,8 @@ var ZipSubscriber = /*@__PURE__*/ (function (_super) {
         if (Object(_util_isArray__WEBPACK_IMPORTED_MODULE_2__["isArray"])(value)) {
             iterators.push(new StaticArrayIterator(value));
         }
-        else if (typeof value[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_6__["iterator"]] === 'function') {
-            iterators.push(new StaticIterator(value[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_6__["iterator"]]()));
+        else if (typeof value[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_4__["iterator"]] === 'function') {
+            iterators.push(new StaticIterator(value[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_4__["iterator"]]()));
         }
         else {
             iterators.push(new ZipBufferIterator(this.destination, this, value));
@@ -6115,7 +6272,7 @@ var ZipSubscriber = /*@__PURE__*/ (function (_super) {
             var iterator = iterators[i];
             if (iterator.stillUnsubscribed) {
                 var destination = this.destination;
-                destination.add(iterator.subscribe(iterator, i));
+                destination.add(iterator.subscribe());
             }
             else {
                 this.active--;
@@ -6191,7 +6348,7 @@ var StaticIterator = /*@__PURE__*/ (function () {
     };
     StaticIterator.prototype.hasCompleted = function () {
         var nextResult = this.nextResult;
-        return nextResult && nextResult.done;
+        return Boolean(nextResult && nextResult.done);
     };
     return StaticIterator;
 }());
@@ -6202,7 +6359,7 @@ var StaticArrayIterator = /*@__PURE__*/ (function () {
         this.length = 0;
         this.length = array.length;
     }
-    StaticArrayIterator.prototype[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_6__["iterator"]] = function () {
+    StaticArrayIterator.prototype[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_4__["iterator"]] = function () {
         return this;
     };
     StaticArrayIterator.prototype.next = function (value) {
@@ -6229,7 +6386,7 @@ var ZipBufferIterator = /*@__PURE__*/ (function (_super) {
         _this.isComplete = false;
         return _this;
     }
-    ZipBufferIterator.prototype[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_6__["iterator"]] = function () {
+    ZipBufferIterator.prototype[_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_4__["iterator"]] = function () {
         return this;
     };
     ZipBufferIterator.prototype.next = function () {
@@ -6256,15 +6413,15 @@ var ZipBufferIterator = /*@__PURE__*/ (function (_super) {
             this.destination.complete();
         }
     };
-    ZipBufferIterator.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    ZipBufferIterator.prototype.notifyNext = function (innerValue) {
         this.buffer.push(innerValue);
         this.parent.checkIterators();
     };
-    ZipBufferIterator.prototype.subscribe = function (value, index) {
-        return Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_5__["subscribeToResult"])(this, this.observable, this, index);
+    ZipBufferIterator.prototype.subscribe = function () {
+        return Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_5__["innerSubscribe"])(this.observable, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_5__["SimpleInnerSubscriber"](this));
     };
     return ZipBufferIterator;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_4__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_5__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=zip.js.map
 
 
@@ -6282,10 +6439,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "audit", function() { return audit; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function audit(durationSelector) {
@@ -6322,7 +6477,7 @@ var AuditSubscriber = /*@__PURE__*/ (function (_super) {
             catch (err) {
                 return this.destination.error(err);
             }
-            var innerSubscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(this, duration);
+            var innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(duration, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](this));
             if (!innerSubscription || innerSubscription.closed) {
                 this.clearThrottle();
             }
@@ -6335,23 +6490,23 @@ var AuditSubscriber = /*@__PURE__*/ (function (_super) {
         var _a = this, value = _a.value, hasValue = _a.hasValue, throttled = _a.throttled;
         if (throttled) {
             this.remove(throttled);
-            this.throttled = null;
+            this.throttled = undefined;
             throttled.unsubscribe();
         }
         if (hasValue) {
-            this.value = null;
+            this.value = undefined;
             this.hasValue = false;
             this.destination.next(value);
         }
     };
-    AuditSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex) {
+    AuditSubscriber.prototype.notifyNext = function () {
         this.clearThrottle();
     };
     AuditSubscriber.prototype.notifyComplete = function () {
         this.clearThrottle();
     };
     return AuditSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=audit.js.map
 
 
@@ -6397,10 +6552,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buffer", function() { return buffer; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function buffer(closingNotifier) {
@@ -6422,19 +6575,19 @@ var BufferSubscriber = /*@__PURE__*/ (function (_super) {
     function BufferSubscriber(destination, closingNotifier) {
         var _this = _super.call(this, destination) || this;
         _this.buffer = [];
-        _this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(_this, closingNotifier));
+        _this.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(closingNotifier, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](_this)));
         return _this;
     }
     BufferSubscriber.prototype._next = function (value) {
         this.buffer.push(value);
     };
-    BufferSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    BufferSubscriber.prototype.notifyNext = function () {
         var buffer = this.buffer;
         this.buffer = [];
         this.destination.next(buffer);
     };
     return BufferSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=buffer.js.map
 
 
@@ -6753,7 +6906,6 @@ var BufferToggleSubscriber = /*@__PURE__*/ (function (_super) {
     tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](BufferToggleSubscriber, _super);
     function BufferToggleSubscriber(destination, openings, closingSelector) {
         var _this = _super.call(this, destination) || this;
-        _this.openings = openings;
         _this.closingSelector = closingSelector;
         _this.contexts = [];
         _this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(_this, openings));
@@ -6789,7 +6941,7 @@ var BufferToggleSubscriber = /*@__PURE__*/ (function (_super) {
         this.contexts = null;
         _super.prototype._complete.call(this);
     };
-    BufferToggleSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    BufferToggleSubscriber.prototype.notifyNext = function (outerValue, innerValue) {
         outerValue ? this.closeBuffer(outerValue) : this.openBuffer(innerValue);
     };
     BufferToggleSubscriber.prototype.notifyComplete = function (innerSub) {
@@ -6853,10 +7005,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Subscription__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Subscription */ "./node_modules/rxjs/_esm5/internal/Subscription.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_Subscription,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_Subscription,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -6894,10 +7044,10 @@ var BufferWhenSubscriber = /*@__PURE__*/ (function (_super) {
         _super.prototype._complete.call(this);
     };
     BufferWhenSubscriber.prototype._unsubscribe = function () {
-        this.buffer = null;
+        this.buffer = undefined;
         this.subscribing = false;
     };
-    BufferWhenSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    BufferWhenSubscriber.prototype.notifyNext = function () {
         this.openBuffer();
     };
     BufferWhenSubscriber.prototype.notifyComplete = function () {
@@ -6931,11 +7081,11 @@ var BufferWhenSubscriber = /*@__PURE__*/ (function (_super) {
         this.closingSubscription = closingSubscription;
         this.add(closingSubscription);
         this.subscribing = true;
-        closingSubscription.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(this, closingNotifier));
+        closingSubscription.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["innerSubscribe"])(closingNotifier, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleInnerSubscriber"](this)));
         this.subscribing = false;
     };
     return BufferWhenSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=bufferWhen.js.map
 
 
@@ -6953,12 +7103,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "catchError", function() { return catchError; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../InnerSubscriber */ "./node_modules/rxjs/_esm5/internal/InnerSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_InnerSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function catchError(selector) {
@@ -6996,13 +7142,16 @@ var CatchSubscriber = /*@__PURE__*/ (function (_super) {
                 return;
             }
             this._unsubscribeAndRecycle();
-            var innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__["InnerSubscriber"](this, undefined, undefined);
+            var innerSubscriber = new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](this);
             this.add(innerSubscriber);
-            Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(this, result, undefined, undefined, innerSubscriber);
+            var innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(result, innerSubscriber);
+            if (innerSubscription !== innerSubscriber) {
+                this.add(innerSubscription);
+            }
         }
     };
     return CatchSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=catchError.js.map
 
 
@@ -7237,10 +7386,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "debounce", function() { return debounce; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function debounce(durationSelector) {
@@ -7261,7 +7408,6 @@ var DebounceSubscriber = /*@__PURE__*/ (function (_super) {
         var _this = _super.call(this, destination) || this;
         _this.durationSelector = durationSelector;
         _this.hasValue = false;
-        _this.durationSubscription = null;
         return _this;
     }
     DebounceSubscriber.prototype._next = function (value) {
@@ -7287,12 +7433,12 @@ var DebounceSubscriber = /*@__PURE__*/ (function (_super) {
             subscription.unsubscribe();
             this.remove(subscription);
         }
-        subscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(this, duration);
+        subscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(duration, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](this));
         if (subscription && !subscription.closed) {
             this.add(this.durationSubscription = subscription);
         }
     };
-    DebounceSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    DebounceSubscriber.prototype.notifyNext = function () {
         this.emitValue();
     };
     DebounceSubscriber.prototype.notifyComplete = function () {
@@ -7303,17 +7449,17 @@ var DebounceSubscriber = /*@__PURE__*/ (function (_super) {
             var value = this.value;
             var subscription = this.durationSubscription;
             if (subscription) {
-                this.durationSubscription = null;
+                this.durationSubscription = undefined;
                 subscription.unsubscribe();
                 this.remove(subscription);
             }
-            this.value = null;
+            this.value = undefined;
             this.hasValue = false;
             _super.prototype._next.call(this, value);
         }
     };
     return DebounceSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=debounce.js.map
 
 
@@ -7620,7 +7766,7 @@ var DelayWhenSubscriber = /*@__PURE__*/ (function (_super) {
         _this.index = 0;
         return _this;
     }
-    DelayWhenSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    DelayWhenSubscriber.prototype.notifyNext = function (outerValue, _innerValue, _outerIndex, _innerIndex, innerSub) {
         this.destination.next(outerValue);
         this.removeSubscription(innerSub);
         this.tryComplete();
@@ -7779,10 +7925,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DistinctSubscriber", function() { return DistinctSubscriber; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function distinct(keySelector, flushes) {
@@ -7805,14 +7949,14 @@ var DistinctSubscriber = /*@__PURE__*/ (function (_super) {
         _this.keySelector = keySelector;
         _this.values = new Set();
         if (flushes) {
-            _this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(_this, flushes));
+            _this.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(flushes, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](_this)));
         }
         return _this;
     }
-    DistinctSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    DistinctSubscriber.prototype.notifyNext = function () {
         this.values.clear();
     };
-    DistinctSubscriber.prototype.notifyError = function (error, innerSub) {
+    DistinctSubscriber.prototype.notifyError = function (error) {
         this._error(error);
     };
     DistinctSubscriber.prototype._next = function (value) {
@@ -7843,7 +7987,7 @@ var DistinctSubscriber = /*@__PURE__*/ (function (_super) {
         }
     };
     return DistinctSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 
 //# sourceMappingURL=distinct.js.map
 
@@ -8092,10 +8236,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "exhaust", function() { return exhaust; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function exhaust() {
@@ -8120,7 +8262,7 @@ var SwitchFirstSubscriber = /*@__PURE__*/ (function (_super) {
     SwitchFirstSubscriber.prototype._next = function (value) {
         if (!this.hasSubscription) {
             this.hasSubscription = true;
-            this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(this, value));
+            this.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(value, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](this)));
         }
     };
     SwitchFirstSubscriber.prototype._complete = function () {
@@ -8129,15 +8271,14 @@ var SwitchFirstSubscriber = /*@__PURE__*/ (function (_super) {
             this.destination.complete();
         }
     };
-    SwitchFirstSubscriber.prototype.notifyComplete = function (innerSub) {
-        this.remove(innerSub);
+    SwitchFirstSubscriber.prototype.notifyComplete = function () {
         this.hasSubscription = false;
         if (this.hasCompleted) {
             this.destination.complete();
         }
     };
     return SwitchFirstSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=exhaust.js.map
 
 
@@ -8155,21 +8296,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "exhaustMap", function() { return exhaustMap; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../InnerSubscriber */ "./node_modules/rxjs/_esm5/internal/InnerSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./map */ "./node_modules/rxjs/_esm5/internal/operators/map.js");
-/* harmony import */ var _observable_from__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../observable/from */ "./node_modules/rxjs/_esm5/internal/observable/from.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_InnerSubscriber,_util_subscribeToResult,_map,_observable_from PURE_IMPORTS_END */
-
-
+/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./map */ "./node_modules/rxjs/_esm5/internal/operators/map.js");
+/* harmony import */ var _observable_from__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../observable/from */ "./node_modules/rxjs/_esm5/internal/observable/from.js");
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_map,_observable_from,_innerSubscribe PURE_IMPORTS_END */
 
 
 
 
 function exhaustMap(project, resultSelector) {
     if (resultSelector) {
-        return function (source) { return source.pipe(exhaustMap(function (a, i) { return Object(_observable_from__WEBPACK_IMPORTED_MODULE_5__["from"])(project(a, i)).pipe(Object(_map__WEBPACK_IMPORTED_MODULE_4__["map"])(function (b, ii) { return resultSelector(a, b, i, ii); })); })); };
+        return function (source) { return source.pipe(exhaustMap(function (a, i) { return Object(_observable_from__WEBPACK_IMPORTED_MODULE_2__["from"])(project(a, i)).pipe(Object(_map__WEBPACK_IMPORTED_MODULE_1__["map"])(function (b, ii) { return resultSelector(a, b, i, ii); })); })); };
     }
     return function (source) {
         return source.lift(new ExhaustMapOperator(project));
@@ -8210,13 +8347,16 @@ var ExhaustMapSubscriber = /*@__PURE__*/ (function (_super) {
             return;
         }
         this.hasSubscription = true;
-        this._innerSub(result, value, index);
+        this._innerSub(result);
     };
-    ExhaustMapSubscriber.prototype._innerSub = function (result, value, index) {
-        var innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__["InnerSubscriber"](this, undefined, undefined);
+    ExhaustMapSubscriber.prototype._innerSub = function (result) {
+        var innerSubscriber = new _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleInnerSubscriber"](this);
         var destination = this.destination;
         destination.add(innerSubscriber);
-        Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(this, result, value, index, innerSubscriber);
+        var innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["innerSubscribe"])(result, innerSubscriber);
+        if (innerSubscription !== innerSubscriber) {
+            destination.add(innerSubscription);
+        }
     };
     ExhaustMapSubscriber.prototype._complete = function () {
         this.hasCompleted = true;
@@ -8225,22 +8365,20 @@ var ExhaustMapSubscriber = /*@__PURE__*/ (function (_super) {
         }
         this.unsubscribe();
     };
-    ExhaustMapSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    ExhaustMapSubscriber.prototype.notifyNext = function (innerValue) {
         this.destination.next(innerValue);
     };
     ExhaustMapSubscriber.prototype.notifyError = function (err) {
         this.destination.error(err);
     };
-    ExhaustMapSubscriber.prototype.notifyComplete = function (innerSub) {
-        var destination = this.destination;
-        destination.remove(innerSub);
+    ExhaustMapSubscriber.prototype.notifyComplete = function () {
         this.hasSubscription = false;
         if (this.hasCompleted) {
             this.destination.complete();
         }
     };
     return ExhaustMapSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=exhaustMap.js.map
 
 
@@ -8260,18 +8398,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExpandSubscriber", function() { return ExpandSubscriber; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function expand(project, concurrent, scheduler) {
     if (concurrent === void 0) {
         concurrent = Number.POSITIVE_INFINITY;
-    }
-    if (scheduler === void 0) {
-        scheduler = undefined;
     }
     concurrent = (concurrent || 0) < 1 ? Number.POSITIVE_INFINITY : concurrent;
     return function (source) { return source.lift(new ExpandOperator(project, concurrent, scheduler)); };
@@ -8339,7 +8472,7 @@ var ExpandSubscriber = /*@__PURE__*/ (function (_super) {
     ExpandSubscriber.prototype.subscribeToProjection = function (result, value, index) {
         this.active++;
         var destination = this.destination;
-        destination.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(this, result, value, index));
+        destination.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(result, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](this)));
     };
     ExpandSubscriber.prototype._complete = function () {
         this.hasCompleted = true;
@@ -8348,13 +8481,11 @@ var ExpandSubscriber = /*@__PURE__*/ (function (_super) {
         }
         this.unsubscribe();
     };
-    ExpandSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    ExpandSubscriber.prototype.notifyNext = function (innerValue) {
         this._next(innerValue);
     };
-    ExpandSubscriber.prototype.notifyComplete = function (innerSub) {
+    ExpandSubscriber.prototype.notifyComplete = function () {
         var buffer = this.buffer;
-        var destination = this.destination;
-        destination.remove(innerSub);
         this.active--;
         if (buffer && buffer.length > 0) {
             this._next(buffer.shift());
@@ -8364,7 +8495,7 @@ var ExpandSubscriber = /*@__PURE__*/ (function (_super) {
         }
     };
     return ExpandSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 
 //# sourceMappingURL=expand.js.map
 
@@ -9177,7 +9308,7 @@ function mergeAll(concurrent) {
 /*!****************************************************************!*\
   !*** ./node_modules/rxjs/_esm5/internal/operators/mergeMap.js ***!
   \****************************************************************/
-/*! exports provided: mergeMap, MergeMapOperator, MergeMapSubscriber */
+/*! exports provided: mergeMap, MergeMapOperator, MergeMapSubscriber, flatMap */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9185,16 +9316,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mergeMap", function() { return mergeMap; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MergeMapOperator", function() { return MergeMapOperator; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MergeMapSubscriber", function() { return MergeMapSubscriber; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "flatMap", function() { return flatMap; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _InnerSubscriber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../InnerSubscriber */ "./node_modules/rxjs/_esm5/internal/InnerSubscriber.js");
-/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./map */ "./node_modules/rxjs/_esm5/internal/operators/map.js");
-/* harmony import */ var _observable_from__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../observable/from */ "./node_modules/rxjs/_esm5/internal/observable/from.js");
-/** PURE_IMPORTS_START tslib,_util_subscribeToResult,_OuterSubscriber,_InnerSubscriber,_map,_observable_from PURE_IMPORTS_END */
-
-
+/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./map */ "./node_modules/rxjs/_esm5/internal/operators/map.js");
+/* harmony import */ var _observable_from__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../observable/from */ "./node_modules/rxjs/_esm5/internal/observable/from.js");
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_map,_observable_from,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -9204,7 +9332,7 @@ function mergeMap(project, resultSelector, concurrent) {
         concurrent = Number.POSITIVE_INFINITY;
     }
     if (typeof resultSelector === 'function') {
-        return function (source) { return source.pipe(mergeMap(function (a, i) { return Object(_observable_from__WEBPACK_IMPORTED_MODULE_5__["from"])(project(a, i)).pipe(Object(_map__WEBPACK_IMPORTED_MODULE_4__["map"])(function (b, ii) { return resultSelector(a, b, i, ii); })); }, concurrent)); };
+        return function (source) { return source.pipe(mergeMap(function (a, i) { return Object(_observable_from__WEBPACK_IMPORTED_MODULE_2__["from"])(project(a, i)).pipe(Object(_map__WEBPACK_IMPORTED_MODULE_1__["map"])(function (b, ii) { return resultSelector(a, b, i, ii); })); }, concurrent)); };
     }
     else if (typeof resultSelector === 'number') {
         concurrent = resultSelector;
@@ -9259,13 +9387,16 @@ var MergeMapSubscriber = /*@__PURE__*/ (function (_super) {
             return;
         }
         this.active++;
-        this._innerSub(result, value, index);
+        this._innerSub(result);
     };
-    MergeMapSubscriber.prototype._innerSub = function (ish, value, index) {
-        var innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_3__["InnerSubscriber"](this, undefined, undefined);
+    MergeMapSubscriber.prototype._innerSub = function (ish) {
+        var innerSubscriber = new _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleInnerSubscriber"](this);
         var destination = this.destination;
         destination.add(innerSubscriber);
-        Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_1__["subscribeToResult"])(this, ish, value, index, innerSubscriber);
+        var innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["innerSubscribe"])(ish, innerSubscriber);
+        if (innerSubscription !== innerSubscriber) {
+            destination.add(innerSubscription);
+        }
     };
     MergeMapSubscriber.prototype._complete = function () {
         this.hasCompleted = true;
@@ -9274,12 +9405,11 @@ var MergeMapSubscriber = /*@__PURE__*/ (function (_super) {
         }
         this.unsubscribe();
     };
-    MergeMapSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    MergeMapSubscriber.prototype.notifyNext = function (innerValue) {
         this.destination.next(innerValue);
     };
-    MergeMapSubscriber.prototype.notifyComplete = function (innerSub) {
+    MergeMapSubscriber.prototype.notifyComplete = function () {
         var buffer = this.buffer;
-        this.remove(innerSub);
         this.active--;
         if (buffer.length > 0) {
             this._next(buffer.shift());
@@ -9289,8 +9419,9 @@ var MergeMapSubscriber = /*@__PURE__*/ (function (_super) {
         }
     };
     return MergeMapSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleOuterSubscriber"]));
 
+var flatMap = mergeMap;
 //# sourceMappingURL=mergeMap.js.map
 
 
@@ -9340,12 +9471,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MergeScanSubscriber", function() { return MergeScanSubscriber; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _InnerSubscriber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../InnerSubscriber */ "./node_modules/rxjs/_esm5/internal/InnerSubscriber.js");
-/** PURE_IMPORTS_START tslib,_util_subscribeToResult,_OuterSubscriber,_InnerSubscriber PURE_IMPORTS_END */
-
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function mergeScan(accumulator, seed, concurrent) {
@@ -9393,17 +9520,20 @@ var MergeScanSubscriber = /*@__PURE__*/ (function (_super) {
                 return destination.error(e);
             }
             this.active++;
-            this._innerSub(ish, value, index);
+            this._innerSub(ish);
         }
         else {
             this.buffer.push(value);
         }
     };
-    MergeScanSubscriber.prototype._innerSub = function (ish, value, index) {
-        var innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_3__["InnerSubscriber"](this, undefined, undefined);
+    MergeScanSubscriber.prototype._innerSub = function (ish) {
+        var innerSubscriber = new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](this);
         var destination = this.destination;
         destination.add(innerSubscriber);
-        Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_1__["subscribeToResult"])(this, ish, value, index, innerSubscriber);
+        var innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(ish, innerSubscriber);
+        if (innerSubscription !== innerSubscriber) {
+            destination.add(innerSubscription);
+        }
     };
     MergeScanSubscriber.prototype._complete = function () {
         this.hasCompleted = true;
@@ -9415,16 +9545,14 @@ var MergeScanSubscriber = /*@__PURE__*/ (function (_super) {
         }
         this.unsubscribe();
     };
-    MergeScanSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    MergeScanSubscriber.prototype.notifyNext = function (innerValue) {
         var destination = this.destination;
         this.acc = innerValue;
         this.hasValue = true;
         destination.next(innerValue);
     };
-    MergeScanSubscriber.prototype.notifyComplete = function (innerSub) {
+    MergeScanSubscriber.prototype.notifyComplete = function () {
         var buffer = this.buffer;
-        var destination = this.destination;
-        destination.remove(innerSub);
         this.active--;
         if (buffer.length > 0) {
             this._next(buffer.shift());
@@ -9437,7 +9565,7 @@ var MergeScanSubscriber = /*@__PURE__*/ (function (_super) {
         }
     };
     return MergeScanSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 
 //# sourceMappingURL=mergeScan.js.map
 
@@ -9627,12 +9755,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _observable_from__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../observable/from */ "./node_modules/rxjs/_esm5/internal/observable/from.js");
 /* harmony import */ var _util_isArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/isArray */ "./node_modules/rxjs/_esm5/internal/util/isArray.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _InnerSubscriber__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../InnerSubscriber */ "./node_modules/rxjs/_esm5/internal/InnerSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_observable_from,_util_isArray,_OuterSubscriber,_InnerSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_observable_from,_util_isArray,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -9652,12 +9776,12 @@ function onErrorResumeNextStatic() {
     for (var _i = 0; _i < arguments.length; _i++) {
         nextSources[_i] = arguments[_i];
     }
-    var source = null;
+    var source = undefined;
     if (nextSources.length === 1 && Object(_util_isArray__WEBPACK_IMPORTED_MODULE_2__["isArray"])(nextSources[0])) {
         nextSources = nextSources[0];
     }
     source = nextSources.shift();
-    return Object(_observable_from__WEBPACK_IMPORTED_MODULE_1__["from"])(source, null).lift(new OnErrorResumeNextOperator(nextSources));
+    return Object(_observable_from__WEBPACK_IMPORTED_MODULE_1__["from"])(source).lift(new OnErrorResumeNextOperator(nextSources));
 }
 var OnErrorResumeNextOperator = /*@__PURE__*/ (function () {
     function OnErrorResumeNextOperator(nextSources) {
@@ -9676,10 +9800,10 @@ var OnErrorResumeNextSubscriber = /*@__PURE__*/ (function (_super) {
         _this.nextSources = nextSources;
         return _this;
     }
-    OnErrorResumeNextSubscriber.prototype.notifyError = function (error, innerSub) {
+    OnErrorResumeNextSubscriber.prototype.notifyError = function () {
         this.subscribeToNextSource();
     };
-    OnErrorResumeNextSubscriber.prototype.notifyComplete = function (innerSub) {
+    OnErrorResumeNextSubscriber.prototype.notifyComplete = function () {
         this.subscribeToNextSource();
     };
     OnErrorResumeNextSubscriber.prototype._error = function (err) {
@@ -9693,17 +9817,20 @@ var OnErrorResumeNextSubscriber = /*@__PURE__*/ (function (_super) {
     OnErrorResumeNextSubscriber.prototype.subscribeToNextSource = function () {
         var next = this.nextSources.shift();
         if (!!next) {
-            var innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_4__["InnerSubscriber"](this, undefined, undefined);
+            var innerSubscriber = new _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleInnerSubscriber"](this);
             var destination = this.destination;
             destination.add(innerSubscriber);
-            Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_5__["subscribeToResult"])(this, next, undefined, undefined, innerSubscriber);
+            var innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["innerSubscribe"])(next, innerSubscriber);
+            if (innerSubscription !== innerSubscriber) {
+                destination.add(innerSubscription);
+            }
         }
         else {
             this.destination.complete();
         }
     };
     return OnErrorResumeNextSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_3__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=onErrorResumeNext.js.map
 
 
@@ -9819,8 +9946,8 @@ function plucker(props, length) {
     var mapper = function (x) {
         var currentProp = x;
         for (var i = 0; i < length; i++) {
-            var p = currentProp[props[i]];
-            if (typeof p !== 'undefined') {
+            var p = currentProp != null ? currentProp[props[i]] : undefined;
+            if (p !== void 0) {
                 currentProp = p;
             }
             else {
@@ -10160,10 +10287,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Subject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Subject */ "./node_modules/rxjs/_esm5/internal/Subject.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_Subject,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_Subject,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -10188,11 +10313,11 @@ var RepeatWhenSubscriber = /*@__PURE__*/ (function (_super) {
         _this.sourceIsBeingSubscribedTo = true;
         return _this;
     }
-    RepeatWhenSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    RepeatWhenSubscriber.prototype.notifyNext = function () {
         this.sourceIsBeingSubscribedTo = true;
         this.source.subscribe(this);
     };
-    RepeatWhenSubscriber.prototype.notifyComplete = function (innerSub) {
+    RepeatWhenSubscriber.prototype.notifyComplete = function () {
         if (this.sourceIsBeingSubscribedTo === false) {
             return _super.prototype.complete.call(this);
         }
@@ -10207,20 +10332,20 @@ var RepeatWhenSubscriber = /*@__PURE__*/ (function (_super) {
                 return _super.prototype.complete.call(this);
             }
             this._unsubscribeAndRecycle();
-            this.notifications.next();
+            this.notifications.next(undefined);
         }
     };
     RepeatWhenSubscriber.prototype._unsubscribe = function () {
         var _a = this, notifications = _a.notifications, retriesSubscription = _a.retriesSubscription;
         if (notifications) {
             notifications.unsubscribe();
-            this.notifications = null;
+            this.notifications = undefined;
         }
         if (retriesSubscription) {
             retriesSubscription.unsubscribe();
-            this.retriesSubscription = null;
+            this.retriesSubscription = undefined;
         }
-        this.retries = null;
+        this.retries = undefined;
     };
     RepeatWhenSubscriber.prototype._unsubscribeAndRecycle = function () {
         var _unsubscribe = this._unsubscribe;
@@ -10240,10 +10365,10 @@ var RepeatWhenSubscriber = /*@__PURE__*/ (function (_super) {
             return _super.prototype.complete.call(this);
         }
         this.retries = retries;
-        this.retriesSubscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(this, retries);
+        this.retriesSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["innerSubscribe"])(retries, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleInnerSubscriber"](this));
     };
     return RepeatWhenSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=repeatWhen.js.map
 
 
@@ -10321,10 +10446,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Subject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Subject */ "./node_modules/rxjs/_esm5/internal/Subject.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_Subject,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_Subject,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -10363,11 +10486,11 @@ var RetryWhenSubscriber = /*@__PURE__*/ (function (_super) {
                 catch (e) {
                     return _super.prototype.error.call(this, e);
                 }
-                retriesSubscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(this, retries);
+                retriesSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["innerSubscribe"])(retries, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleInnerSubscriber"](this));
             }
             else {
-                this.errors = null;
-                this.retriesSubscription = null;
+                this.errors = undefined;
+                this.retriesSubscription = undefined;
             }
             this._unsubscribeAndRecycle();
             this.errors = errors;
@@ -10380,15 +10503,15 @@ var RetryWhenSubscriber = /*@__PURE__*/ (function (_super) {
         var _a = this, errors = _a.errors, retriesSubscription = _a.retriesSubscription;
         if (errors) {
             errors.unsubscribe();
-            this.errors = null;
+            this.errors = undefined;
         }
         if (retriesSubscription) {
             retriesSubscription.unsubscribe();
-            this.retriesSubscription = null;
+            this.retriesSubscription = undefined;
         }
-        this.retries = null;
+        this.retries = undefined;
     };
-    RetryWhenSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    RetryWhenSubscriber.prototype.notifyNext = function () {
         var _unsubscribe = this._unsubscribe;
         this._unsubscribe = null;
         this._unsubscribeAndRecycle();
@@ -10396,7 +10519,7 @@ var RetryWhenSubscriber = /*@__PURE__*/ (function (_super) {
         this.source.subscribe(this);
     };
     return RetryWhenSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=retryWhen.js.map
 
 
@@ -10414,10 +10537,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sample", function() { return sample; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function sample(notifier) {
@@ -10430,7 +10551,7 @@ var SampleOperator = /*@__PURE__*/ (function () {
     SampleOperator.prototype.call = function (subscriber, source) {
         var sampleSubscriber = new SampleSubscriber(subscriber);
         var subscription = source.subscribe(sampleSubscriber);
-        subscription.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(sampleSubscriber, this.notifier));
+        subscription.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(this.notifier, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](sampleSubscriber)));
         return subscription;
     };
     return SampleOperator;
@@ -10446,7 +10567,7 @@ var SampleSubscriber = /*@__PURE__*/ (function (_super) {
         this.value = value;
         this.hasValue = true;
     };
-    SampleSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    SampleSubscriber.prototype.notifyNext = function () {
         this.emitValue();
     };
     SampleSubscriber.prototype.notifyComplete = function () {
@@ -10459,7 +10580,7 @@ var SampleSubscriber = /*@__PURE__*/ (function (_super) {
         }
     };
     return SampleSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=sample.js.map
 
 
@@ -10799,7 +10920,7 @@ function shareReplay(configOrBufferSize, windowTime, scheduler) {
             bufferSize: configOrBufferSize,
             windowTime: windowTime,
             refCount: false,
-            scheduler: scheduler
+            scheduler: scheduler,
         };
     }
     return function (source) { return source.lift(shareReplayOperator(config)); };
@@ -10813,25 +10934,36 @@ function shareReplayOperator(_a) {
     var isComplete = false;
     return function shareReplayOperation(source) {
         refCount++;
+        var innerSub;
         if (!subject || hasError) {
             hasError = false;
             subject = new _ReplaySubject__WEBPACK_IMPORTED_MODULE_0__["ReplaySubject"](bufferSize, windowTime, scheduler);
+            innerSub = subject.subscribe(this);
             subscription = source.subscribe({
-                next: function (value) { subject.next(value); },
+                next: function (value) {
+                    subject.next(value);
+                },
                 error: function (err) {
                     hasError = true;
                     subject.error(err);
                 },
                 complete: function () {
                     isComplete = true;
+                    subscription = undefined;
                     subject.complete();
                 },
             });
+            if (isComplete) {
+                subscription = undefined;
+            }
         }
-        var innerSub = subject.subscribe(this);
+        else {
+            innerSub = subject.subscribe(this);
+        }
         this.add(function () {
             refCount--;
             innerSub.unsubscribe();
+            innerSub = undefined;
             if (subscription && !isComplete && useRefCount && refCount === 0) {
                 subscription.unsubscribe();
                 subscription = undefined;
@@ -11059,12 +11191,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skipUntil", function() { return skipUntil; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../InnerSubscriber */ "./node_modules/rxjs/_esm5/internal/InnerSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_InnerSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function skipUntil(notifier) {
@@ -11084,10 +11212,14 @@ var SkipUntilSubscriber = /*@__PURE__*/ (function (_super) {
     function SkipUntilSubscriber(destination, notifier) {
         var _this = _super.call(this, destination) || this;
         _this.hasValue = false;
-        var innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__["InnerSubscriber"](_this, undefined, undefined);
+        var innerSubscriber = new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](_this);
         _this.add(innerSubscriber);
         _this.innerSubscription = innerSubscriber;
-        Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(_this, notifier, undefined, undefined, innerSubscriber);
+        var innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(notifier, innerSubscriber);
+        if (innerSubscription !== innerSubscriber) {
+            _this.add(innerSubscription);
+            _this.innerSubscription = innerSubscription;
+        }
         return _this;
     }
     SkipUntilSubscriber.prototype._next = function (value) {
@@ -11095,7 +11227,7 @@ var SkipUntilSubscriber = /*@__PURE__*/ (function (_super) {
             _super.prototype._next.call(this, value);
         }
     };
-    SkipUntilSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    SkipUntilSubscriber.prototype.notifyNext = function () {
         this.hasValue = true;
         if (this.innerSubscription) {
             this.innerSubscription.unsubscribe();
@@ -11104,7 +11236,7 @@ var SkipUntilSubscriber = /*@__PURE__*/ (function (_super) {
     SkipUntilSubscriber.prototype.notifyComplete = function () {
     };
     return SkipUntilSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=skipUntil.js.map
 
 
@@ -11277,21 +11409,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "switchMap", function() { return switchMap; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../InnerSubscriber */ "./node_modules/rxjs/_esm5/internal/InnerSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./map */ "./node_modules/rxjs/_esm5/internal/operators/map.js");
-/* harmony import */ var _observable_from__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../observable/from */ "./node_modules/rxjs/_esm5/internal/observable/from.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_InnerSubscriber,_util_subscribeToResult,_map,_observable_from PURE_IMPORTS_END */
-
-
+/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./map */ "./node_modules/rxjs/_esm5/internal/operators/map.js");
+/* harmony import */ var _observable_from__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../observable/from */ "./node_modules/rxjs/_esm5/internal/observable/from.js");
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_map,_observable_from,_innerSubscribe PURE_IMPORTS_END */
 
 
 
 
 function switchMap(project, resultSelector) {
     if (typeof resultSelector === 'function') {
-        return function (source) { return source.pipe(switchMap(function (a, i) { return Object(_observable_from__WEBPACK_IMPORTED_MODULE_5__["from"])(project(a, i)).pipe(Object(_map__WEBPACK_IMPORTED_MODULE_4__["map"])(function (b, ii) { return resultSelector(a, b, i, ii); })); })); };
+        return function (source) { return source.pipe(switchMap(function (a, i) { return Object(_observable_from__WEBPACK_IMPORTED_MODULE_2__["from"])(project(a, i)).pipe(Object(_map__WEBPACK_IMPORTED_MODULE_1__["map"])(function (b, ii) { return resultSelector(a, b, i, ii); })); })); };
     }
     return function (source) { return source.lift(new SwitchMapOperator(project)); };
 }
@@ -11322,17 +11450,20 @@ var SwitchMapSubscriber = /*@__PURE__*/ (function (_super) {
             this.destination.error(error);
             return;
         }
-        this._innerSub(result, value, index);
+        this._innerSub(result);
     };
-    SwitchMapSubscriber.prototype._innerSub = function (result, value, index) {
+    SwitchMapSubscriber.prototype._innerSub = function (result) {
         var innerSubscription = this.innerSubscription;
         if (innerSubscription) {
             innerSubscription.unsubscribe();
         }
-        var innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_2__["InnerSubscriber"](this, undefined, undefined);
+        var innerSubscriber = new _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleInnerSubscriber"](this);
         var destination = this.destination;
         destination.add(innerSubscriber);
-        this.innerSubscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(this, result, value, index, innerSubscriber);
+        this.innerSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["innerSubscribe"])(result, innerSubscriber);
+        if (this.innerSubscription !== innerSubscriber) {
+            destination.add(this.innerSubscription);
+        }
     };
     SwitchMapSubscriber.prototype._complete = function () {
         var innerSubscription = this.innerSubscription;
@@ -11342,21 +11473,19 @@ var SwitchMapSubscriber = /*@__PURE__*/ (function (_super) {
         this.unsubscribe();
     };
     SwitchMapSubscriber.prototype._unsubscribe = function () {
-        this.innerSubscription = null;
+        this.innerSubscription = undefined;
     };
-    SwitchMapSubscriber.prototype.notifyComplete = function (innerSub) {
-        var destination = this.destination;
-        destination.remove(innerSub);
-        this.innerSubscription = null;
+    SwitchMapSubscriber.prototype.notifyComplete = function () {
+        this.innerSubscription = undefined;
         if (this.isStopped) {
             _super.prototype._complete.call(this);
         }
     };
-    SwitchMapSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    SwitchMapSubscriber.prototype.notifyNext = function (innerValue) {
         this.destination.next(innerValue);
     };
     return SwitchMapSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=switchMap.js.map
 
 
@@ -11546,10 +11675,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "takeUntil", function() { return takeUntil; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 function takeUntil(notifier) {
@@ -11561,7 +11688,7 @@ var TakeUntilOperator = /*@__PURE__*/ (function () {
     }
     TakeUntilOperator.prototype.call = function (subscriber, source) {
         var takeUntilSubscriber = new TakeUntilSubscriber(subscriber);
-        var notifierSubscription = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(takeUntilSubscriber, this.notifier);
+        var notifierSubscription = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(this.notifier, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](takeUntilSubscriber));
         if (notifierSubscription && !takeUntilSubscriber.seenValue) {
             takeUntilSubscriber.add(notifierSubscription);
             return source.subscribe(takeUntilSubscriber);
@@ -11577,14 +11704,14 @@ var TakeUntilSubscriber = /*@__PURE__*/ (function (_super) {
         _this.seenValue = false;
         return _this;
     }
-    TakeUntilSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    TakeUntilSubscriber.prototype.notifyNext = function () {
         this.seenValue = true;
         this.complete();
     };
     TakeUntilSubscriber.prototype.notifyComplete = function () {
     };
     return TakeUntilSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=takeUntil.js.map
 
 
@@ -11771,10 +11898,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "throttle", function() { return throttle; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_innerSubscribe PURE_IMPORTS_END */
 
 
 var defaultThrottleConfig = {
@@ -11785,7 +11910,7 @@ function throttle(durationSelector, config) {
     if (config === void 0) {
         config = defaultThrottleConfig;
     }
-    return function (source) { return source.lift(new ThrottleOperator(durationSelector, config.leading, config.trailing)); };
+    return function (source) { return source.lift(new ThrottleOperator(durationSelector, !!config.leading, !!config.trailing)); };
 }
 var ThrottleOperator = /*@__PURE__*/ (function () {
     function ThrottleOperator(durationSelector, leading, trailing) {
@@ -11828,12 +11953,12 @@ var ThrottleSubscriber = /*@__PURE__*/ (function (_super) {
             this.throttle(_sendValue);
         }
         this._hasValue = false;
-        this._sendValue = null;
+        this._sendValue = undefined;
     };
     ThrottleSubscriber.prototype.throttle = function (value) {
         var duration = this.tryDurationSelector(value);
         if (!!duration) {
-            this.add(this._throttled = Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(this, duration));
+            this.add(this._throttled = Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["innerSubscribe"])(duration, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleInnerSubscriber"](this)));
         }
     };
     ThrottleSubscriber.prototype.tryDurationSelector = function (value) {
@@ -11850,19 +11975,19 @@ var ThrottleSubscriber = /*@__PURE__*/ (function (_super) {
         if (_throttled) {
             _throttled.unsubscribe();
         }
-        this._throttled = null;
+        this._throttled = undefined;
         if (_trailing) {
             this.send();
         }
     };
-    ThrottleSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    ThrottleSubscriber.prototype.notifyNext = function () {
         this.throttlingDone();
     };
     ThrottleSubscriber.prototype.notifyComplete = function () {
         this.throttlingDone();
     };
     return ThrottleSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_1__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_1__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=throttle.js.map
 
 
@@ -12137,10 +12262,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scheduler_async__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scheduler/async */ "./node_modules/rxjs/_esm5/internal/scheduler/async.js");
 /* harmony import */ var _util_isDate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../util/isDate */ "./node_modules/rxjs/_esm5/internal/util/isDate.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_scheduler_async,_util_isDate,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_scheduler_async,_util_isDate,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -12175,14 +12298,13 @@ var TimeoutWithSubscriber = /*@__PURE__*/ (function (_super) {
         _this.waitFor = waitFor;
         _this.withObservable = withObservable;
         _this.scheduler = scheduler;
-        _this.action = null;
         _this.scheduleTimeout();
         return _this;
     }
     TimeoutWithSubscriber.dispatchTimeout = function (subscriber) {
         var withObservable = subscriber.withObservable;
         subscriber._unsubscribeAndRecycle();
-        subscriber.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_4__["subscribeToResult"])(subscriber, withObservable));
+        subscriber.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["innerSubscribe"])(withObservable, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleInnerSubscriber"](subscriber)));
     };
     TimeoutWithSubscriber.prototype.scheduleTimeout = function () {
         var action = this.action;
@@ -12200,12 +12322,12 @@ var TimeoutWithSubscriber = /*@__PURE__*/ (function (_super) {
         _super.prototype._next.call(this, value);
     };
     TimeoutWithSubscriber.prototype._unsubscribe = function () {
-        this.action = null;
+        this.action = undefined;
         this.scheduler = null;
         this.withObservable = null;
     };
     return TimeoutWithSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_3__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_3__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=timeoutWith.js.map
 
 
@@ -12287,10 +12409,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Subject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Subject */ "./node_modules/rxjs/_esm5/internal/Subject.js");
-/* harmony import */ var _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../OuterSubscriber */ "./node_modules/rxjs/_esm5/internal/OuterSubscriber.js");
-/* harmony import */ var _util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../util/subscribeToResult */ "./node_modules/rxjs/_esm5/internal/util/subscribeToResult.js");
-/** PURE_IMPORTS_START tslib,_Subject,_OuterSubscriber,_util_subscribeToResult PURE_IMPORTS_END */
-
+/* harmony import */ var _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../innerSubscribe */ "./node_modules/rxjs/_esm5/internal/innerSubscribe.js");
+/** PURE_IMPORTS_START tslib,_Subject,_innerSubscribe PURE_IMPORTS_END */
 
 
 
@@ -12307,7 +12427,7 @@ var WindowOperator = /*@__PURE__*/ (function () {
         var windowSubscriber = new WindowSubscriber(subscriber);
         var sourceSubscription = source.subscribe(windowSubscriber);
         if (!sourceSubscription.closed) {
-            windowSubscriber.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_3__["subscribeToResult"])(windowSubscriber, this.windowBoundaries));
+            windowSubscriber.add(Object(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["innerSubscribe"])(this.windowBoundaries, new _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleInnerSubscriber"](windowSubscriber)));
         }
         return sourceSubscription;
     };
@@ -12321,13 +12441,13 @@ var WindowSubscriber = /*@__PURE__*/ (function (_super) {
         destination.next(_this.window);
         return _this;
     }
-    WindowSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    WindowSubscriber.prototype.notifyNext = function () {
         this.openWindow();
     };
-    WindowSubscriber.prototype.notifyError = function (error, innerSub) {
+    WindowSubscriber.prototype.notifyError = function (error) {
         this._error(error);
     };
-    WindowSubscriber.prototype.notifyComplete = function (innerSub) {
+    WindowSubscriber.prototype.notifyComplete = function () {
         this._complete();
     };
     WindowSubscriber.prototype._next = function (value) {
@@ -12354,7 +12474,7 @@ var WindowSubscriber = /*@__PURE__*/ (function (_super) {
         destination.next(newWindow);
     };
     return WindowSubscriber;
-}(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__["OuterSubscriber"]));
+}(_innerSubscribe__WEBPACK_IMPORTED_MODULE_2__["SimpleOuterSubscriber"]));
 //# sourceMappingURL=window.js.map
 
 
@@ -12491,13 +12611,13 @@ function windowTime(windowTimeSpan) {
         scheduler = arguments[2];
     }
     else if (Object(_util_isNumeric__WEBPACK_IMPORTED_MODULE_4__["isNumeric"])(arguments[2])) {
-        maxWindowSize = arguments[2];
+        maxWindowSize = Number(arguments[2]);
     }
     if (Object(_util_isScheduler__WEBPACK_IMPORTED_MODULE_5__["isScheduler"])(arguments[1])) {
         scheduler = arguments[1];
     }
     else if (Object(_util_isNumeric__WEBPACK_IMPORTED_MODULE_4__["isNumeric"])(arguments[1])) {
-        windowCreationInterval = arguments[1];
+        windowCreationInterval = Number(arguments[1]);
     }
     return function windowTimeOperatorFunction(source) {
         return source.lift(new WindowTimeOperator(windowTimeSpan, windowCreationInterval, maxWindowSize, scheduler));
@@ -12824,10 +12944,10 @@ var WindowSubscriber = /*@__PURE__*/ (function (_super) {
         _this.openWindow();
         return _this;
     }
-    WindowSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    WindowSubscriber.prototype.notifyNext = function (_outerValue, _innerValue, _outerIndex, _innerIndex, innerSub) {
         this.openWindow(innerSub);
     };
-    WindowSubscriber.prototype.notifyError = function (error, innerSub) {
+    WindowSubscriber.prototype.notifyError = function (error) {
         this._error(error);
     };
     WindowSubscriber.prototype.notifyComplete = function (innerSub) {
@@ -12940,11 +13060,11 @@ var WithLatestFromSubscriber = /*@__PURE__*/ (function (_super) {
         }
         for (var i = 0; i < len; i++) {
             var observable = observables[i];
-            _this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(_this, observable, observable, i));
+            _this.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_2__["subscribeToResult"])(_this, observable, undefined, i));
         }
         return _this;
     }
-    WithLatestFromSubscriber.prototype.notifyNext = function (outerValue, innerValue, outerIndex, innerIndex, innerSub) {
+    WithLatestFromSubscriber.prototype.notifyNext = function (_outerValue, innerValue, outerIndex) {
         this.values[outerIndex] = innerValue;
         var toRespond = this.toRespond;
         if (toRespond.length > 0) {
@@ -13674,18 +13794,20 @@ var QueueScheduler = /*@__PURE__*/ (function (_super) {
 /*!************************************************************!*\
   !*** ./node_modules/rxjs/_esm5/internal/scheduler/asap.js ***!
   \************************************************************/
-/*! exports provided: asap */
+/*! exports provided: asapScheduler, asap */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "asapScheduler", function() { return asapScheduler; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "asap", function() { return asap; });
 /* harmony import */ var _AsapAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsapAction */ "./node_modules/rxjs/_esm5/internal/scheduler/AsapAction.js");
 /* harmony import */ var _AsapScheduler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AsapScheduler */ "./node_modules/rxjs/_esm5/internal/scheduler/AsapScheduler.js");
 /** PURE_IMPORTS_START _AsapAction,_AsapScheduler PURE_IMPORTS_END */
 
 
-var asap = /*@__PURE__*/ new _AsapScheduler__WEBPACK_IMPORTED_MODULE_1__["AsapScheduler"](_AsapAction__WEBPACK_IMPORTED_MODULE_0__["AsapAction"]);
+var asapScheduler = /*@__PURE__*/ new _AsapScheduler__WEBPACK_IMPORTED_MODULE_1__["AsapScheduler"](_AsapAction__WEBPACK_IMPORTED_MODULE_0__["AsapAction"]);
+var asap = asapScheduler;
 //# sourceMappingURL=asap.js.map
 
 
@@ -13695,18 +13817,20 @@ var asap = /*@__PURE__*/ new _AsapScheduler__WEBPACK_IMPORTED_MODULE_1__["AsapSc
 /*!*************************************************************!*\
   !*** ./node_modules/rxjs/_esm5/internal/scheduler/async.js ***!
   \*************************************************************/
-/*! exports provided: async */
+/*! exports provided: asyncScheduler, async */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "asyncScheduler", function() { return asyncScheduler; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "async", function() { return async; });
 /* harmony import */ var _AsyncAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncAction */ "./node_modules/rxjs/_esm5/internal/scheduler/AsyncAction.js");
 /* harmony import */ var _AsyncScheduler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AsyncScheduler */ "./node_modules/rxjs/_esm5/internal/scheduler/AsyncScheduler.js");
 /** PURE_IMPORTS_START _AsyncAction,_AsyncScheduler PURE_IMPORTS_END */
 
 
-var async = /*@__PURE__*/ new _AsyncScheduler__WEBPACK_IMPORTED_MODULE_1__["AsyncScheduler"](_AsyncAction__WEBPACK_IMPORTED_MODULE_0__["AsyncAction"]);
+var asyncScheduler = /*@__PURE__*/ new _AsyncScheduler__WEBPACK_IMPORTED_MODULE_1__["AsyncScheduler"](_AsyncAction__WEBPACK_IMPORTED_MODULE_0__["AsyncAction"]);
+var async = asyncScheduler;
 //# sourceMappingURL=async.js.map
 
 
@@ -13716,18 +13840,20 @@ var async = /*@__PURE__*/ new _AsyncScheduler__WEBPACK_IMPORTED_MODULE_1__["Asyn
 /*!*************************************************************!*\
   !*** ./node_modules/rxjs/_esm5/internal/scheduler/queue.js ***!
   \*************************************************************/
-/*! exports provided: queue */
+/*! exports provided: queueScheduler, queue */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "queueScheduler", function() { return queueScheduler; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "queue", function() { return queue; });
 /* harmony import */ var _QueueAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QueueAction */ "./node_modules/rxjs/_esm5/internal/scheduler/QueueAction.js");
 /* harmony import */ var _QueueScheduler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QueueScheduler */ "./node_modules/rxjs/_esm5/internal/scheduler/QueueScheduler.js");
 /** PURE_IMPORTS_START _QueueAction,_QueueScheduler PURE_IMPORTS_END */
 
 
-var queue = /*@__PURE__*/ new _QueueScheduler__WEBPACK_IMPORTED_MODULE_1__["QueueScheduler"](_QueueAction__WEBPACK_IMPORTED_MODULE_0__["QueueAction"]);
+var queueScheduler = /*@__PURE__*/ new _QueueScheduler__WEBPACK_IMPORTED_MODULE_1__["QueueScheduler"](_QueueAction__WEBPACK_IMPORTED_MODULE_0__["QueueAction"]);
+var queue = queueScheduler;
 //# sourceMappingURL=queue.js.map
 
 
@@ -13857,31 +13983,39 @@ var EmptyError = EmptyErrorImpl;
 /*!************************************************************!*\
   !*** ./node_modules/rxjs/_esm5/internal/util/Immediate.js ***!
   \************************************************************/
-/*! exports provided: Immediate */
+/*! exports provided: Immediate, TestTools */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Immediate", function() { return Immediate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestTools", function() { return TestTools; });
 /** PURE_IMPORTS_START  PURE_IMPORTS_END */
 var nextHandle = 1;
-var tasksByHandle = {};
-function runIfPresent(handle) {
-    var cb = tasksByHandle[handle];
-    if (cb) {
-        cb();
+var RESOLVED = /*@__PURE__*/ (function () { return /*@__PURE__*/ Promise.resolve(); })();
+var activeHandles = {};
+function findAndClearHandle(handle) {
+    if (handle in activeHandles) {
+        delete activeHandles[handle];
+        return true;
     }
+    return false;
 }
 var Immediate = {
     setImmediate: function (cb) {
         var handle = nextHandle++;
-        tasksByHandle[handle] = cb;
-        Promise.resolve().then(function () { return runIfPresent(handle); });
+        activeHandles[handle] = true;
+        RESOLVED.then(function () { return findAndClearHandle(handle) && cb(); });
         return handle;
     },
     clearImmediate: function (handle) {
-        delete tasksByHandle[handle];
+        findAndClearHandle(handle);
     },
+};
+var TestTools = {
+    pending: function () {
+        return Object.keys(activeHandles).length;
+    }
 };
 //# sourceMappingURL=Immediate.js.map
 
@@ -14286,8 +14420,8 @@ function not(pred, thisArg) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pipe", function() { return pipe; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pipeFromArray", function() { return pipeFromArray; });
-/* harmony import */ var _noop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./noop */ "./node_modules/rxjs/_esm5/internal/util/noop.js");
-/** PURE_IMPORTS_START _noop PURE_IMPORTS_END */
+/* harmony import */ var _identity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./identity */ "./node_modules/rxjs/_esm5/internal/util/identity.js");
+/** PURE_IMPORTS_START _identity PURE_IMPORTS_END */
 
 function pipe() {
     var fns = [];
@@ -14297,8 +14431,8 @@ function pipe() {
     return pipeFromArray(fns);
 }
 function pipeFromArray(fns) {
-    if (!fns) {
-        return _noop__WEBPACK_IMPORTED_MODULE_0__["noop"];
+    if (fns.length === 0) {
+        return _identity__WEBPACK_IMPORTED_MODULE_0__["identity"];
     }
     if (fns.length === 1) {
         return fns[0];
@@ -14407,7 +14541,14 @@ var subscribeToIterable = function (iterable) {
     return function (subscriber) {
         var iterator = iterable[_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__["iterator"]]();
         do {
-            var item = iterator.next();
+            var item = void 0;
+            try {
+                item = iterator.next();
+            }
+            catch (err) {
+                subscriber.error(err);
+                return subscriber;
+            }
             if (item.done) {
                 subscriber.complete();
                 break;
@@ -14508,17 +14649,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function subscribeToResult(outerSubscriber, result, outerValue, outerIndex, destination) {
-    if (destination === void 0) {
-        destination = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_0__["InnerSubscriber"](outerSubscriber, outerValue, outerIndex);
+function subscribeToResult(outerSubscriber, result, outerValue, outerIndex, innerSubscriber) {
+    if (innerSubscriber === void 0) {
+        innerSubscriber = new _InnerSubscriber__WEBPACK_IMPORTED_MODULE_0__["InnerSubscriber"](outerSubscriber, outerValue, outerIndex);
     }
-    if (destination.closed) {
+    if (innerSubscriber.closed) {
         return undefined;
     }
     if (result instanceof _Observable__WEBPACK_IMPORTED_MODULE_2__["Observable"]) {
-        return result.subscribe(destination);
+        return result.subscribe(innerSubscriber);
     }
-    return Object(_subscribeTo__WEBPACK_IMPORTED_MODULE_1__["subscribeTo"])(result)(destination);
+    return Object(_subscribeTo__WEBPACK_IMPORTED_MODULE_1__["subscribeTo"])(result)(innerSubscriber);
 }
 //# sourceMappingURL=subscribeToResult.js.map
 
@@ -14708,7 +14849,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _internal_operators_mergeMap__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../internal/operators/mergeMap */ "./node_modules/rxjs/_esm5/internal/operators/mergeMap.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "mergeMap", function() { return _internal_operators_mergeMap__WEBPACK_IMPORTED_MODULE_45__["mergeMap"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "flatMap", function() { return _internal_operators_mergeMap__WEBPACK_IMPORTED_MODULE_45__["mergeMap"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "flatMap", function() { return _internal_operators_mergeMap__WEBPACK_IMPORTED_MODULE_45__["flatMap"]; });
 
 /* harmony import */ var _internal_operators_mergeMapTo__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../internal/operators/mergeMapTo */ "./node_modules/rxjs/_esm5/internal/operators/mergeMapTo.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "mergeMapTo", function() { return _internal_operators_mergeMapTo__WEBPACK_IMPORTED_MODULE_46__["mergeMapTo"]; });
@@ -14882,7 +15023,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "zipAll", function() { return _internal_operators_zipAll__WEBPACK_IMPORTED_MODULE_102__["zipAll"]; });
 
 /** PURE_IMPORTS_START  PURE_IMPORTS_END */
-
 
 
 
@@ -15545,16 +15685,16 @@ const _default = ({
     store
   } = Object(_client_store_index__WEBPACK_IMPORTED_MODULE_10__["default"])(history, react_redux_epic__WEBPACK_IMPORTED_MODULE_2__["wrapRootEpic"]);
   const reactRouterContext = {};
-  const component = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_cookie__WEBPACK_IMPORTED_MODULE_8__["CookiesProvider"], {
+  const component = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_cookie__WEBPACK_IMPORTED_MODULE_8__["CookiesProvider"], {
     cookies: req.universalCookies
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
     store: store,
     key: "provider"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["StaticRouter"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["StaticRouter"], {
     location: req.url,
     context: reactRouterContext,
     history: history
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_App__WEBPACK_IMPORTED_MODULE_9__["default"], null))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_App__WEBPACK_IMPORTED_MODULE_9__["default"], null))));
   Object(react_redux_epic__WEBPACK_IMPORTED_MODULE_2__["renderToString"])(component, wrappedEpic).map(({
     markup
   }) => ({
@@ -15572,7 +15712,7 @@ const _default = ({
     } = webpack_flush_chunks__WEBPACK_IMPORTED_MODULE_5___default()(clientStats, {
       chunkNames
     });
-    const html = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToNodeStream"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_helpers_Html__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    const html = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_1__["renderToNodeStream"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_helpers_Html__WEBPACK_IMPORTED_MODULE_11__["default"], {
       styles: stylesheets,
       cssHash: cssHashRaw,
       js: scripts,
@@ -15614,7 +15754,7 @@ const _default = ({
     return;
   }
 
-  reactHotLoader.register(_default, "default", "/home/aekryzprobook/Workspace/system-administration/server/render.js");
+  reactHotLoader.register(_default, "default", "/home/aekryz/Documents/projects/system-administration/server/render.js");
 })();
 
 ;
@@ -15634,7 +15774,7 @@ const _default = ({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/aekryzprobook/Workspace/system-administration/server/render.js */"./server/render.js");
+module.exports = __webpack_require__(/*! /home/aekryz/Documents/projects/system-administration/server/render.js */"./server/render.js");
 
 
 /***/ }),
@@ -15900,17 +16040,6 @@ module.exports = require("serialize-javascript");
 /***/ (function(module, exports) {
 
 module.exports = require("tslib");
-
-/***/ }),
-
-/***/ "vm":
-/*!*********************!*\
-  !*** external "vm" ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("vm");
 
 /***/ })
 

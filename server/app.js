@@ -19,10 +19,10 @@ const CURRENT_WORKING_DIR = process.cwd();
 const app = express();
 
 // body parser
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({
+//   extended: true
+// }));
 
 app.set(SESSION_SECRET, SESSION_SECRET_VALUE);
 
